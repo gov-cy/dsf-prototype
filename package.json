@@ -1,0 +1,14 @@
+{
+    "name": "gov-cy-dsf-prototype",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.html",
+    "author": "DMRID - DSF Team",
+    "license": "MIT",
+    "scripts": {
+        "start": "http-server -c-1 -p 3000 -o docs/"
+    },
+    "devDependencies": {
+        "http-server": "^13.0.2"
+    }
+}
