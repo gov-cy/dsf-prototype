@@ -46,6 +46,7 @@ DSFTemplates =
         "h4" : "<h4{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h4>",
         "h5" : "<h5{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h5>",
         "h6" : "<h6{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h6>",
+        "footer" : "<p{{#id}} id='{{id}}'{{/id}}>FOOTER: {{langLabel}}</p>",
         "table" : "<p>{{langLabel}}</p>"
         + "<table class='table'>"
         + "<thead><tr>"
@@ -54,6 +55,12 @@ DSFTemplates =
         + "<tbody>"
             + "{{#data}}<tr>{{#.}}<td>{{.}}</td>{{/.}}</tr>{{/data}}"
         + "</tbody>"
-        + "</table>"
+        + "</table>",
+        "checkboxes" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
+            + "{{#data}}"
+            + "<div class='form-check'>"
+            + "<input name='{{name}}' class='form-check-input' type='checkbox' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}}>"
+            + "<label class='form-check-label' for='{{option_id}}'>{{option_label}}</label>"
+            + "</div>{{/data}}"
     } 
 };

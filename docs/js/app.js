@@ -76,7 +76,11 @@ var appController = {
                 var formData = new FormData(document.querySelector("#components"));
                 // Display the key/value pairs
                 for(var pair of formData.entries()) {
-                    console.log(pair[0]+ ', '+ pair[1]);
+                    var inputKey = pair[0];
+                    var inputValue = formData.getAll(inputKey);
+                    console.log(inputKey+ ', '+ inputValue);
+                    //save in session store
+                    sessionStorage[inputKey] = inputValue;
                 }
                 break;
             case "alertData": 
@@ -84,7 +88,9 @@ var appController = {
                 var formDataValues="";
                 // Display the key/value pairs
                 for(var pair of formData.entries()) {
-                    formDataValues += pair[0]+ ', '+ pair[1] + '\n';
+                    var inputKey = pair[0];
+                    var inputValue = formData.getAll(inputKey);
+                    formDataValues += inputKey+ ', '+ inputValue + '\n';
                 }
                 alert(formDataValues);
                 break;
