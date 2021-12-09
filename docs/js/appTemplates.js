@@ -14,7 +14,6 @@ DSFTemplates =
             +"<span class='navbar-toggler-icon'></span></button>"
             +"<div class='collapse navbar-collapse' id='navbarsTopLevel'>"
             +"<ul class='navbar-nav me-auto mb-2 mb-lg-0' id='headerNavBar'>"
-            +"<li class='nav-item'><a class='nav-link active' aria-current='page' href='#'>Home</a></li>"
             +"</ul><form><select class='form-control w-100-px' id='changeLangSel'><option value='en' selected>English</option><option value='el'>Ελληνικά</option></select></form></div></div></nav>"
         ,"el" : "<nav class='navbar navbar-expand-md' aria-label='Top navigation bar'>"
             +"<div class='container-md'><a class='navbar-brand' href='#'>"
@@ -23,7 +22,6 @@ DSFTemplates =
             +"<span class='navbar-toggler-icon'></span></button>"
             +"<div class='collapse navbar-collapse' id='navbarsTopLevel'>"
             +"<ul class='navbar-nav me-auto mb-2 mb-lg-0' id='headerNavBar'>"
-            +"<li class='nav-item'><a class='nav-link active' aria-current='page' href='#'>Αρχική</a></li>"
             +"</ul><form><select class='form-control w-100-px' id='changeLangSel'><option value='en'>English</option><option value='el' selected>Ελληνικά</option></select></form></div></div></nav>"
     },
     "footer" : {
@@ -31,15 +29,17 @@ DSFTemplates =
         ,"el" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'> Όροι χρήσης</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προσβασιμότητα</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προστασία Προσωπικών Δεδομένων</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Ανάπτυξη <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Κυπριακή Δημοκρατία, 202 </p> </footer>"
     },
     "componentTemplates" : {
-        "text": "<label for='{{name}}' class='form-label'>{{langLabel}}</label>"
+        "text": "<div class='mb-3'><label for='{{name}}' class='form-label'>{{langLabel}}</label>"
             +"<input type='text' class='form-control' name='{{name}}'"
                 +"{{#id}}id='{{id}}'{{/id}}"
                 +"{{#placeholder}}placeholder='{{placeholder}}'{{/placeholder}}"
-                +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>",
-        "button" : "<button type='button' class='btn btn-primary'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</button>",
+                +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}></div>",
+        "button" : "<button type='button' class='dsf-btn-primary'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</button>",
+        "link" : "<a href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</a>",
+        "backLink" : "<div class='md-3'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</a></div>",
         "paragraph" : "<p{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</p>", 
         "spanHTML" : "<span{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</span>", 
-        "paragraphHTML" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>", 
+        "paragraphHTML" : "<div{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</div>", 
         "h1" : "<h1{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h1>",
         "h2" : "<h2{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h2>",
         "h3" : "<h3{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h3>",
@@ -53,14 +53,31 @@ DSFTemplates =
             + "{{#head}}<th>{{.}}</th>{{/head}}"
         + "</tr></thead>"
         + "<tbody>"
-            + "{{#data}}<tr>{{#.}}<td>{{.}}</td>{{/.}}</tr>{{/data}}"
+            + "{{#data}}<tr>{{#.}}<td>{{{.}}}</td>{{/.}}</tr>{{/data}}"
         + "</tbody>"
-        + "</table>",
-        "checkboxes" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
+        + "</table>"
+        ,"checkboxes" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
             + "{{#data}}"
             + "<div class='form-check'>"
             + "<input name='{{name}}' class='form-check-input' type='checkbox' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}}>"
             + "<label class='form-check-label' for='{{option_id}}'>{{option_label}}</label>"
             + "</div>{{/data}}"
+        ,"radio" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
+            + "{{#data}}"
+            + "<div class='form-check'>"
+            + "<input name='{{name}}' class='form-check-input' type='radio' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}}>"
+            + "<label class='form-check-label' for='{{option_id}}'>{{option_label}}</label>"
+            + "</div>{{/data}}"
+        ,"successPanel" : "<div class='row'>"
+            +"<div class='dsf-panel'>"
+            +"<div class='col'>"
+            +"<div class='row'>"
+            +"<div class='col align-items-center justify-content-center d-flex'>"
+            +"<h1>{{head}}</h1>"
+            +"</div></div>"
+            +"<div class='row'>"
+            +"<div class='col align-items-center align-content-center justify-content-center d-flex'>"
+            +"<p>{{{langLabel}}}</p>"
+            +"</div></div></div></div></div>"
     } 
 };

@@ -9,7 +9,7 @@
       appModel.siteOptions = data;
       //language code
       if ((!localStorage.DDSlanguageCode) || (localStorage.DDSlanguageCode == 'undefined')) {
-          localStorage.DDSlanguageCode = "el";
+          localStorage.DDSlanguageCode = "en";
       }
       //initialize router
       appController.init();    
@@ -72,6 +72,7 @@ var appController = {
         switch (actions.data[i].action) {
             case "alert": alert(actions.data[i].data); break;
             case "link": window.location=actions.data[i].data; break;
+            case "goBack": history.back(); break;
             case "getData": 
                 var formData = new FormData(document.querySelector("#components"));
                 // Display the key/value pairs
