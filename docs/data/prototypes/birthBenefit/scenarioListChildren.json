@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/scenario2_1listChildren",
+    "id":"birthBenefit/scenarioListChildren",
     "menus" : [],
     "layout" : "Max-width",
     "DSFcomponents" : 
@@ -28,16 +28,16 @@
             ,{
                 "type": "paragraph",
                 "label": {"en":" ", "el":" "}
-            }
-            ,{
+            },
+            {
                 "type": "button",
                 "label":  {"en":"Next", "el":"Επόμενο"},
-                "id":"nextbtn",
+                "id":"nextRoutebtn",
                 "events" : [
                     {
                         "on":"click","actions" : [
                             {"action" : "getData","data":""},
-                            {"action" : "link","data":"#p/birthBenefit/scenario2_2"}
+                            {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ]

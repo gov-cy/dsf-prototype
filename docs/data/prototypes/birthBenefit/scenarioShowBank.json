@@ -1,0 +1,47 @@
+{
+    "id":"birthBenefit/scenarioShowBank",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Bank account details", "el":"Στοιχεία τραπεζικού λογαριασμού"}
+            }
+            ,{
+                "type": "table",
+                "label":  {"en":"Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary.", "el":"Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος."},
+                "head" : ["",""],
+                "data" : 
+                    [
+                        ["<b>Name</b>","Maria Smith"],
+                        ["<b>Bank</b>","Bank of Cyprus"],
+                        ["<b>IBAN/SIC</b>","1234567890"]
+                    ]
+            }
+            ,{
+                "type": "link",
+                "label": {"en":"Is this information not correct?", "el":"Δεν είναι σωστές αυτές οι πληροφορίες;"},
+                "href" : "#p/birthBenefit/changeBank"
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":" ", "el":" "}
+            },
+            {
+                "type": "button",
+                "label":  {"en":"Next", "el":"Επόμενο"},
+                "id":"nextRoutebtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "nextOnRoute","data":""}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }   
+}

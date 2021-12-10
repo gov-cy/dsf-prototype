@@ -138,6 +138,7 @@ Update the `js/appTemplates.js` file and add the template (in mustache js format
 ## Todo
 
 - Explain events and actions more
+- Explain routes
 - multilanguage data, head
 - use of page data connected with session (load with mustache)
 - Add custom actions (custom js file)

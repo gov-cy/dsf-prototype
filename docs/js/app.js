@@ -39,6 +39,11 @@ var appController = {
                   appView.renderPage(route_args.id);
               });
           });
+          //------------#route/:routeId/:routeNo---------------------------
+          this.get('#route/:routeId/:routeNo', function () {
+            appView.renderPage(appModel.siteOptions.routes[this.params['routeId']][this.params['routeNo']]
+                ,this.params['routeId'], this.params['routeNo']);
+          });
           //-------------/----------------------------
           //default
           this.get('', function () { this.app.runRoute('get', '#home') });
@@ -49,13 +54,19 @@ var appController = {
    * Uses the component.id to to and jquery $("").on funtion 
    * 
    * @param {object} DSFComponent The component object 
+   * @param {string} routeId The id of the route 
+   * @param {int} routeNo The number of the route 
    */
-  attachEvents: function (DSFComponent){
+  attachEvents: function (DSFComponent,routeId,routeNo ){
     if (DSFComponent.id){
         //for all events
         for (var i = 0; i < DSFComponent.events.length; i++) {
             //attach evevrnts
-            $( "#"+DSFComponent.id ).on( DSFComponent.events[i].on,DSFComponent.events[i].actions, 
+            $( "#"+DSFComponent.id ).on( 
+                DSFComponent.events[i].on,
+                    {"actions":DSFComponent.events[i].actions
+                    ,"routeId":routeId
+                    ,"routeNo":routeNo}, 
                 appController.runActions );
         }
     }    
@@ -65,14 +76,24 @@ var appController = {
    * 
    * @param {array} actions the actions defined on the event of a component
    */
-  runActions: function (actions) {
+  runActions: function (actions ) {
     //for all actions
-    for (var i=0; i < actions.data.length; i++) {
+    for (var i=0; i < actions.data.actions.length; i++) {
         //run appropriate action 
-        switch (actions.data[i].action) {
-            case "alert": alert(actions.data[i].data); break;
-            case "link": window.location=actions.data[i].data; break;
+        switch (actions.data.actions[i].action) {
+            case "alert": alert(actions.data.actions[i].data); break;
+            case "link": window.location=actions.data.actions[i].data; break;
             case "goBack": history.back(); break;
+            case "previousOnRoute": 
+                var nextRoutId=parseInt(actions.data.routeNo) - 1;
+                var newURL= "#route/"+actions.data.routeId+'/'+nextRoutId;
+                window.location=newURL;
+                break;
+            case "nextOnRoute": 
+                var nextRoutId=parseInt(actions.data.routeNo) + 1;
+                var newURL= "#route/"+actions.data.routeId+'/'+nextRoutId;
+                window.location=newURL;
+                break;
             case "getData": 
                 var formData = new FormData(document.querySelector("#components"));
                 // Display the key/value pairs
@@ -152,8 +173,13 @@ var appView = {
    * Renders the page 
    * 
    * @param {string} pageId the id of the page to be rendered
+   * @param {string} routeId The id of the route 
+   * @param {int} routeNo The number of the route 
    */
-  renderPage:function(pageId) {
+  renderPage:function(pageId,routeId,routeNo) {
+      //default parameters
+      routeId = typeof routeId !== 'undefined' ? routeId : "";
+      routeNo = typeof routeNo !== 'undefined' ? routeNo : 0;
       //set current values
       appModel.currentPageId = pageId;
       //clear everything
@@ -162,11 +188,11 @@ var appView = {
       //------ DSF Components START------------------
 
           //get data from json
-        $.getJSON( "prototypes/"+pageId+".json", function( data ) {
+        $.getJSON( "data/prototypes/"+pageId+".json", function( data ) {
             //render site stuff
             appView.renderSiteStuff(data);
             //page bindings
-            appView.globalBindings();
+            appView.globalBindings(routeId,routeNo);
             //Render components
             if (data.DSFcomponents) {
                 //for all components
@@ -186,7 +212,7 @@ var appView = {
                     
                     //attach events
                     if (data.DSFcomponents.components[i].events) {
-                        appController.attachEvents(data.DSFcomponents.components[i]);
+                        appController.attachEvents(data.DSFcomponents.components[i],routeId,routeNo);
                     }
                 }
             }
@@ -236,14 +262,17 @@ var appView = {
   }, 
   /**
    * Handles global bindings such as change language
+   * 
+   * @param {string} routeId The id of the route 
+   * @param {int} routeNo The number of the route 
    */
-  globalBindings:function() {
+  globalBindings:function(routeId,routeNo) {
       //bindings change language
       $('#changeLangSel').on('change', function() {
           //change language id
           localStorage.DDSlanguageCode = this.value;
           // re render 
-          appView.renderPage(appModel.currentPageId);
+          appView.renderPage(appModel.currentPageId,routeId,routeNo);
       });
   }
 };

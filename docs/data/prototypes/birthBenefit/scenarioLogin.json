@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/scenario1_0_Login",
+    "id":"birthBenefit/scenarioLogin",
     "menus" : [],
     "layout" : "Max-width",
     "DSFcomponents" : 
@@ -27,16 +27,16 @@
                 "name": "password",
                 "id" : "password",
                 "maxlength": 100
-            }
-            ,{
+            },
+            {
                 "type": "button",
                 "label":  {"en":"Login", "el":"Σύνδεση"},
-                "id":"nextbtn",
+                "id":"nextRoutebtn",
                 "events" : [
                     {
                         "on":"click","actions" : [
                             {"action" : "getData","data":""},
-                            {"action" : "link","data":"#p/birthBenefit/scenario1_1"}
+                            {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ]

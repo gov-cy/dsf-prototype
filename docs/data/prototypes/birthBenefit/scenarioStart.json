@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/birthBenefitScenario1",
+    "id":"birthBenefit/scenarioStart",
     "menus" : [],
     "layout" : "Max-width",
     "DSFcomponents" : 
@@ -17,11 +17,11 @@
             ,{
                 "type": "button",
                 "label":  {"en":"Start", "el":"Ξεκινήστε τη διαδικασία"},
-                "id":"nextbtn",
+                "id":"nextRoutebtn",
                 "events" : [
                     {
                         "on":"click","actions" : [
-                            {"action" : "link","data":"#p/birthBenefit/scenario1_0_Login"}
+                            {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ]

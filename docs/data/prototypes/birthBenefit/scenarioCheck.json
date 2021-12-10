@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/scenario2_2",
+    "id":"birthBenefit/scenarioCheck",
     "menus" : [],
     "layout" : "Max-width",
     "DSFcomponents" : 
@@ -43,11 +43,11 @@
             ,{
                 "type": "button",
                 "label":  {"en":"Submit", "el":"Υποβολή"},
-                "id":"nextbtn",
+                "id":"nextRoutebtn",
                 "events" : [
                     {
                         "on":"click","actions" : [
-                            {"action" : "link","data":"#p/birthBenefit/confirm"}
+                            {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ]

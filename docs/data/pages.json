@@ -13,17 +13,38 @@
     "pages" : {
         "index":{"id":"index"}
         ,"birthBenefit/allLinks":{"id":"birthBenefit/allLinks"}
-        ,"birthBenefit/scenario1":{"id":"birthBenefit/scenario1"}
-        ,"birthBenefit/scenario1_0_Login":{"id":"birthBenefit/scenario1_0_Login"}
-        ,"birthBenefit/scenario1_1":{"id":"birthBenefit/scenario1_1" }
-        ,"birthBenefit/scenario2":{"id":"birthBenefit/scenario2"}
-        ,"birthBenefit/scenario2_0_Login":{"id":"birthBenefit/scenario2_0_Login"}
-        ,"birthBenefit/scenario2_1listChildren":{"id":"birthBenefit/scenario2_1listChildren" }
-        ,"birthBenefit/scenario2_2":{"id":"birthBenefit/scenario2_2" }        
+        ,"birthBenefit/scenarioStart":{"id":"birthBenefit/scenarioStart"}
+        ,"birthBenefit/scenarioLogin":{"id":"birthBenefit/scenarioLogin"}
+        ,"birthBenefit/scenarioListChildren":{"id":"birthBenefit/scenarioListChildren" }
+        ,"birthBenefit/scenarioShowBank":{"id":"birthBenefit/scenarioShowBank" }
+        ,"birthBenefit/scenarioCheck":{"id":"birthBenefit/scenarioCheck" }        
         ,"birthBenefit/changeBank":{"id":"birthBenefit/changeBank"}
         ,"birthBenefit/confirm":{"id":"birthBenefit/confirm"}
         ,"birthBenefit/dataNotCorrect":{"id":"birthBenefit/dataNotCorrect"}
         ,"birthBenefit/childNotFound":{"id":"birthBenefit/childNotFound"}
         ,"cheatsheet":{"id":"cheatsheet"}
-    } 
+    },
+    "routes" : {
+        "birthBenefit1" : [
+            "birthBenefit/scenarioStart"
+            ,"birthBenefit/scenarioLogin"
+            ,"birthBenefit/scenarioCheck"
+            ,"birthBenefit/confirm"
+            ]
+        ,"birthBenefit2" : [
+            "birthBenefit/scenarioStart"
+            ,"birthBenefit/scenarioLogin"
+            ,"birthBenefit/scenarioListChildren"
+            ,"birthBenefit/scenarioCheck"
+            ,"birthBenefit/confirm"
+            ]
+        ,"birthBenefit3" : [
+            "birthBenefit/scenarioStart"
+            ,"birthBenefit/scenarioLogin"
+            ,"birthBenefit/scenarioListChildren"
+            ,"birthBenefit/scenarioShowBank"
+            ,"birthBenefit/scenarioCheck"
+            ,"birthBenefit/confirm"
+            ]
+    }
 }
