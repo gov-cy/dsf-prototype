@@ -12,12 +12,18 @@
     ,
     "pages" : {
         "index":{"id":"index"}
+        ,"birthBenefit/allLinks":{"id":"birthBenefit/allLinks"}
         ,"birthBenefit/scenario1":{"id":"birthBenefit/scenario1"}
-        ,"birthBenefit/scenario1Login":{"id":"birthBenefit/scenario1Login"}
+        ,"birthBenefit/scenario1_0_Login":{"id":"birthBenefit/scenario1_0_Login"}
         ,"birthBenefit/scenario1_1":{"id":"birthBenefit/scenario1_1" }
+        ,"birthBenefit/scenario2":{"id":"birthBenefit/scenario2"}
+        ,"birthBenefit/scenario2_0_Login":{"id":"birthBenefit/scenario2_0_Login"}
+        ,"birthBenefit/scenario2_1listChildren":{"id":"birthBenefit/scenario2_1listChildren" }
+        ,"birthBenefit/scenario2_2":{"id":"birthBenefit/scenario2_2" }        
         ,"birthBenefit/changeBank":{"id":"birthBenefit/changeBank"}
         ,"birthBenefit/confirm":{"id":"birthBenefit/confirm"}
-        ,"birthBenefit_dataNotCorrect":{"id":"birthBenefit/dataNotCorrect"}
+        ,"birthBenefit/dataNotCorrect":{"id":"birthBenefit/dataNotCorrect"}
+        ,"birthBenefit/childNotFound":{"id":"birthBenefit/childNotFound"}
         ,"cheatsheet":{"id":"cheatsheet"}
     } 
 }

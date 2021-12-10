@@ -1,0 +1,23 @@
+{
+    "id":"birthBenefit/dataNotCorrect",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "label": {"en":"Back", "el":"Πίσω"}
+            }
+            ,{
+                "type": "h1",
+                "label": {"en":"Your application cannot be submited.", "el":"Η αίτηση σας δεν μπορεί να καταχωρηθεί."}
+            }
+            ,{
+                "type": "paragraphHTML",
+                "label": {"en":"<p>[could not find a birth record, point user to paper route, to provide birth certificate or hospital letter if stillbirth]</p>", "el":"<p>[δεν μπόρεσε να βρει ένα αρχείο γέννησης, να οδηγήσει τον χρήστη στη διαδρομή χαρτιού, να παράσχει πιστοποιητικό γέννησης ή επιστολή νοσοκομείου σε περίπτωση θνησιγένειας]</p>"}
+            }
+        ]
+    }
+}

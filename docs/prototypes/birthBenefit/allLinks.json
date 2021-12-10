@@ -1,0 +1,37 @@
+{
+    "id":"birthBenefit/allLinks",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Child Birth Grand Prototypes", "el":"Προτότυπα για βοήθημα τοκετού"}
+            }
+            ,{
+                "type": "link",
+                "label": {"en":"Scenario 1", "el":"Σενάριο 1"},
+                "href" : "#p/birthBenefit/scenario1"
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":"Simple scenario with only confirmation page.", "el":"Απλό σενάριο με μόνο σελίδα επιβεβαίωσης."}
+            }
+            ,{
+                "type": "link",
+                "label": {"en":"Scenario 2", "el":"Σενάριο 2"},
+                "href" : "#p/birthBenefit/scenario2"
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":"Simple scenario but has more than one child.", "el":"Απλό σενάριο αλλά έχει περισσότερα από ένα παιδιά."}
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":" ", "el":" "}
+            }
+        ]
+    }   
+}

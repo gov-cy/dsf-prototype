@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/birthBenefitScenario1",
+    "id":"birthBenefit/birthBenefitScenario2",
     "menus" : [],
     "layout" : "Max-width",
     "DSFcomponents" : 
@@ -21,7 +21,7 @@
                 "events" : [
                     {
                         "on":"click","actions" : [
-                            {"action" : "link","data":"#p/birthBenefit/scenario1_0_Login"}
+                            {"action" : "link","data":"#p/birthBenefit/scenario2_0_Login"}
                         ]
                     }
                 ]

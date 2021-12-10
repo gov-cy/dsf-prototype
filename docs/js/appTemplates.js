@@ -2,8 +2,8 @@ DSFTemplates =
 {
     "markdownFile" : "<div{{#id}} id='{{id}}'{{/id}}></h1>",
     "layouts": {
-        "Max-width" : "<article id='main'></article><form id='components'></form>"
-        ,"One-third + Two-thirds + Sidemenu" : "<div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
+        "Max-width" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article id='main'></article><form id='components'></form>"
+        ,"One-third + Two-thirds + Sidemenu" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
     "header" : {
@@ -29,7 +29,7 @@ DSFTemplates =
         ,"el" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'> Όροι χρήσης</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προσβασιμότητα</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προστασία Προσωπικών Δεδομένων</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Ανάπτυξη <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Κυπριακή Δημοκρατία, 202 </p> </footer>"
     },
     "componentTemplates" : {
-        "text": "<div class='mb-3'><label for='{{name}}' class='form-label'>{{langLabel}}</label>"
+        "text": "<div class='mb-3'><label{{#id}} for='{{id}}'{{/id}} class='form-label'>{{langLabel}}</label>"
             +"<input type='text' class='form-control' name='{{name}}'"
                 +"{{#id}}id='{{id}}'{{/id}}"
                 +"{{#placeholder}}placeholder='{{placeholder}}'{{/placeholder}}"
@@ -62,6 +62,10 @@ DSFTemplates =
             + "<input name='{{name}}' class='form-check-input' type='checkbox' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}}>"
             + "<label class='form-check-label' for='{{option_id}}'>{{option_label}}</label>"
             + "</div>{{/data}}"
+        ,"file" : "<div class='mb-3'>"
+            + "<label{{#id}} for='{{id}}'{{/id}}class='form-label'>{{langLabel}}</label>"
+            + "<input class='form-control' type='file' name='{{name}}' {{#id}}id='{{id}}'{{/id}}>"
+            + "</div>"            
         ,"radio" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
             + "{{#data}}"
             + "<div class='form-check'>"

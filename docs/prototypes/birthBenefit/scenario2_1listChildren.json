@@ -1,0 +1,47 @@
+{
+    "id":"birthBenefit/scenario2_1listChildren",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Which children are you claiming for?", "el":"Παιδί/ιά που υποβάλετε την αίτηση"}
+            }
+            ,{
+                "type": "table",
+                "label":  {"en":"List of children born in the last 365 days", "el":"Λίστα παιδιών που γεννήθηκαν τις τελευταίες 365 ημέρες."},
+                "head" : ["Child","Date of birth","Select"],
+                "data" : 
+                    [
+                        ["Γιώργος και Μιχάλης","15/12/2020","<div class='form-check'><input name='childSelect' class='form-check-input' type='radio' value='Γιώργος και Μιχάλης'></div>"],
+                        ["Άντρη","20/10/2022","Έχει γίνει ήδη αίτηση."]
+                    ]
+            }
+            ,{
+                "type": "link",
+                "label": {"en":"Is the child missing from this list or stillborn?", "el":"Το παιδί λείπει από αυτή τη λίστα ή είναι νεκρό;"},
+                "href" : "#p/birthBenefit/childNotFound"
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":" ", "el":" "}
+            }
+            ,{
+                "type": "button",
+                "label":  {"en":"Next", "el":"Επόμενο"},
+                "id":"nextbtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "getData","data":""},
+                            {"action" : "link","data":"#p/birthBenefit/scenario2_2"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }   
+}

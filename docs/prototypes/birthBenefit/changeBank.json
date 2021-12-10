@@ -37,6 +37,12 @@
                 "maxlength": 100
             }
             ,{
+                "type": "file",                
+                "label": {"en":"Upload a document certifying the International Account Number (IBAN).", "el":"Ανεβάστε έγγραφο που να πιστοποιεί τον διεθνή αριθμό λογαριασμού (IBAN)."},
+                "name": "IBANPDF",
+                "id" : "IBANPDF"
+            }
+            ,{
                 "type": "button",
                 "label":  {"en":"Next", "el":"Επόμενο"},
                 "id":"nextbtn",

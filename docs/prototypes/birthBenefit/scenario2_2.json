@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/scenario1_1",
+    "id":"birthBenefit/scenario2_2",
     "menus" : [],
     "layout" : "Max-width",
     "DSFcomponents" : 
@@ -9,8 +9,8 @@
             {
                 "type": "backLink",
                 "label": {"en":"Back", "el":"Πίσω"}
-            },
-            {
+            }
+            ,{
                 "type": "h1",
                 "label": {"en":"Check the information we have", "el":"Επιβεβαίωση στοιχείων"}
             },

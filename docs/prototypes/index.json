@@ -12,12 +12,12 @@
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Simple script with only confirmation page.", "el":"Απλό σενάριο με μόνο σελίδα επιβεβαίωσης."}
+                "label": {"en":"Click on the list of services below to check the respective prototypes.", "el":"Κάντε κλικ στη λίστα των υπηρεσιών παρακάτω για να ελέγξετε τα αντίστοιχα πρωτότυπα."}
             }
             ,{
                 "type": "link",
-                "label": {"en":"Child Grand Benefit Scenario 1", "el":"Child Grand Benefit Scenario 1"},
-                "href" : "#p/birthBenefit/scenario1"
+                "label": {"en":"Child Grand Benefit", "el":"Βοήθημα τοκετού"},
+                "href" : "#p/birthBenefit/allLinks"
             }
             ,{
                 "type": "paragraph",
