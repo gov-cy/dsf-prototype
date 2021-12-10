@@ -2,7 +2,6 @@
     "id":"birthBenefit/scenario1Login",
     "menus" : [],
     "layout" : "Max-width",
-    "MDcontent" : [],
     "DSFcomponents" : 
         {
         "DOMId": "components",

@@ -2,7 +2,6 @@
     "id":"birthBenefit/changeBank",
     "menus" : [],
     "layout" : "Max-width",
-    "MDcontent" : [],
     "DSFcomponents" : 
         {
         "DOMId": "components",

@@ -2,7 +2,6 @@
     "id":"cheatsheet",
     "menus" : ["general"],
     "layout" : "Max-width",
-    "MDcontent" : [],
     "DSFcomponents" : 
         {
         "DOMId": "components",

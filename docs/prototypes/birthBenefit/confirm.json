@@ -2,7 +2,6 @@
     "id":"birthBenefit/confirm",
     "menus" : [],
     "layout" : "Max-width",
-    "MDcontent" : [],
     "DSFcomponents" : 
         {
         "DOMId": "components",

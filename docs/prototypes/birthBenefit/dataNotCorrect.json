@@ -2,7 +2,6 @@
     "id":"birthBenefit/dataNotCorrect",
     "menus" : [],
     "layout" : "Max-width",
-    "MDcontent" : [],
     "DSFcomponents" : 
         {
         "DOMId": "components",
