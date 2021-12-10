@@ -77,7 +77,7 @@ DSFTemplates =
             +"</div></div>"
             +"<div class='row'>"
             +"<div class='col align-items-center align-content-center justify-content-center d-flex'>"
-            +"<p>{{{langLabel}}}</p>"
+            +"<p> {{{langLabel}}} </p>"
             +"</div></div></div></div></div>"
     } 
 };

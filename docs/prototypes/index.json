@@ -1,0 +1,29 @@
+{
+    "id":"index",
+    "menus" : [],
+    "layout" : "Max-width",
+    "MDcontent" : [],
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Prototypes", "el":"Προτότυπα"}
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":"Simple script with only confirmation page.", "el":"Απλό σενάριο με μόνο σελίδα επιβεβαίωσης."}
+            }
+            ,{
+                "type": "link",
+                "label": {"en":"Child Grand Benefit Scenario 1", "el":"Child Grand Benefit Scenario 1"},
+                "href" : "#p/birthBenefit/scenario1"
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":" ", "el":" "}
+            }
+        ]
+    }   
+}

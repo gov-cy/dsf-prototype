@@ -33,7 +33,7 @@ var appController = {
           this.get('#home', function () {
               appView.renderPage(appModel.siteOptions.defaultPage);
           });
-          //------------#p/Pages---------------------------
+          //------------#p-Pages---------------------------
           $.each(appModel.siteOptions["pages"], function (i, route_args) {
               app.get('#p/' + route_args.id, function () {
                   appView.renderPage(route_args.id);
@@ -126,15 +126,15 @@ var appView = {
   /**
    * Render site stuff like menus header and footer
    **/
-  renderSiteStuff : function(DSFPage){
+  renderSiteStuff : function(){
       //render header footer
       if (DSFTemplates.header) $('#headerContainer').html(DSFTemplates.header[localStorage.DDSlanguageCode]);
       if (DSFTemplates.footer) $('#footerContainer').html(DSFTemplates.footer[localStorage.DDSlanguageCode]);
       //render layouts
-      $('#mainContainer').html(DSFTemplates.layouts[DSFPage.layout]);
+      $('#mainContainer').html(DSFTemplates.layouts[appModel.siteOptions.pages[appModel.currentPageId].layout]);
       //render menus
-      for (var i = 0; i < DSFPage.menus.length; i++) {
-        appView.showMenu(appModel.siteOptions.menus[DSFPage.menus[i]]);
+      for (var i = 0; i < appModel.siteOptions.pages[appModel.currentPageId].menus.length; i++) {
+        appView.showMenu(appModel.siteOptions.menus[appModel.siteOptions.pages[appModel.currentPageId].menus[i]]);
       }
   },
   /**
@@ -157,40 +157,43 @@ var appView = {
       //set current values
       appModel.currentPageId = pageId;
       //clear everything
-      appView.clearScreen();      
+      appView.clearScreen();
+      //render site stuff
+      appView.renderSiteStuff();
+      //page bindings
+      appView.globalBindings();
       
-      //------ DSF Components START------------------
+    //   //Markdown with Pagedown		      
+    //   //for all markdowns      
+    //   for (var i = 0; i < appModel.siteOptions.pages[pageId].MDcontent.length; i++) {
+    //     appView.renderMarkDownContent(appModel.siteOptions.pages[pageId].MDcontent[i].MDFile[localStorage.DDSlanguageCode], 
+    //         appModel.siteOptions.pages[pageId].MDcontent[i].DOMId)
+    //   }
 
-          //get data from json
-        $.getJSON( "prototypes/"+pageId+".json", function( data ) {
-            //render site stuff
-            appView.renderSiteStuff(data);
-            //page bindings
-            appView.globalBindings();
-            //Render components
-            if (data.DSFcomponents) {
-                //for all components
-                var DSFComponents = "";
-                for (var i = 0; i < data.DSFcomponents.components.length; i++) {
-                    //change label language
-                    data.DSFcomponents.components[i].langLabel = 
-                        data.DSFcomponents.components[i].label[localStorage.DDSlanguageCode];
-                    
-                    //render using mustache
-                    DSFComponents = Mustache.render
-                    (DSFTemplates.componentTemplates[data.DSFcomponents.components[i].type]
-                        , data.DSFcomponents.components[i]);
-                    
-                    //render on page
-                    $("#"+data.DSFcomponents.DOMId).append(DSFComponents);
-                    
-                    //attach events
-                    if (data.DSFcomponents.components[i].events) {
-                        appController.attachEvents(data.DSFcomponents.components[i]);
-                    }
-                }
+      //------ DSF Components START------------------
+      //Render components
+      if (appModel.siteOptions.pages[pageId].DSFcomponents) {
+        //for all components
+        var DSFComponents = "";
+        for (var i = 0; i < appModel.siteOptions.pages[pageId].DSFcomponents.components.length; i++) {
+            //change label language
+            appModel.siteOptions.pages[pageId].DSFcomponents.components[i].langLabel = 
+                appModel.siteOptions.pages[pageId].DSFcomponents.components[i].label[localStorage.DDSlanguageCode];
+            
+            //render using mustache
+            DSFComponents = Mustache.render
+            (DSFTemplates.componentTemplates[appModel.siteOptions.pages[pageId].DSFcomponents.components[i].type]
+                , appModel.siteOptions.pages[pageId].DSFcomponents.components[i]);
+            
+            //render on page
+            $("#"+appModel.siteOptions.pages[pageId].DSFcomponents.DOMId).append(DSFComponents);
+            
+            //attach events
+            if (appModel.siteOptions.pages[pageId].DSFcomponents.components[i].events) {
+                appController.attachEvents(appModel.siteOptions.pages[pageId].DSFcomponents.components[i]);
             }
-        });
+        }
+      }
       //------ DSF Components END------------------
       
       //highlight hack to display html highlighter

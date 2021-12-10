@@ -1,0 +1,21 @@
+{
+    "id":"birthBenefit/confirm",
+    "menus" : [],
+    "layout" : "Max-width",
+    "MDcontent" : [],
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "successPanel",
+                "head" : "Η αίτηση έχει ολοκληρωθεί",
+                "label": {"en":"The application reference number is:<b>191292</b>", "el":"Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"}
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":"The amount is expected to be deposited in your bank account within 5 working days.", "el":"Το ποσό αναμένεται να κατατεθεί στον τραπεζικό σας λογαριασμό εντός 5 εργάσιμων ημερών."}
+            }
+        ]
+    }
+}

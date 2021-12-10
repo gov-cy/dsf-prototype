@@ -1,0 +1,46 @@
+{
+    "id":"birthBenefit/scenario1Login",
+    "menus" : [],
+    "layout" : "Max-width",
+    "MDcontent" : [],
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Login", "el":"Σύνδεση"}
+            }
+            ,{
+                "type": "text",
+                "required": false,
+                "label": {"en":"User Name", "el":"Όνομα Χρήστη"},
+                "placeholder": "",
+                "name": "id",
+                "id" : "id",
+                "maxlength": 100
+            }
+            ,{
+                "type": "text",
+                "required": false,
+                "label": {"en":"Password", "el":"Κωδικός Πρόσβασης"},
+                "placeholder": "",
+                "name": "password",
+                "id" : "password",
+                "maxlength": 100
+            }
+            ,{
+                "type": "button",
+                "label":  {"en":"Login", "el":"Σύνδεση"},
+                "id":"nextbtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "link","data":"#p/birthBenefit/scenario1_1"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }   
+}

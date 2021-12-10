@@ -1,0 +1,107 @@
+{
+    "id":"cheatsheet",
+    "menus" : ["general"],
+    "layout" : "Max-width",
+    "MDcontent" : [],
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Header 1", "el":"Τίτλος 1"},
+                "id" : "header1"
+            }
+            ,{
+                "type": "h2",
+                "label": {"en":"Header 2", "el":"Τίτλος 2"}
+            }
+            ,{
+                "type": "h3",
+                "label": {"en":"Header 3", "el":"Τίτλος 3"}
+            }
+            ,{
+                "type": "h4",
+                "label": {"en":"Header 4", "el":"Τίτλος 4"}
+            }
+            ,{
+                "type": "h5",
+                "label": {"en":"Header 5", "el":"Τίτλος 5"}
+            }
+            ,{
+                "type": "h6",
+                "label": {"en":"Header 6", "el":"Τίτλος 6"}
+            }
+            ,{
+                "type": "footer",
+                "label": {"en":"Hey am here", "el":"Hey am here"}
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus.",
+                        "el":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
+            }
+            ,{
+                "type": "text",
+                "required": false,
+                "label": {"en":"Text Box", "el":"Πεδίο text"},
+                "placeholder": "XXXXXX",
+                "name": "id",
+                "id" : "id",
+                "maxlength": 10
+            }
+            ,{
+                "type": "checkboxes",
+                "required": false,
+                "label": {"en":"Checkboxes", "el":"Επιλογές Checkbox"},
+                "data" : [
+                    {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true},
+                    {"option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false},
+                    {"option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}
+                ],
+                "name": "checkboxes",
+                "id" : "checkboxes"
+            }
+            ,{
+                "type": "radio",
+                "required": false,
+                "label": {"en":"Radio Buttons", "el":"Επιλογές Radio Buttons"},
+                "data" : [
+                    {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true},
+                    {"option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false},
+                    {"option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}
+                ],
+                "name": "radios",
+                "id" : "radios"
+            }
+            ,{
+                "type": "table",
+                "label":  {"en":"Table", "el":"Πίνακας"},
+                "head" : ["#","Date","Data"],
+                "data" : 
+                    [
+                        ["1","2021-12-01","Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
+                        ["2","2021-12-21","In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
+                        ["3","2021-12-31","Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
+                    ]
+                , 
+                "name": "next"
+            }
+            ,{
+                "type": "button",
+                "label":  {"en":"Back", "el":"Πίσω"},
+                "subtype": "button",
+                "name": "back",
+                "id":"backbtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "getData","data":""},
+                            {"action" : "link","data":"#p/index"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }   
+}
