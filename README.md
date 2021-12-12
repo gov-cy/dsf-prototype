@@ -14,7 +14,7 @@ For each page listed in the pages.json a `data\prototypes\{{id}}.json` file must
 
 Check below a sample structure of the file with comments to help identify what is each element
 
-```json
+```js
 {
     "defaultPage" : "index", //defines the default page if no page id is defined in url
     "menus" : //define the menus here to be referenced in the `pages` section
@@ -56,7 +56,7 @@ Check below a sample structure of the file with comments to help identify what i
 
 This file defines the page configuration and it's components. Note that the `{{id}}` must be the same as defined in the pages.json file. Also you can define in a subdirectory, i.e. if the {{id}} defined in the pages.json is `service1/page1` the corresponding page definition file must be `prototypes/service1/page1`.
 
-```json
+```js
 
 { 
     "id":"service1/page1", //page id
