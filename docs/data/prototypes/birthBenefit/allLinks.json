@@ -11,6 +11,10 @@
                 "label": {"en":"Child Birth Grand Prototypes", "el":"Προτότυπα για βοήθημα τοκετού"}
             }
             ,{
+                "type": "paragraph",
+                "label": {"en":"Click on the link to start.", "el":"Κάντε κλικ στον σύνδεσμο για να ξεκινήσετε."}
+            }
+            ,{
                 "type": "link",
                 "label": {"en":"Scenario 1", "el":"Σενάριο 1"},
                 "href" : "#r/birthBenefit1/0"

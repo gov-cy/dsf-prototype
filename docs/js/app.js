@@ -2,7 +2,10 @@
  * On window load
  */
  $(window).on('load', function() { 
-            
+
+  //dissable cache on ajax
+  $.ajaxSetup({ cache: false });
+  
   //get data from json
   $.getJSON( "data/pages.json", function( data ) {
       //set data to model
