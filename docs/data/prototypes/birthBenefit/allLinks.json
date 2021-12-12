@@ -13,7 +13,7 @@
             ,{
                 "type": "link",
                 "label": {"en":"Scenario 1", "el":"Σενάριο 1"},
-                "href" : "#route/birthBenefit1/0"
+                "href" : "#r/birthBenefit1/0"
             }
             ,{
                 "type": "paragraph",
@@ -22,7 +22,7 @@
             ,{
                 "type": "link",
                 "label": {"en":"Scenario 2", "el":"Σενάριο 2"},
-                "href" : "#route/birthBenefit2/0"
+                "href" : "#r/birthBenefit2/0"
             }
             ,{
                 "type": "paragraph",
@@ -31,7 +31,7 @@
             ,{
                 "type": "link",
                 "label": {"en":"Scenario 3", "el":"Σενάριο 3"},
-                "href" : "#route/birthBenefit3/0"
+                "href" : "#r/birthBenefit3/0"
             }
             ,{
                 "type": "paragraph",

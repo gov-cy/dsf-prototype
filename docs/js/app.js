@@ -39,8 +39,8 @@ var appController = {
                   appView.renderPage(route_args.id);
               });
           });
-          //------------#route/:routeId/:routeNo---------------------------
-          this.get('#route/:routeId/:routeNo', function () {
+          //------------#r/:routeId/:routeNo---------------------------
+          this.get('#r/:routeId/:routeNo', function () {
             appView.renderPage(appModel.siteOptions.routes[this.params['routeId']][this.params['routeNo']]
                 ,this.params['routeId'], this.params['routeNo']);
           });
@@ -86,12 +86,12 @@ var appController = {
             case "goBack": history.back(); break;
             case "previousOnRoute": 
                 var nextRoutId=parseInt(actions.data.routeNo) - 1;
-                var newURL= "#route/"+actions.data.routeId+'/'+nextRoutId;
+                var newURL= "#r/"+actions.data.routeId+'/'+nextRoutId;
                 window.location=newURL;
                 break;
             case "nextOnRoute": 
                 var nextRoutId=parseInt(actions.data.routeNo) + 1;
-                var newURL= "#route/"+actions.data.routeId+'/'+nextRoutId;
+                var newURL= "#r/"+actions.data.routeId+'/'+nextRoutId;
                 window.location=newURL;
                 break;
             case "getData": 
