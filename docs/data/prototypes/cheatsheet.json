@@ -108,8 +108,27 @@
                         "Enter your fullname"
                         ,"Second Error"
                     ]
-                , 
-                "name": "next"
+            }
+            ,{
+                "type": "alertImportant",
+                "label":  {"en":"Important", "el":"Συμαντικό"},
+                "data" : 
+                    [
+                        "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                        ,"<a href='#'>View your application</a>"
+                    ]
+            }
+            ,{
+                "type": "alertSuccess",
+                "label":  {"en":"Success", "el":"Επιτυχία"},
+                "data" : 
+                    [
+                        "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                    ],
+                "links" : 
+                    [
+                        "Contact <a href='mailto:support@gov.cy'>support@gov.cy</a> if you think your application has a problem"
+                    ]
             }
             ,{
                 "type": "successPanel",
