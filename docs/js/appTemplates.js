@@ -109,5 +109,13 @@ DSFTemplates =
             +"<div class='col align-items-center align-content-center justify-content-center d-flex'>"
             +"<p> {{{langLabel}}} </p>"
             +"</div></div></div></div></div>"
+        ,"alertError" : "<div class='row'>"
+            + "<div class='govcy-alert-error'>"
+            + "<h2>"
+            + "{{{langLabel}}}"
+            + "</h2>"
+            + "{{#data}}<p><a href='#'>{{{.}}}</a></p>{{/data}}"
+            + "</div>"
+            + "</div>"
     } 
 };
