@@ -36,9 +36,17 @@
                 "label": {"en":"Hey am here", "el":"Hey am here"}
             }
             ,{
+                "type": "link",
+                "label": {"en":"This is a link", "el":"This is a link"}
+            }
+            ,{
+                "type": "backLink",
+                "label": {"en":"Back", "el":"Πίσω"}
+            }
+            ,{
                 "type": "paragraph",
-                "label": {"en":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus.",
-                        "el":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
+                "label": {"en":"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus.",
+                        "el":"Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
             }
             ,{
                 "type": "text",
@@ -48,6 +56,12 @@
                 "name": "id",
                 "id" : "id",
                 "maxlength": 10
+            }
+            ,{
+                "type": "file",
+                "label": {"en":"Upload", "el":"Ανέβασμα"},
+                "name": "file",
+                "id" : "file"
             }
             ,{
                 "type": "checkboxes",
@@ -85,6 +99,22 @@
                     ]
                 , 
                 "name": "next"
+            }
+            ,{
+                "type": "alertError",
+                "label":  {"en":"There is a problem", "el":"Υπάρχει ένα πρόβλημα"},
+                "data" : 
+                    [
+                        "Enter your fullname"
+                        ,"Second Error"
+                    ]
+                , 
+                "name": "next"
+            }
+            ,{
+                "type": "successPanel",
+                "head" : "Η αίτηση έχει ολοκληρωθεί",
+                "label": {"en":"The application reference number is:<b>191292</b>", "el":"Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"}
             }
             ,{
                 "type": "button",

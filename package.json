@@ -6,9 +6,11 @@
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "scripts": {
-        "start": "http-server -c-1 -p 3000 -o docs/"
+        "start": "http-server -c-1 -p 3000 -o docs/",
+        "snapshots": "percy exec -- node snapshots.js"
     },
     "devDependencies": {
+        "@percy/script": "^1.1.0",
         "http-server": "^13.0.2"
     }
 }
