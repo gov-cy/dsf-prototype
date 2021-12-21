@@ -136,5 +136,15 @@ DSFTemplates =
             + "</div>"
             + "</div>"
             + "</div>"
+        ,"warning" : "<div class='row'>"
+            + "<div class='govcy-warning'>"
+            + "<div class='col align-items-center justify-content-start d-flex'>"
+            + "<p>"
+            + "<i class='bi bi-exclamation-circle-fill'></i>"
+            + "{{{langLabel}}}"
+            + "</p>"
+            + "</div>"
+            + "</div>"
+            + "</div>"
     } 
 };

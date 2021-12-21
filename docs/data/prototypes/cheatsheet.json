@@ -136,6 +136,10 @@
                 "label": {"en":"The application reference number is:<b>191292</b>", "el":"Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"}
             }
             ,{
+                "type": "warning",
+                "label": {"en":"Warning message here.", "el":"προειδοποιητικό μήνυμα."}
+            }
+            ,{
                 "type": "button",
                 "label":  {"en":"Back", "el":"Πίσω"},
                 "subtype": "button",
