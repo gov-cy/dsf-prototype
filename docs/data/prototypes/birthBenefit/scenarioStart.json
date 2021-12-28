@@ -16,6 +16,7 @@
             }
             ,{
                 "type": "button",
+                "subtype": "primary",
                 "label":  {"en":"Start", "el":"Ξεκινήστε τη διαδικασία"},
                 "id":"nextRoutebtn",
                 "events" : [

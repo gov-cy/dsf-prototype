@@ -51,30 +51,50 @@ DSFTemplates =
         + "</div>"
     },
     "footer" : {
-        "en" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'>Terms and Conditions</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Accessibility</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Data protection</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Built by the <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Republic of Cyprus, 2021 </p> </footer>"
-        ,"el" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'> Όροι χρήσης</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προσβασιμότητα</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προστασία Προσωπικών Δεδομένων</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Ανάπτυξη <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Κυπριακή Δημοκρατία, 202 </p> </footer>"
+        "en" : "<div class='row'>"
+        + "<footer class='govcy-footer govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light'>"
+        + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo'></span>"
+        + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
+        + "<li><a href='#'>Privacy statement</a></li>"
+        + "<li><a href='#'>Cookie policy</a></li>"
+        + "<li><a href='#'>Accessibility statement</a></li>"
+        + "<li class='govcy-d-block govcy-text-dark'>© Republic of Cyprus, 2021</li>"
+        + "</ul>"
+        + "</footer>"
+        + "</div>"
+        ,"el" : "<div class='row'>"
+        + "<footer class='govcy-footer govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light'>"
+        + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo'></span>"
+        + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
+        + "<li><a href='#'>Όροι Χρήσης</a></li>"
+        + "<li><a href='#'>Προστασία Προσωπικών Δεδομένων</a></li>"
+        + "<li><a href='#'>Προσβασιμότητα</a></li>"
+        + "<li class='govcy-d-block govcy-text-dark'>© Κυπριακή Δημοκρατία, 2021</li>"
+        + "</ul>"
+        + "</footer>"
+        + "</div>"
     },
     "componentTemplates" : {
-        "text": "<div class='mb-3'><label{{#id}} for='{{id}}'{{/id}} class='form-label'>{{langLabel}}</label>"
+        "text": "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'><label{{#id}} for='{{id}}'{{/id}} class='form-label'>{{langLabel}}</label>"
             +"<input type='text' class='form-control' name='{{name}}'"
                 +"{{#id}}id='{{id}}'{{/id}}"
                 +"{{#placeholder}}placeholder='{{placeholder}}'{{/placeholder}}"
                 +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}></div>",
-        "button" : "<button type='button' class='govcy-btn-primary'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</button>",
-        "link" : "<a href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</a>",
-        "backLink" : "<div class='md-3'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</a></div>",
-        "paragraph" : "<p{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</p>", 
-        "spanHTML" : "<span{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</span>", 
-        "paragraphHTML" : "<div{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</div>", 
-        "h1" : "<h1{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h1>",
-        "h2" : "<h2{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h2>",
-        "h3" : "<h3{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h3>",
-        "h4" : "<h4{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h4>",
-        "h5" : "<h5{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h5>",
-        "h6" : "<h6{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h6>",
-        "footer" : "<p{{#id}} id='{{id}}'{{/id}}>FOOTER: {{langLabel}}</p>",
+        "button" : "<button type='button' class='govcy-btn-{{subtype}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</button>",
+        "link" : "<a class='{{#classes}} {{.}}{{/classes}}' href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</a>",
+        "backLink" : "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</a></div>",
+        "paragraph" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</p>", 
+        "spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</span>", 
+        "paragraphHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</div>", 
+        "h1" : "<h1 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h1>",
+        "h2" : "<h2 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h2>",
+        "h3" : "<h3 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h3>",
+        "h4" : "<h4 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h4>",
+        "h5" : "<h5 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h5>",
+        "h6" : "<h6 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langLabel}}</h6>",
+        "footer" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>FOOTER: {{langLabel}}</p>",
         "table" : "<p>{{langLabel}}</p>"
-        + "<table class='table'>"
+        + "<table class='table{{#classes}} {{.}}{{/classes}}'>"
         + "<thead><tr>"
             + "{{#head}}<th>{{.}}</th>{{/head}}"
         + "</tr></thead>"
@@ -84,21 +104,21 @@ DSFTemplates =
         + "</table>"
         ,"checkboxes" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
             + "{{#data}}"
-            + "<div class='form-check'>"
+            + "<div class='form-check {{#classes}} {{.}}{{/classes}}'>"
             + "<input name='{{name}}' class='form-check-input' type='checkbox' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}}>"
             + "<label class='form-check-label' for='{{option_id}}'>{{option_label}}</label>"
             + "</div>{{/data}}"
-        ,"file" : "<div class='mb-3'>"
+        ,"file" : "<div class='govcy-mb-3 {{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}}class='form-label'>{{langLabel}}</label>"
             + "<input class='form-control' type='file' name='{{name}}' {{#id}}id='{{id}}'{{/id}}>"
             + "</div>"            
         ,"radio" : "<p{{#id}} id='{{id}}'{{/id}}>{{{langLabel}}}</p>"
             + "{{#data}}"
-            + "<div class='form-check'>"
+            + "<div class='form-check {{#classes}} {{.}}{{/classes}}'>"
             + "<input name='{{name}}' class='form-check-input' type='radio' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}}>"
             + "<label class='form-check-label' for='{{option_id}}'>{{option_label}}</label>"
             + "</div>{{/data}}"
-        ,"successPanel" : "<div class='row'>"
+        ,"successPanel" : "<div class='row{{#classes}} {{.}}{{/classes}}'>"
             +"<div class='govcy-panel'>"
             +"<div class='col'>"
             +"<div class='row'>"
@@ -109,7 +129,7 @@ DSFTemplates =
             +"<div class='col align-items-center align-content-center justify-content-center d-flex'>"
             +"<p> {{{langLabel}}} </p>"
             +"</div></div></div></div></div>"
-        ,"alertError" : "<div class='row'>"
+        ,"alertError" : "<div class='row{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-error'>"
             + "<h2>"
             + "{{{langLabel}}}"
@@ -117,7 +137,7 @@ DSFTemplates =
             + "{{#data}}<p><a href='#'>{{{.}}}</a></p>{{/data}}"
             + "</div>"
             + "</div>"
-        ,"alertImportant" : "<div class='row'>"
+        ,"alertImportant" : "<div class='row{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-important'>"
             + "<h2>"
             + "{{{langLabel}}}"
@@ -125,7 +145,7 @@ DSFTemplates =
             + "{{#data}}<p>{{{.}}}</p>{{/data}}"
             + "</div>"
             + "</div>"
-        ,"alertSuccess" : "<div class='row'>"
+        ,"alertSuccess" : "<div class='row{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-success'>"
             + "<h2>"
             + "{{{langLabel}}}"
@@ -136,7 +156,7 @@ DSFTemplates =
             + "</div>"
             + "</div>"
             + "</div>"
-        ,"warning" : "<div class='row'>"
+        ,"warning" : "<div class='row{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-warning'>"
             + "<div class='col align-items-center justify-content-start d-flex'>"
             + "<p>"
@@ -146,5 +166,10 @@ DSFTemplates =
             + "</div>"
             + "</div>"
             + "</div>"
+        ,"divContainerOpen" : "<div class='govcy-container{{#classes}} {{.}}{{/classes}}' >"
+        ,"divContainerFluidOpen" : "<div class='govcy-container-fluid{{#classes}} {{.}}{{/classes}}' >"
+        ,"divRowOpen" : "<div class='row{{#classes}} {{.}}{{/classes}}' >"
+        ,"divColumnOpen" : "<div class='govcy-col{{#colnum}}-{{colnum}}{{/colnum}}{{#classes}} {{.}}{{/classes}} '>"
+        ,"divClose" : "</div>"
     } 
 };
