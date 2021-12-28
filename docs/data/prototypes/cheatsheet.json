@@ -49,6 +49,12 @@
                         "el":"Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
             }
             ,{
+                "type": "paragraph",
+                "label": {"en":"Test paragraph with custom classes.",
+                        "el":"Δοκιμαστική Πατάργαφος με custom classes."},
+                "classes" :["govcy-bg-danger","govcy-text-white","govcy-py-5","govcy-text-center", "govcy-fs-3"]
+            }
+            ,{
                 "type": "text",
                 "required": false,
                 "label": {"en":"Text Box", "el":"Πεδίο text"},
@@ -140,11 +146,20 @@
                 "label": {"en":"Warning message here.", "el":"προειδοποιητικό μήνυμα."}
             }
             ,{
+                "type" :"divRowOpen"
+            }
+            ,{
+                "type" :"divColumnOpen",
+                "colnum": "5",
+                "classes" : ["govcy-my-2"]
+            }
+            ,{
                 "type": "button",
+                "subtype": "primary",
                 "label":  {"en":"Back", "el":"Πίσω"},
-                "subtype": "button",
                 "name": "back",
-                "id":"backbtn",
+                "id":"backbtn1",
+                "classes" : ["govcy-mx-2"],
                 "events" : [
                     {
                         "on":"click","actions" : [
@@ -153,6 +168,28 @@
                         ]
                     }
                 ]
+            }
+            ,{
+                "type": "button",
+                "subtype": "primary",
+                "label":  {"en":"Back 1", "el":"Πίσω 1"},
+                "name": "back",
+                "id":"backbtn2",
+                "classes" : ["govcy-mx-2"],
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "getData","data":""},
+                            {"action" : "link","data":"#p/index"}
+                        ]
+                    }
+                ]
+            }
+            ,{
+                "type" :"divClose"
+            }
+            ,{
+                "type" :"divClose"
             }
         ]
     }   

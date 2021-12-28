@@ -196,27 +196,36 @@ var appView = {
             appView.renderSiteStuff(data);
             //page bindings
             appView.globalBindings(routeId,routeNo);
+
+            var DSFComponents = "";
+            var DSFEvents = [];
             //Render components
             if (data.DSFcomponents) {
                 //for all components
-                var DSFComponents = "";
                 for (var i = 0; i < data.DSFcomponents.components.length; i++) {
                     //change label language
-                    data.DSFcomponents.components[i].langLabel = 
-                        data.DSFcomponents.components[i].label[localStorage.DDSlanguageCode];
+                    if (data.DSFcomponents.components[i].label){
+                       data.DSFcomponents.components[i].langLabel = 
+                        data.DSFcomponents.components[i].label[localStorage.DDSlanguageCode]; 
+                    }
                     
                     //render using mustache
-                    DSFComponents = Mustache.render
+                    DSFComponents += Mustache.render
                     (DSFTemplates.componentTemplates[data.DSFcomponents.components[i].type]
                         , data.DSFcomponents.components[i]);
                     
-                    //render on page
-                    $("#"+data.DSFcomponents.DOMId).append(DSFComponents);
-                    
-                    //attach events
+                    //register events in array
                     if (data.DSFcomponents.components[i].events) {
-                        appController.attachEvents(data.DSFcomponents.components[i],routeId,routeNo);
+                        DSFEvents.push(data.DSFcomponents.components[i]);
                     }
+                }
+
+                //render on page
+                $("#"+data.DSFcomponents.DOMId).html(DSFComponents);
+
+                //attach events
+                for (var i = 0; i < DSFEvents.length; i++) {
+                    appController.attachEvents(DSFEvents[i],routeId,routeNo);
                 }
             }
         });

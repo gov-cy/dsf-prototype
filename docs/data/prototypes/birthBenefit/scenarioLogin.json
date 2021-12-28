@@ -30,6 +30,7 @@
             },
             {
                 "type": "button",
+                "subtype": "primary",
                 "label":  {"en":"Login", "el":"Σύνδεση"},
                 "id":"nextRoutebtn",
                 "events" : [
