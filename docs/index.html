@@ -30,6 +30,20 @@
         <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
         <!-- Bootstrap CSS -->
         <link href="css/main.css" rel="stylesheet" >
+        <style>
+            .bg-header-right:after {
+                height: 59px;
+                content: " ";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 65%;
+                background-color: #31576f;
+                z-index: -1;
+            }
+        </style>
+
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/vs.min.css">
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
@@ -38,13 +52,17 @@
     </head>
     <body>
     <!--Header-->
-    <header class="govcy-container-fluid" id="headerContainer"></header>
+    <div class="govcy-container-fluid govcy-m-0 govcy-p-0 bg-header-right" id="headerContainerOut">
+        <div class="govcy-container" id="headerContainer"></div>
+    </div>
     <!--Top Menu-->
     <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
     <!--Main-->
     <main class="govcy-container" id="mainContainer"></main>
     <!-- Footer -->
-    <div class="govcy-container-fluid" id="footerContainer"></div>
+    <div class="govcy-container-fluid govcy-m-0 govcy-p-0 govcy-br-top-8 govcy-br-top-primary govcy-bg-light">
+        <div class="govcy-container" id="footerContainer"></div>
+    </div>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         <!-- jquery and app-->
