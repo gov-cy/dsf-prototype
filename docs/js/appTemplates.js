@@ -52,7 +52,7 @@ DSFTemplates =
     },
     "footer" : {
         "en" : "<div class='row'>"
-        + "<footer class='govcy-footer govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light'>"
+        + "<footer class='govcy-footer govcy-p-3 govcy-bg-light'>"
         + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo'></span>"
         + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
         + "<li><a href='#'>Privacy statement</a></li>"
@@ -63,7 +63,7 @@ DSFTemplates =
         + "</footer>"
         + "</div>"
         ,"el" : "<div class='row'>"
-        + "<footer class='govcy-footer govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light'>"
+        + "<footer class='govcy-footer govcy-p-3 govcy-bg-light'>"
         + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo'></span>"
         + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
         + "<li><a href='#'>Όροι Χρήσης</a></li>"
