@@ -22,6 +22,7 @@
         ,"birthBenefit/confirm":{"id":"birthBenefit/confirm"}
         ,"birthBenefit/dataNotCorrect":{"id":"birthBenefit/dataNotCorrect"}
         ,"birthBenefit/childNotFound":{"id":"birthBenefit/childNotFound"}
+        ,"birthBenefit/badLogin":{"id":"birthBenefit/badLogin"}
         ,"cheatsheet":{"id":"cheatsheet"}
     },
     "routes" : {

@@ -80,45 +80,57 @@ var appController = {
    * @param {array} actions the actions defined on the event of a component
    */
   runActions: function (actions ) {
+    appModel.stopScripts = false;
     //for all actions
     for (var i=0; i < actions.data.actions.length; i++) {
         //run appropriate action 
-        switch (actions.data.actions[i].action) {
-            case "alert": alert(actions.data.actions[i].data); break;
-            case "link": window.location=actions.data.actions[i].data; break;
-            case "goBack": history.back(); break;
-            case "previousOnRoute": 
-                var nextRoutId=parseInt(actions.data.routeNo) - 1;
-                var newURL= "#r/"+actions.data.routeId+'/'+nextRoutId;
-                window.location=newURL;
-                break;
-            case "nextOnRoute": 
-                var nextRoutId=parseInt(actions.data.routeNo) + 1;
-                var newURL= "#r/"+actions.data.routeId+'/'+nextRoutId;
-                window.location=newURL;
-                break;
-            case "getData": 
-                var formData = new FormData(document.querySelector("#components"));
-                // Display the key/value pairs
-                for(var pair of formData.entries()) {
-                    var inputKey = pair[0];
-                    var inputValue = formData.getAll(inputKey);
-                    console.log(inputKey+ ', '+ inputValue);
-                    //save in session store
-                    sessionStorage[inputKey] = inputValue;
-                }
-                break;
-            case "alertData": 
-                var formData = new FormData(document.querySelector("#components"));
-                var formDataValues="";
-                // Display the key/value pairs
-                for(var pair of formData.entries()) {
-                    var inputKey = pair[0];
-                    var inputValue = formData.getAll(inputKey);
-                    formDataValues += inputKey+ ', '+ inputValue + '\n';
-                }
-                alert(formDataValues);
-                break;
+        if (!appModel.stopScripts) {
+            switch (actions.data.actions[i].action) {
+                case "alert": alert(actions.data.actions[i].data); break;
+                case "customScript": 
+                    //$.getScript("data/prototypes/"+actions.data.actions[i].data); 
+                    $.ajax({
+                        async: false,
+                        type:"GET",
+                        url: "data/prototypes/"+actions.data.actions[i].data,
+                        dataType: "script"
+                    });
+                    break;
+                case "link": window.location=actions.data.actions[i].data; break;
+                case "goBack": history.back(); break;
+                case "previousOnRoute": 
+                    var nextRoutId=parseInt(actions.data.routeNo) - 1;
+                    var newURL= "#r/"+actions.data.routeId+'/'+nextRoutId;
+                    window.location=newURL;
+                    break;
+                case "nextOnRoute": 
+                    var nextRoutId=parseInt(actions.data.routeNo) + 1;
+                    var newURL= "#r/"+actions.data.routeId+'/'+nextRoutId;
+                    window.location=newURL;
+                    break;
+                case "getData": 
+                    var formData = new FormData(document.querySelector("#components"));
+                    // Display the key/value pairs
+                    for(var pair of formData.entries()) {
+                        var inputKey = pair[0];
+                        var inputValue = formData.getAll(inputKey);
+                        console.log(inputKey+ ', '+ inputValue);
+                        //save in session store
+                        sessionStorage[inputKey] = inputValue;
+                    }
+                    break;
+                case "alertData": 
+                    var formData = new FormData(document.querySelector("#components"));
+                    var formDataValues="";
+                    // Display the key/value pairs
+                    for(var pair of formData.entries()) {
+                        var inputKey = pair[0];
+                        var inputValue = formData.getAll(inputKey);
+                        formDataValues += inputKey+ ', '+ inputValue + '\n';
+                    }
+                    alert(formDataValues);
+                    break;
+            }
         }
     }
   }
@@ -139,7 +151,9 @@ var appModel = {
   /** The current route */
   currentRoute: null,
   /** The count of the fetch requests */
-  fetchCount : 0
+  fetchCount : 0,
+  stopScripts: false
+  
 };
 
 /**
@@ -226,6 +240,11 @@ var appView = {
                 //attach events
                 for (var i = 0; i < DSFEvents.length; i++) {
                     appController.attachEvents(DSFEvents[i],routeId,routeNo);
+                }
+                
+                //register scipt 
+                if (data.script) {
+                    $.getScript("data/prototypes/"+data.script);
                 }
             }
         });
