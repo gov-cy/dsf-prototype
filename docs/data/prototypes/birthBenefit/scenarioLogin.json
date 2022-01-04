@@ -37,10 +37,15 @@
                     {
                         "on":"click","actions" : [
                             {"action" : "getData","data":""},
+                            {"action" : "customScript","data":"birthBenefit/scenarioLoginSubmit.js"},
                             {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ]
+            }
+            ,{
+                "type": "paragraphHTML",
+                "label": {"en":"<p class='small'>Use the usernme:'elena' to login. You can use anything in the password field.</p>", "el":"<p class='small'>Χρησιμοποιήστε το όνομα χρήστη: 'elena' για να συνδεθείτε. Μπορείτε να χρησιμοποιήσετε οτιδήποτε στο πεδίο κωδικού πρόσβασης.</p>"}
             }
         ]
     }   

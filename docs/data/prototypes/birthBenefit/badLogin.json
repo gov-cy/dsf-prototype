@@ -1,0 +1,19 @@
+{
+    "id":"birthBenefit/badLogin",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "h1",
+                "label": {"en":"Your account is not valid.", "el":"Ο λογαριασμός σας δεν είναι έγκυρος."}
+            }
+            ,{
+                "type": "paragraph",
+                "label": {"en":"You must have a verified Ariadni account in order to use our service.", "el":"Πρέπει να έχετε έναν επαληθευμένο λογαριασμό Ariadni για να χρησιμοποιήσετε την υπηρεσία μας."}
+            }
+        ]
+    }
+}
