@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const httpServer = require('http-server');
 const percySnapshot = require('@percy/puppeteer');
 
-describe('TodoMVC', function () {
+describe('DesignSystem', function () {
   this.timeout(10000);
   let page;
   let server;
@@ -13,10 +13,12 @@ describe('TodoMVC', function () {
 
   //before tests start
   before(async () => {
+    console.log(`Begin`);
+    
     //start the server
     server = httpServer.createServer();
     server.listen(PORT);
-    console.log(`Server started `);
+    console.log(`Server started  at port ${PORT}`);
     //start the browser and page
     browser = await puppeteer.launch({
       headless:true,
