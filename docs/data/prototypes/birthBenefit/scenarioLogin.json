@@ -12,6 +12,7 @@
             }
             ,{
                 "type": "text",
+                "hint" : "Enter your Ariadni Username",
                 "required": false,
                 "label": {"en":"User Name", "el":"Όνομα Χρήστη"},
                 "placeholder": "",

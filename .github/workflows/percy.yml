@@ -19,6 +19,6 @@ jobs:
       - name: Percy Test
         uses: percy/exec-action@master
         with:
-          command: "node snapshots.js"
+          command: "percy exec -t 200 -- mocha tests/scripts/percy --exit"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}

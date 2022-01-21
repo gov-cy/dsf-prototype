@@ -2,7 +2,7 @@ DSFTemplates =
 {
     "markdownFile" : "<div{{#id}} id='{{id}}'{{/id}}></h1>",
     "layouts": {
-        "Max-width" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article id='main'></article><form id='components'></form>"
+        "Max-width" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article class='row' id='main'><form id='components'></form></article>"
         ,"One-third + Two-thirds + Sidemenu" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
@@ -75,8 +75,10 @@ DSFTemplates =
         + "</div>"
     },
     "componentTemplates" : {
-        "text": "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'><label{{#id}} for='{{id}}'{{/id}} class='form-label'>{{langLabel}}</label>"
-            +"<input type='text' class='form-control' name='{{name}}'"
+        "text": "<div class='govcy-form govcy-mb-3{{#classes}} {{.}}{{/classes}}'>"
+            + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label'>{{langLabel}}</label>"
+            + "{{#hint}}<span class='govcy-hint'>{{hint}}</span>{{/hint}}"
+            + "<input type='text' class='govcy-text-input' name='{{name}}'"
                 +"{{#id}}id='{{id}}'{{/id}}"
                 +"{{#placeholder}}placeholder='{{placeholder}}'{{/placeholder}}"
                 +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}></div>",
