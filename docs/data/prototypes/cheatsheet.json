@@ -64,6 +64,16 @@
                 "maxlength": 10
             }
             ,{
+                "type": "text",
+                "required": false,
+                "label": {"en":"Text Box", "el":"Πεδίο text"},
+                "placeholder": "XXXXXX",
+                "name": "id1",
+                "id" : "id1",
+                "maxlength": 10,
+                "classes" :["govcy-bg-danger"]
+            }
+            ,{
                 "type": "file",
                 "label": {"en":"Upload", "el":"Ανέβασμα"},
                 "name": "file",
