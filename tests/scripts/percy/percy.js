@@ -16,7 +16,7 @@ describe('TodoMVC', function () {
     //start the server
     server = httpServer.createServer();
     server.listen(PORT);
-    console.log(`Server started at ${TEST_URL}`);
+    console.log(`Server started `);
     //start the browser and page
     browser = await puppeteer.launch({
       headless:true,
