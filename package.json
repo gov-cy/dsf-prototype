@@ -8,7 +8,7 @@
     "scripts": {
         "start": "http-server -c-1 -p 3000 -o docs/",
         "snapshots": "percy exec -- node snapshots.js",
-        "test-percy" : "percy exec -t 200 -- mocha tests/scripts/percy --exit"
+        "test-percy" : "percy exec -- mocha tests/scripts/percy --exit"
     },
     "devDependencies": {
         "@percy/cli": "^1.0.0-beta.73",
