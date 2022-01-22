@@ -352,6 +352,7 @@ Creates an an HTML button element as defined in GOVCY design system `<button typ
 ,{
     "type": "text",
     "subtype":"primary" //i.e. primary or secondaty 
+    "hint": "This is a hint", //hint for the entire input
     "label": {"en":"label", "el":"Επιγραφή"}, //label
     "id" : "button1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
@@ -443,10 +444,11 @@ Creates checkboxes elements i.e. `<input name='{{name}}' type='checkbox'`.
 ,{
     "type": "checkboxes",
     "label": {"en":"Checkboxes", "el":"Επιλογές Checkbox"}, //label
+    "hint": "This is a hint", //hint for the entire input
     "data" : [ //the data. Each checkbox must have {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
-        {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
-        {"option_id": "chbox2","option_value":"2", "option_label":"Check 2", "option_checked":false},
-        {"option_id": "chbox3","option_value":"3", "option_label":"Check 3", "option_checked":false}
+        {"option_hint":"Hint","option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true}, //use `option_checked`:true if this option is checked 
+        {"option_hint":"Hint","option_id": "chbox2","option_value":"2", "option_label":"Check 2", "option_checked":false}, //use `option_hint` to add a hint for this option
+        {"option_id": "chbox3","option_value":"3", "option_label":"Check 3", "option_checked":false} //dont't add an `option_hint` i the option has no hint  
     ],
     "name": "checkboxes1",// NAME is important for HTML Inputs to get the values
     "id" : "checkboxes1", //OPTIONAL, useful if you are adding an event
@@ -464,10 +466,11 @@ Creates radio elements i.e. `<input name='{{name}}' type='radio'`.
 ,{
     "type": "radio",
     "label": {"en":"Radio Buttons", "el":"Επιλογές Radio Buttons"}, //label
+    "hint": "This is a hint", //hint for the entire input
     "data" : [ //the data. Each checkbox must have {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
-        {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
-        {"option_id": "chbox2","option_value":"2", "option_label":"Check 2", "option_checked":false},
-        {"option_id": "chbox3","option_value":"3", "option_label":"Check 3", "option_checked":false}
+        {"option_hint":"Hint","option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true}, //use `option_checked`:true if this option is checked 
+        {"option_hint":"Hint","option_id": "chbox2","option_value":"2", "option_label":"Check 2", "option_checked":false}, //use `option_hint` to add a hint for this option
+        {"option_id": "chbox3","option_value":"3", "option_label":"Check 3", "option_checked":false} //dont't add an `option_hint` i the option has no hint  
     ],
     "name": "radio1",// NAME is important for HTML Inputs to get the values
     "id" : "radio1", //OPTIONAL, useful if you are adding an event
@@ -504,10 +507,7 @@ Creates a success alert GOVCY component.
     "label":  {"en":"Success", "el":"Επιτυχία"}, //label displayed in alert head
     "data" : //array of lines in the body of the  alert
         [
-            "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-        ],
-    "links" : //links displayed in the body of the alert. Can be HTML
-        [
+            "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
             "Contact <a href='mailto:support@gov.cy'>support@gov.cy</a> if you think your application has a problem"
         ],
     "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
@@ -586,6 +586,33 @@ Creates a warning GOVCY component.
 
 ### Containers List
 This list contains GOVCY containers such as `contaner` `container-fluid` `row` and `col`. It consists of **open** and **close** elements. ALWAYS REMEMBER to close a contaner, otherwise the rendered HTML will be invalid. 
+
+<details>
+  <summary>fieldsetOpen</summary>
+  
+Opens a GOVCY `<fieldset>`.
+
+```js
+,{
+    "type": "fieldsetOpen",
+    "legend": "Contact Address" //The fieldset legend html
+    "id" : "fieldset1", //OPTIONAL, useful if you are adding an event
+    "classes": ["govcy-mx-2"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+}
+```
+</details>
+
+<details>
+  <summary>fieldsetClose</summary>
+  
+Closes any `<fieldset>` elements. It is very important to close all fieldsets that you have previously opened. 
+
+```js
+,{
+    "type": "fieldsetClose"
+}
+```
+</details>
 
 <details>
   <summary>divContainerOpen</summary>
