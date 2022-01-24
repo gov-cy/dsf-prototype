@@ -8,42 +8,66 @@
         "components" : [
             {
                 "type": "backLink",
-                "label": {"en":"Back", "el":"Πίσω"}
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
             }
             ,{
                 "type": "h1",
-                "label": {"en":"Check the information we have", "el":"Επιβεβαίωση στοιχείων"}
+                "content" : {
+                    "en" : {"label" : "Check the information we have"},
+                    "el" : {"label" : "Επιβεβαίωση στοιχείων"}
+                }
             },
             {
                 "type": "table",
-                "label":  {"en":"Check your information is correct.", "el":"Ελέγξτε πως τα στοιχεία που έχετε καταχωρίσει είναι ορθά."},
-                "head" : ["","",""],
-                "data" : 
-                    [
-                        ["<b>Contact email</b>","me@gmail.com",""],
-                        ["<b>Children included in application</b>","Γιώργος και Μιχάλης",""],
-                        ["<b>Bank details</b>","Name<br>Maria Smith<br><br>Bank<br>Bank of Cyprus<br><br>IBAN/SIC<br>1234567890","<a href='#p/birthBenefit/changeBank'>Change account details</a>"]
-                    ]
-                , 
-                "name": "next"
+                "name": "next",
+                "content" : {
+                    "en" : {"label" : "Check your information is correct.",
+                            "head": ["","",""],
+                            "data" : [
+                                ["<b>Contact email</b>","me@gmail.com",""],
+                                ["<b>Children included in application</b>","George and Mike",""],
+                                ["<b>Bank details</b>","Name<br>Maria Smith<br><br>Bank<br>Bank of Cyprus<br><br>IBAN/SIC<br>1234567890","<a href='#p/birthBenefit/changeBank'>Change account details</a>"]
+                            ]
+                        },
+                    "el" : {"label" : "Ελέγξτε πως τα στοιχεία που έχετε καταχωρίσει είναι ορθά.",
+                        "head": ["","",""],
+                        "data" : [
+                            ["<b>email επικοινωνίας</b>","me@gmail.com",""],
+                            ["<b>Παιδιά που περιλαμβάνονται στην αίτηση</b>","Γιώργος και Μιχάλης",""],
+                            ["<b>Στοιχεία Τράπεζας</b>","Όνομα<br>Μαρία Σμηθ<br><br>Τράπεζα<br>Τράπεζα Κύπρου<br><br>IBAN/SIC<br>1234567890","<a href='#p/birthBenefit/changeBank'>Αλλαγή στοιχείων λογαριασμού</a>"]
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Check the information we have is correct.", "el":"Ελέγξτε πως τα στοιχεία σας είναι ορθά."}
+                "content" : {
+                    "en" : {"label" : "Check the information we have is correct."},
+                    "el" : {"label" : "Ελέγξτε πως τα στοιχεία σας είναι ορθά."}
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"Is the information not right?", "el":"Τα στοιχεία δεν είναι ορθά;"},
-                "href" : "#p/birthBenefit/dataNotCorrect"
+                "label": {"en":"", "el":""},
+                "href" : "#p/birthBenefit/dataNotCorrect",
+                "content" : {
+                    "en" : {"label" : "Is the information not right?"},
+                    "el" : {"label" : "Τα στοιχεία δεν είναι ορθά;"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":" ", "el":" "}
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : ""}
+                }
             }
             ,{
                 "type": "button",
                 "subtype": "primary",
-                "label":  {"en":"Submit", "el":"Υποβολή"},
                 "id":"nextRoutebtn",
                 "events" : [
                     {
@@ -51,7 +75,11 @@
                             {"action" : "nextOnRoute","data":""}
                         ]
                     }
-                ]
+                ],
+                "content" : {
+                    "en" : {"label" : "Submit"},
+                    "el" : {"label" : "Υποβολή"}
+                }
             }
         ]
     }   

@@ -187,6 +187,23 @@ var appView = {
       $('#main').html("");
   },
   /**
+   * Creates a `langConent` with the language selected content data. 
+   * 
+   * @param {*} obj the component data object
+   */
+  prepareMultiLanguage (obj) {
+    //if content exits in object
+    if (obj.content){
+        //if content exist in specific language
+        if (obj.content[localStorage.DDSlanguageCode]) {
+            // set obj.langContent to specific language
+            obj.langConent = obj.content[localStorage.DDSlanguageCode];
+        } else {
+            obj.langConent = obj.content[DSFTemplates.defaultLang];
+        }
+    }
+  },
+  /**
    * Renders the page 
    * 
    * @param {string} pageId the id of the page to be rendered
@@ -217,11 +234,9 @@ var appView = {
             if (data.DSFcomponents) {
                 //for all components
                 for (var i = 0; i < data.DSFcomponents.components.length; i++) {
-                    //change label language
-                    if (data.DSFcomponents.components[i].label){
-                       data.DSFcomponents.components[i].langLabel = 
-                        data.DSFcomponents.components[i].label[localStorage.DDSlanguageCode]; 
-                    }
+                    
+                    //take care of multilanguage hasle 
+                    appView.prepareMultiLanguage(data.DSFcomponents.components[i]);
                     
                     //render using mustache
                     DSFComponents += Mustache.render

@@ -8,32 +8,49 @@
         "components" : [
             {
                 "type": "h1",
-                "label": {"en":"Bank account details", "el":"Στοιχεία τραπεζικού λογαριασμού"}
+                "content" : {
+                    "en" : {"label" : "Bank account details"},
+                    "el" : {"label" : "Στοιχεία τραπεζικού λογαριασμού"}
+                }
             }
             ,{
                 "type": "table",
-                "label":  {"en":"Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary.", "el":"Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος."},
-                "head" : ["",""],
-                "data" : 
-                    [
-                        ["<b>Name</b>","Maria Smith"],
-                        ["<b>Bank</b>","Bank of Cyprus"],
-                        ["<b>IBAN/SIC</b>","1234567890"]
-                    ]
+                "content" : {
+                    "en" : {"label" : "Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary.",
+                            "head": ["",""],
+                            "data" : [
+                                ["<b>Name</b>","Maria Smith"],
+                                ["<b>Bank</b>","Bank of Cyprus"],
+                                ["<b>IBAN/SIC</b>","1234567890"]
+                            ]
+                        },
+                    "el" : {"label" : "Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος..",
+                        "head": ["",""],
+                        "data" : [
+                            ["<b>Όνομα</b>","Μαρία Σμηθ"],
+                            ["<b>Τράπεζα</b>","Τράπεζα Κύπρου"],
+                            ["<b>IBAN/SIC</b>","1234567890"]
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"Is this information not correct?", "el":"Δεν είναι σωστές αυτές οι πληροφορίες;"},
-                "href" : "#p/birthBenefit/changeBank"
+                "href" : "#p/birthBenefit/changeBank",
+                "content" : {
+                    "en" : {"label" : "Is this information not correct?"},
+                    "el" : {"label" : "Δεν είναι σωστές αυτές οι πληροφορίες;"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":" ", "el":" "}
+                "content" : {
+                    "en" : {"label" : ""}
+                }
             },
             {
                 "type": "button",
                 "subtype": "primary",
-                "label":  {"en":"Next", "el":"Επόμενο"},
                 "id":"nextRoutebtn",
                 "events" : [
                     {
@@ -41,7 +58,11 @@
                             {"action" : "nextOnRoute","data":""}
                         ]
                     }
-                ]
+                ],
+                "content" : {
+                    "en" : {"label" : "Next"},
+                    "el" : {"label" : "Επόμενο"}
+                }
             }
         ]
     }   

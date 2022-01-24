@@ -8,31 +8,41 @@
         "components" : [
             {
                 "type": "h1",
-                "label": {"en":"Login", "el":"Σύνδεση"}
+                "content" : {
+                    "en" : {"label" : "Login"},
+                    "el" : {"label" : "Σύνδεση"}
+                }
             }
             ,{
                 "type": "text",
-                "hint" : "Enter your Ariadni Username",
+                "hint" : "",
                 "required": false,
-                "label": {"en":"User Name", "el":"Όνομα Χρήστη"},
-                "placeholder": "",
                 "name": "id",
                 "id" : "id",
-                "maxlength": 100
+                "maxlength": 100,
+                "content" : {
+                    "en" : {"label" : "User Name",
+                        "hint" : "Enter your Ariadni Username"
+                    },
+                    "el" : {"label" : "Όνομα Χρήστη",
+                        "hint" : "Χρησιμοποιήστε το όνομα χρήστη της Αριάδνης"
+                    }
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"Password", "el":"Κωδικός Πρόσβασης"},
-                "placeholder": "",
                 "name": "password",
                 "id" : "password",
-                "maxlength": 100
+                "maxlength": 100,
+                "content" : {
+                    "en" : {"label" : "Password"},
+                    "el" : {"label" : "Κωδικός Πρόσβασης"}
+                }
             },
             {
                 "type": "button",
                 "subtype": "primary",
-                "label":  {"en":"Login", "el":"Σύνδεση"},
                 "id":"nextRoutebtn",
                 "events" : [
                     {
@@ -42,11 +52,18 @@
                             {"action" : "nextOnRoute","data":""}
                         ]
                     }
-                ]
+                ],
+                "content" : {
+                    "en" : {"label" : "Login"},
+                    "el" : {"label" : "Σύνδεση"}
+                }
             }
             ,{
                 "type": "paragraphHTML",
-                "label": {"en":"<p class='small'>Use the usernme:'elena' to login. You can use anything in the password field.</p>", "el":"<p class='small'>Χρησιμοποιήστε το όνομα χρήστη: 'elena' για να συνδεθείτε. Μπορείτε να χρησιμοποιήσετε οτιδήποτε στο πεδίο κωδικού πρόσβασης.</p>"}
+                "content" : {
+                    "en" : {"label" : "<p class='small'>Use the usernme:'elena' to login. You can use anything in the password field.</p>"},
+                    "el" : {"label" : "<p class='small'>Χρησιμοποιήστε το όνομα χρήστη: 'elena' για να συνδεθείτε. Μπορείτε να χρησιμοποιήσετε οτιδήποτε στο πεδίο κωδικού πρόσβασης.</p>"}
+                }
             }
         ]
     }   
