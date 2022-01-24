@@ -285,10 +285,13 @@ Creates an an HTML header element i.e. `<h2>`. Code example:
 
 ```js
 ,{
-    "type": "h2",
-    "label": {"en":"Header 2", "el":"Τίτλος 2"}, //label
+    "type": "h2", 
     "id" : "header2", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {"label" : "Header 2"}, //label
+        "el" : {"label" : "Τίτλος 2"}
+    }
     
 }
 ```
@@ -302,10 +305,13 @@ Creates an an HTML anchor element i.e. `<a href={{href}}>`. Code example:
 ```js
 ,{
     "type": "link",
-    "label": {"en":"This is a link", "el":"This is a link"}, //label
     "href" : "#p/page", //can also be an absolute URL.
     "id" : "link1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {"label" : "This is a link"}, //label
+        "el" : {"label" : "This is a link"}
+    }
 }
 ```
 </details>
@@ -318,9 +324,12 @@ Creates an an HTML anchor element that redircects back in the browser's hisoty i
 ```js
 ,{
     "type": "backLink",
-    "label": {"en":"Back", "el":"Πίσω"}, //label
     "id" : "link1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {"label" : "Back"}, //label
+        "el" : {"label" : "Πίσω"}
+    }
 }
 ```
 </details>
@@ -333,12 +342,20 @@ Creates an an HTML text input element and it's label i.e. `<input type='text' ..
 ```js
 ,{
     "type": "text",
-    "label": {"en":"Text Box", "el":"Πεδίο text"}, //label
-    "placeholder": "XXXXXX", // the input placeholder
     "name": "text1", // NAME is important for HTML Inputs to get the values
     "id" : "text1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div
-    "maxlength": 10 // OPTIONAL, defines the maximum length of the input
+    "maxlength": 10, // OPTIONAL, defines the maximum length of the input
+    "content" : {//multilanguage content
+        "en" : {"label" : "Text Box" //label
+            "placeholder": "XXXXXX", // the input placeholder
+            "hint": "This is a hint", //hint for the entire input
+        }, 
+        "el" : {"label" : "Πεδίο text" //label
+            "placeholder": "XXXXXX", // the input placeholder
+            "hint": "This is a hint", //hint for the entire input
+        }
+    }
 }
 ```
 </details>
@@ -350,10 +367,8 @@ Creates an an HTML button element as defined in GOVCY design system `<button typ
 
 ```js
 ,{
-    "type": "text",
+    "type": "button",
     "subtype":"primary" //i.e. primary or secondaty 
-    "hint": "This is a hint", //hint for the entire input
-    "label": {"en":"label", "el":"Επιγραφή"}, //label
     "id" : "button1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
     "events" : [ //OPTIONAL events that trigger actions
@@ -363,7 +378,15 @@ Creates an an HTML button element as defined in GOVCY design system `<button typ
                 {"action" : "link","data":"#p/index"} // redirect to new page
             ]
         }
-    ]
+    ],
+    "content" : {//multilanguage content
+        "en" : {"label" : "label", //label
+            "hint": "This is a hint", //hint for the entire input
+        }, 
+        "el" : {"label" : "Επιγραφή" //label
+            "hint": "This is a hint", //hint for the entire input
+        }
+    }
 }
 ```
 </details>
@@ -376,9 +399,12 @@ Creates a paragpraph element i.e. `<p>`. Label can only be text. Code example:
 ```js
 ,{
     "type": "paragraph",
-    "label": {"en":"Lorem 13 ipsum dolor sit amet", "el":"Lorem 13 ipsum dolor sit amet"}, //label
     "id" : "p1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {"label" : "Lorem 13 ipsum dolor sit amet", }, //label
+        "el" : {"label" : "Lorem 13 ipsum dolor sit amet"}
+    }
 }
 ```
 </details>
@@ -391,9 +417,12 @@ Creates a span element i.e. `<span>`. Label can be HTML. Code example:
 ```js
 ,{
     "type": "spanHTML",
-    "label": {"en":"<b>Lorem 13 ipsum dolor sit amet</b>", "el":"<b>Lorem 13 ipsum dolor sit amet</b>"}, //label
     "id" : "span1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {"label" : "<b>Lorem 13 ipsum dolor sit amet</b>", }, //label
+        "el" : {"label" : "<b>Lorem 13 ipsum dolor sit amet</b>"}
+    }
 }
 ```
 </details>
@@ -406,9 +435,12 @@ Creates a div element i.e. `<div>`. Label can be HTML. Code example:
 ```js
 ,{
     "type": "paragraphHTML",
-    "label": {"en":"<b>Lorem 13 ipsum dolor sit amet</b>", "el":"<b>Lorem 13 ipsum dolor sit amet</b>"}, //label
     "id" : "p1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {"label" : "<b>Lorem 13 ipsum dolor sit amet</b>", }, //label
+        "el" : {"label" : "<b>Lorem 13 ipsum dolor sit amet</b>"}
+    }
 }
 ```
 </details>
@@ -420,17 +452,28 @@ Creates a table element i.e. `<table>`. Data my contain HTML. Code example:
 
 ```js
 ,{
-    "type": "table",
-    "label":  {"en":"Table", "el":"Πίνακας"}, // label
-    "head" : ["#","Date","Data"], // the headings of the table
-    "data" :  //the data of the table. Each row is a different array
-        [
-            ["1","<b>2021-12-01</b>","Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
-            ["2","<b>2021-12-21</b>","In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
-            ["3","<b>2021-12-31</b>","Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
-        ]
-    , 
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "type": "table", 
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element,
+    "content" : {//multilanguage content
+        "en" : {"label" : "Table", //label
+                "head": ["#","Date","Data"], // the headings of the table
+                "data" :  //the data of the table. Each row is a different array
+                [
+                    ["1","2021-12-01","Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
+                    ["2","2021-12-21","In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
+                    ["3","2021-12-31","Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
+                ]
+            },
+        "el" : {"label" : "Πίνακας",
+            "head": ["#","Ημερομηνία","Δεδομένα"],
+            "data" : 
+            [
+                ["1","2021-12-01","Ελληνικά Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
+                ["2","2021-12-21","Ελληνικά In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
+                ["3","2021-12-31","Ελληνικά Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
+            ]
+        }
+    }
 }
 ```
 </details>
@@ -443,16 +486,27 @@ Creates checkboxes elements i.e. `<input name='{{name}}' type='checkbox'`.
 ```js
 ,{
     "type": "checkboxes",
-    "label": {"en":"Checkboxes", "el":"Επιλογές Checkbox"}, //label
-    "hint": "This is a hint", //hint for the entire input
-    "data" : [ //the data. Each checkbox must have {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
-        {"option_hint":"Hint","option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true}, //use `option_checked`:true if this option is checked 
-        {"option_hint":"Hint","option_id": "chbox2","option_value":"2", "option_label":"Check 2", "option_checked":false}, //use `option_hint` to add a hint for this option
-        {"option_id": "chbox3","option_value":"3", "option_label":"Check 3", "option_checked":false} //dont't add an `option_hint` i the option has no hint  
-    ],
     "name": "checkboxes1",// NAME is important for HTML Inputs to get the values
     "id" : "checkboxes1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div
+    "content" : {//multilanguage content
+        "en" : {"label" : "Checkboxes", //label
+                "hint" : "This is a hint on top check", //hint for the entire input
+                "options": [ //the data. Each checkbox must have {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
+                    {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true}, //use `option_checked`:true if this option is checked 
+                    {"option_hint":"This is a hint","option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false}, //use `option_hint` to add a hint for this option
+                    {"option_hint":"This is a hint","option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}//dont't add an `option_hint` i the option has no hint  
+                ]
+            },
+        "el" : {"label" : "Επιλογές Checkbox",
+            "hint" : "Αυτό είναι ένα hint on top check",
+            "options": [
+                {"option_id": "chbox1","option_value":"check 1", "option_label":"Επιλογή 1", "option_checked":true},
+                {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox2","option_value":"check 2", "option_label":"Επιλογή 2", "option_checked":false},
+                {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox3","option_value":"check 3", "option_label":"Επιλογή 3", "option_checked":false}
+            ]
+        }
+    }
 }
 ```
 </details>
@@ -465,16 +519,27 @@ Creates radio elements i.e. `<input name='{{name}}' type='radio'`.
 ```js
 ,{
     "type": "radio",
-    "label": {"en":"Radio Buttons", "el":"Επιλογές Radio Buttons"}, //label
-    "hint": "This is a hint", //hint for the entire input
-    "data" : [ //the data. Each checkbox must have {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
-        {"option_hint":"Hint","option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true}, //use `option_checked`:true if this option is checked 
-        {"option_hint":"Hint","option_id": "chbox2","option_value":"2", "option_label":"Check 2", "option_checked":false}, //use `option_hint` to add a hint for this option
-        {"option_id": "chbox3","option_value":"3", "option_label":"Check 3", "option_checked":false} //dont't add an `option_hint` i the option has no hint  
-    ],
     "name": "radio1",// NAME is important for HTML Inputs to get the values
     "id" : "radio1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div
+    "content" : { //multilanguage content
+        "en" : {"label" : "Radio Buttons", //label
+                "hint" : "This is a hint on top check", //hint for the entire input
+                "options": [//the data. Each checkbox must have {"option_id": "chbox1","option_value":"1", "option_label":"Check 1", "option_checked":true},
+                    {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true},//use `option_checked`:true if this option is checked 
+                    {"option_hint":"This is a hint","option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false},//use `option_hint` to add a hint for this option
+                    {"option_hint":"This is a hint","option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}//dont't add an `option_hint` i the option has no hint  
+                ]
+            },
+        "el" : {"label" : "Επιλογές Radio Buttons",
+            "hint" : "Αυτό είναι ένα hint on top check",
+            "options": [
+                {"option_id": "chbox1","option_value":"check 1", "option_label":"Επιλογή 1", "option_checked":true},
+                {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox2","option_value":"check 2", "option_label":"Επιλογή 2", "option_checked":false},
+                {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox3","option_value":"check 3", "option_label":"Επιλογή 3", "option_checked":false}
+            ]
+        }
+    }
 }
 ```
 </details>
@@ -487,10 +552,14 @@ Creates file elements i.e. `<input name='{{name}}' type='file'`.
 ```js
 ,{
     "type": "file",
-    "label": {"en":"Upload", "el":"Ανέβασμα"}, //label
+    "label": {"en":"Upload", "el":"Ανέβασμα"}, 
     "name": "file", // NAME is important for HTML Inputs to get the values
     "id" : "file", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div
+    "content" : { //multilanguage content
+        "en" : {"label" : "Upload"},//label
+        "el" : {"label" : "Ανέβασμα"}
+    }
 }
 ```
 </details>
@@ -504,13 +573,23 @@ Creates a success alert GOVCY component.
 
 ,{
     "type": "alertSuccess",
-    "label":  {"en":"Success", "el":"Επιτυχία"}, //label displayed in alert head
-    "data" : //array of lines in the body of the  alert
-        [
-            "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-            "Contact <a href='mailto:support@gov.cy'>support@gov.cy</a> if you think your application has a problem"
-        ],
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "content" : { //multilanguage content
+        "en" : {"label" : "Success", //label displayed in alert head
+            "data" : //array of lines in the body of the  alert
+            [
+                "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                ,"Contact <a href='mailto:support@gov.cy'>support@gov.cy</a> if you think your application has a problem"
+            ]
+        },
+        "el" : {"label" : "Επιτυχία",
+            "data" : 
+            [
+                "Επιτυχία: Η τεχνητή νοημοσύνη είναι ένα από καιρό καθιερωμένο γεγονός ότι ο αναγνώστης αποσπάται από το αναγνώσιμο περιεχόμενο μιας σελίδας όταν κοιτάζει τη διάταξή της."
+                ,"Επικοινωνήστε με το <a href='mailto:support@gov.cy'>support@gov.cy</a> εάν πιστεύετε ότι η αίτησή σας έχει πρόβλημα" 
+            ]
+        }
+    }
 }
 ```
 </details>
@@ -524,13 +603,22 @@ Creates a important alert GOVCY component.
 
 ,{
     "type": "alertImportant",
-    "label":  {"en":"Important", "el":"Συμαντικό"}, //label displayed in alert head
-    "data" : //array of lines in the body of the alert. Can be HTML
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "content" : { //multilanguage content
+    "en" : {"label" : "Important",//label displayed in alert head
+        "data" : //array of lines in the body of the alert. Can be HTML
         [
-             "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-                ,"<a href='#'>View your application</a>"
+            "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            ,"<a href='#'>View your application</a>"
         ]
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    },
+    "el" : {"label" : "Συμαντικό",
+        "data" : 
+        [
+            "Επιτυχία: Η τεχνητή νοημοσύνη είναι ένα από καιρό καθιερωμένο γεγονός ότι ο αναγνώστης αποσπάται από το αναγνώσιμο περιεχόμενο μιας σελίδας όταν κοιτάζει τη διάταξή της."
+            ,"<a href='#'>Προβολή της αίτησής σας</a>" 
+        ]
+    }
 }
 ```
 </details>
@@ -544,13 +632,23 @@ Creates a error alert GOVCY component.
 
 ,{
     "type": "alertError",
-    "label":  {"en":"There is a problem", "el":"Υπάρχει ένα πρόβλημα"}, //label displayed in alert head
-    "data" : //array of lines in the body of the alert. Will be disaplayed as links. Can be HTML
-        [
-             "Enter your fullname."
-                ,"Second Error"
-        ]
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "content" : { //multilanguage content
+        "en" : {"label" : "There is a problem",//label displayed in alert head
+            "data" : //array of lines in the body of the alert. Will be disaplayed as links. Can be HTML
+            [
+                "Enter your fullname",
+                "Second Error"
+            ]
+        },
+        "el" : {"label" : "Υπάρχει ένα πρόβλημα",
+            "data" : 
+            [
+                "Εισαγάγετε το όνομά σας",
+                "Δεύτερο λάθος"
+            ]
+        }
+    }
 }
 ```
 </details>
@@ -563,9 +661,17 @@ Creates a success panel GOVCY component.
 ```js
 ,{
     "type": "successPanel",
-    "head" : "Η αίτηση έχει ολοκληρωθεί", // the head of the success panel
-    "label": {"en":"The application reference number is:<b>191292</b>", "el":"Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"} // the body of the success panel
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "content" : { //multilanguage content
+        "en" : {
+            "head" : "Your application has been completed", // the head of the success panel
+            "label" : "The application reference number is:<b>191292</b>" // the body of the success panel
+        },
+        "el" : {
+            "head" : "Η αίτηση έχει ολοκληρωθεί",
+            "label" : "Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"
+        }
+    }
 }
 ```
 </details>
@@ -578,8 +684,15 @@ Creates a warning GOVCY component.
 ```js
 ,{
     "type": "warning",
-    "label": {"en":"Warning message here.", "el":"προειδοποιητικό μήνυμα."} // the body of the warning
-    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "content" : { //multilanguage content
+        "en" : {
+            "label" : "Warning message here." // the body of the warning
+        },
+        "el" : {
+            "label" : "προειδοποιητικό μήνυμα."
+        }
+    }
 }
 ```
 </details>
@@ -595,9 +708,12 @@ Opens a GOVCY `<fieldset>`.
 ```js
 ,{
     "type": "fieldsetOpen",
-    "legend": "Contact Address" //The fieldset legend html
     "id" : "fieldset1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-mx-2"] //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "classes": ["govcy-mx-2"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+    "content" : { //multilanguage content
+        "en" : {"legend" : "Contact Address"}, //The fieldset legend html
+        "el" : {"legend" : "Στοιχεία Επικοινωνίας"}
+    }
 }
 ```
 </details>

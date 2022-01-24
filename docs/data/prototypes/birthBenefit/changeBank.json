@@ -8,44 +8,59 @@
         "components" : [
             {
                 "type": "backLink",
-                "label": {"en":"Back", "el":"Πίσω"}
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
             }
             ,{
                 "type": "h1",
-                "label": {"en":"Bank account details", "el":"Στοιχεία τραπεζικού λογαριασμού"}
+                "content" : {
+                    "en" : {"label" : "Bank account details"},
+                    "el" : {"label" : "Στοιχεία τραπεζικού λογαριασμού"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary.", "el":"Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος."}
+                "content" : {
+                    "en" : {"label" : "Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary."},
+                    "el" : {"label" : "Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος."}
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"Bank", "el":"Τράπεζα"},
-                "placeholder": "",
                 "name": "Bank",
                 "id" : "Bank",
-                "maxlength": 200
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Bank"},
+                    "el" : {"label" : "Τράπεζα"}
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"IBAN (international account number) / BIC (bank swift code)", "el":"IBAN (διεθνής αριθμός λογαριασμού) / BIC (κωδικός swift τράπεζας)"},
-                "placeholder": "",
                 "name": "IBAN",
                 "id" : "IBAN",
-                "maxlength": 100
+                "maxlength": 100,
+                "content" : {
+                    "en" : {"label" : "IBAN (international account number) / BIC (bank swift code)"},
+                    "el" : {"label" : "IBAN (διεθνής αριθμός λογαριασμού) / BIC (κωδικός swift τράπεζας)"}
+                }
             }
             ,{
-                "type": "file",                
-                "label": {"en":"Upload a document certifying the International Account Number (IBAN).", "el":"Ανεβάστε έγγραφο που να πιστοποιεί τον διεθνή αριθμό λογαριασμού (IBAN)."},
+                "type": "file",
                 "name": "IBANPDF",
-                "id" : "IBANPDF"
+                "id" : "IBANPDF",
+                "content" : {
+                    "en" : {"label" : "Upload a document certifying the International Account Number (IBAN)."},
+                    "el" : {"label" : "Ανεβάστε έγγραφο που να πιστοποιεί τον διεθνή αριθμό λογαριασμού (IBAN)."}
+                }
             }
             ,{
                 "type": "button",
                 "subtype": "primary",
-                "label":  {"en":"Next", "el":"Επόμενο"},
                 "id":"nextbtn",
                 "events" : [
                     {
@@ -54,7 +69,11 @@
                             {"action" : "goBack","data":""}
                         ]
                     }
-                ]
+                ],
+                "content" : {
+                    "en" : {"label" : "Next"},
+                    "el" : {"label" : "Επόμενο"}
+                }
             }
         ]
     }   

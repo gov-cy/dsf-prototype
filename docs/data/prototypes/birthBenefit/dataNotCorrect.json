@@ -8,15 +8,24 @@
         "components" : [
             {
                 "type": "backLink",
-                "label": {"en":"Back", "el":"Πίσω"}
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
             }
             ,{
                 "type": "h1",
-                "label": {"en":"Your application cannot be submited.", "el":"Η αίτηση σας δεν μπορεί να καταχωρηθεί."}
+                "content" : {
+                    "en" : {"label" : "Your application cannot be submited."},
+                    "el" : {"label" : "Η αίτηση σας δεν μπορεί να καταχωρηθεί."}
+                }
             }
             ,{
                 "type": "paragraphHTML",
-                "label": {"en":"<p>If the data we have are not correct, you can <a href='#'>apply using a paper</a> form instead.</p>", "el":"<p>Εάν τα στοιχέια που έχουμε καταχωρημένα δεν είναι σωστά μπορείτε να χρησιμοποιήσετε την <a href='#'>έντυπη μορφή της αίτησης.</a></p>"}
+                "content" : {
+                    "en" : {"label" : "<p>If the data we have are not correct, you can <a href='#'>apply using a paper</a> form instead.</p>"},
+                    "el" : {"label" : "<p>Εάν τα στοιχέια που έχουμε καταχωρημένα δεν είναι σωστά μπορείτε να χρησιμοποιήσετε την <a href='#'>έντυπη μορφή της αίτησης.</a></p>"}
+                }
             }
         ]
     }

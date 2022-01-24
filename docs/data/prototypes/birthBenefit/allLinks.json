@@ -8,42 +8,68 @@
         "components" : [
             {
                 "type": "h1",
-                "label": {"en":"Child Birth Grand Prototypes", "el":"Προτότυπα για βοήθημα τοκετού"}
+                "content" : {
+                    "en" : {"label" : "Child Birth Grand Prototypes"},
+                    "el" : {"label" : "Προτότυπα για βοήθημα τοκετού"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Click on the link to start.", "el":"Κάντε κλικ στον σύνδεσμο για να ξεκινήσετε."}
+                "content" : {
+                    "en" : {"label" : "Click on the link to start."},
+                    "el" : {"label" : "Κάντε κλικ στον σύνδεσμο για να ξεκινήσετε."}
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"Scenario 1", "el":"Σενάριο 1"},
-                "href" : "#r/birthBenefit1/0"
+                "href" : "#r/birthBenefit1/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 1"},
+                    "el" : {"label" : "Σενάριο 1"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Simple scenario with only confirmation page.", "el":"Απλό σενάριο με μόνο σελίδα επιβεβαίωσης."}
+                "content" : {
+                    "en" : {"label" : "Simple scenario with only confirmation page."},
+                    "el" : {"label" : "Απλό σενάριο με μόνο σελίδα επιβεβαίωσης."}
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"Scenario 2", "el":"Σενάριο 2"},
-                "href" : "#r/birthBenefit2/0"
+                "href" : "#r/birthBenefit2/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 2"},
+                    "el" : {"label" : "Σενάριο 2"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Simple scenario but has more than one child.", "el":"Απλό σενάριο αλλά έχει περισσότερα από ένα παιδιά."}
+                "content" : {
+                    "en" : {"label" : "Simple scenario but has more than one child."},
+                    "el" : {"label" : "Απλό σενάριο αλλά έχει περισσότερα από ένα παιδιά."}
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"Scenario 3", "el":"Σενάριο 3"},
-                "href" : "#r/birthBenefit3/0"
+                "href" : "#r/birthBenefit3/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 3"},
+                    "el" : {"label" : "Σενάριο 3"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Scenario with two confirmation pages.", "el":"Απλό σενάριο με δύο σελίδες επιβεβαίωσης."}
+                "content" : {
+                    "en" : {"label" : "Scenario with two confirmation pages."},
+                    "el" : {"label" : "Απλό σενάριο με δύο σελίδες επιβεβαίωσης."}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":" ", "el":" "}
+                "content" : {
+                    "en" : {"label" : " "}
+                }
             }
         ]
     }   

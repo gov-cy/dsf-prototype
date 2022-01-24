@@ -8,178 +8,299 @@
         "components" : [
             {
                 "type": "h1",
-                "label": {"en":"Header 1", "el":"Τίτλος 1"},
+                "content" : {
+                    "en" : {"label": "Header 1 single language"}
+                },
                 "id" : "header1"
             }
             ,{
                 "type": "h2",
-                "label": {"en":"Header 2", "el":"Τίτλος 2"}
+                "content" : {
+                    "en" : {"label" : "Header 2"},
+                    "el" : {"label" : "Τίτλος 2"}
+                }
             }
             ,{
                 "type": "h3",
-                "label": {"en":"Header 3", "el":"Τίτλος 3"}
+                "content" : {
+                    "en" : {"label" : "Header 3"},
+                    "el" : {"label" : "Τίτλος 3"}
+                }
             }
             ,{
                 "type": "h4",
-                "label": {"en":"Header 4", "el":"Τίτλος 4"}
+                "content" : {
+                    "en" : {"label" : "Header 4"},
+                    "el" : {"label" : "Τίτλος 4"}
+                }
             }
             ,{
                 "type": "h5",
-                "label": {"en":"Header 5", "el":"Τίτλος 5"}
+                "content" : {
+                    "en" : {"label" : "Header 5"},
+                    "el" : {"label" : "Τίτλος 5"}
+                }
             }
             ,{
                 "type": "h6",
-                "label": {"en":"Header 6", "el":"Τίτλος 6"}
+                "content" : {
+                    "en" : {"label" : "Header 6"},
+                    "el" : {"label" : "Τίτλος 6"}
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"This is a link", "el":"This is a link"}
+                "content" : {
+                    "en" : {"label" : "This is a link"},
+                    "el" : {"label" : "Αυτός είναι έανς σύνδεσμος"}
+                }
             }
             ,{
                 "type": "backLink",
-                "label": {"en":"Back", "el":"Πίσω"}
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus.",
-                        "el":"Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
+                "content" : {
+                    "en" : {"label" : "Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."},
+                    "el" : {"label" : "Ελληνικά Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Test paragraph with custom classes.",
-                        "el":"Δοκιμαστική Πατάργαφος με custom classes."},
+                "content" : {
+                    "en" : {"label" : "Test paragraph with custom classes."},
+                    "el" : {"label" : "Δοκιμαστική Πατάργαφος με custom classes."}
+                },
                 "classes" :["govcy-bg-danger","govcy-text-white","govcy-py-5","govcy-text-center", "govcy-fs-3"]
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"Text Box", "el":"Πεδίο text"},
-                "placeholder": "XXXXXX",
                 "name": "id",
                 "id" : "id",
-                "maxlength": 10
+                "maxlength": 10,
+                "content" : {
+                    "en" : {"label" : "Text Box", "placeholder": "Your Id"},
+                    "el" : {"label" : "Πεδίο text.", "placeholder": "Η Ταυτότητά σας"}
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"Text Box with hint", "el":"Πεδίο text με hint"},
-                "hint" : "Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus.",
-                "placeholder": "XXXXXX",
                 "name": "id_hint",
                 "id" : "id_hint",
-                "maxlength": 10
+                "maxlength": 1010,
+                "content" : {
+                    "en" : {"label" : "Text Box with hint", 
+                            "placeholder": "Your Id",
+                            "hint" : "Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."
+                },
+                    "el" : {"label" : "Πεδίο text με hint", 
+                            "placeholder": "Η Ταυτότητά σας",
+                            "hint" : "Ελληνικά Lorem 13 ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ex nisl. Suspendisse nec massa turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc egestas tellus eget quam volutpat, in vulputate ligula maximus. Integer maximus rutrum eros sit amet laoreet. Vivamus interdum odio est, eu ornare dui mattis tincidunt. Nulla facilisi. Ut mollis lorem sed turpis sagittis, et volutpat eros hendrerit. Maecenas ultrices efficitur ex, eu pellentesque felis luctus non. Aenean feugiat ornare orci, a vehicula purus pharetra nec. Praesent a tempor nisi. Suspendisse efficitur neque ut velit luctus molestie. Vestibulum tempus posuere felis vitae euismod. Nunc mattis tortor quis faucibus facilisis. Vestibulum eu velit tortor. Donec fermentum justo sit amet diam ultrices, ut imperdiet lorem faucibus."}
+                }
             }
             ,{
                 "type" :"fieldsetOpen",
-                "legend": "Contact Address"
+                "content" : {
+                    "en" : {"legend" : "Contact Address"},
+                    "el" : {"legend" : "Στοιχεία Επικοινωνίας"}
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"Address", "el":"Διεύθυνση"},
-                "placeholder": "",
                 "name": "addresstxt",
-                "id" : "addresstxt"
+                "id" : "addresstxt",
+                "content" : {
+                    "en" : {"label" : "Address"},
+                    "el" : {"label" : "Διεύθυνση"}
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"District", "el":"Επαρχία"},
-                "placeholder": "",
                 "name": "districttxt",
-                "id" : "districttxt"
+                "id" : "districttxt",
+                "content" : {
+                    "en" : {"label" : "District"},
+                    "el" : {"label" : "Επαρχία"}
+                }
             }
             ,{
                 "type": "text",
                 "required": false,
-                "label": {"en":"Postal Code", "el":"Ταχυδρομικός Κώδικας"},
-                "placeholder": "",
                 "name": "postalcodetxt",
-                "id" : "postalcodetxt"
+                "id" : "postalcodetxt",
+                "content" : {
+                    "en" : {"label" : "Postal Code"},
+                    "el" : {"label" : "Ταχυδρομικός Κώδικας"}
+                }
             }
             ,{
                 "type" :"fieldsetClose"
             }
             ,{
                 "type": "file",
-                "label": {"en":"Upload", "el":"Ανέβασμα"},
                 "name": "file",
-                "id" : "file"
+                "id" : "file",
+                "content" : {
+                    "en" : {"label" : "Upload"},
+                    "el" : {"label" : "Ανέβασμα"}
+                }
             }
             ,{
                 "type": "checkboxes",
                 "required": false,
-                "label": {"en":"Checkboxes", "el":"Επιλογές Checkbox"},
-                "hint": "This is a hint on top check",
-                "data" : [
-                    {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true},
-                    {"option_hint":"This is a hint","option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false},
-                    {"option_hint":"This is a hint","option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}
-                ],
                 "name": "checkboxes",
-                "id" : "checkboxes"
+                "id" : "checkboxes",
+                "content" : {
+                    "en" : {"label" : "Checkboxes",
+                            "hint" : "This is a hint on top check",
+                            "options": [
+                                {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true},
+                                {"option_hint":"This is a hint","option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false},
+                                {"option_hint":"This is a hint","option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}
+                            ]
+                        },
+                    "el" : {"label" : "Επιλογές Checkbox",
+                        "hint" : "Αυτό είναι ένα hint on top check",
+                        "options": [
+                            {"option_id": "chbox1","option_value":"check 1", "option_label":"Επιλογή 1", "option_checked":true},
+                            {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox2","option_value":"check 2", "option_label":"Επιλογή 2", "option_checked":false},
+                            {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox3","option_value":"check 3", "option_label":"Επιλογή 3", "option_checked":false}
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "radio",
                 "required": false,
-                "label": {"en":"Radio Buttons", "el":"Επιλογές Radio Buttons"},
-                "hint": "This is a hint on top",
-                "data" : [
-                    {"option_id": "chbox1","option_value":"check 12", "option_label":"Check 12", "option_checked":true},
-                    {"option_hint":"This is a hint","option_id": "chbox2","option_value":"check 22", "option_label":"Check 22", "option_checked":false},
-                    {"option_hint":"This is a hint","option_id": "chbox3","option_value":"check 32", "option_label":"Check 32", "option_checked":false}
-                ],
                 "name": "radios",
-                "id" : "radios"
+                "id" : "radios",
+                "content" : {
+                    "en" : {"label" : "Radio Buttons",
+                            "hint" : "This is a hint on top check",
+                            "options": [
+                                {"option_id": "chbox1","option_value":"check 1", "option_label":"Check 1", "option_checked":true},
+                                {"option_hint":"This is a hint","option_id": "chbox2","option_value":"check 2", "option_label":"Check 2", "option_checked":false},
+                                {"option_hint":"This is a hint","option_id": "chbox3","option_value":"check 3", "option_label":"Check 3", "option_checked":false}
+                            ]
+                        },
+                    "el" : {"label" : "Επιλογές Radio Buttons",
+                        "hint" : "Αυτό είναι ένα hint on top check",
+                        "options": [
+                            {"option_id": "chbox1","option_value":"check 1", "option_label":"Επιλογή 1", "option_checked":true},
+                            {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox2","option_value":"check 2", "option_label":"Επιλογή 2", "option_checked":false},
+                            {"option_hint":"Αυτό είναι ένα hint","option_id": "chbox3","option_value":"check 3", "option_label":"Επιλογή 3", "option_checked":false}
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "table",
-                "label":  {"en":"Table", "el":"Πίνακας"},
-                "head" : ["#","Date","Data"],
-                "data" : 
-                    [
-                        ["1","2021-12-01","Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
-                        ["2","2021-12-21","In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
-                        ["3","2021-12-31","Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
-                    ]
-                , 
-                "name": "next"
+                "name": "next",
+                "content" : {
+                    "en" : {"label" : "Table",
+                            "head": ["#","Date","Data"],
+                            "data" : [
+                                ["1","2021-12-01","Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
+                                ["2","2021-12-21","In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
+                                ["3","2021-12-31","Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
+                            ]
+                        },
+                    "el" : {"label" : "Πίνακας",
+                        "head": ["#","Ημερομηνία","Δεδομένα"],
+                        "data" : [
+                            ["1","2021-12-01","Ελληνικά Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
+                            ["2","2021-12-21","Ελληνικά In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
+                            ["3","2021-12-31","Ελληνικά Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "alertError",
-                "label":  {"en":"There is a problem", "el":"Υπάρχει ένα πρόβλημα"},
-                "data" : 
-                    [
-                        "Enter your fullname"
-                        ,"Second Error"
-                    ]
+                "content" : {
+                    "en" : {"label" : "There is a problem",
+                        "data" : 
+                        [
+                            "Enter your fullname","Second Error"
+                        ]
+                    },
+                    "el" : {"label" : "Υπάρχει ένα πρόβλημα",
+                        "data" : 
+                        [
+                            "Εισαγάγετε το όνομά σας","Δεύτερο λάθος"
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "alertImportant",
-                "label":  {"en":"Important", "el":"Συμαντικό"},
-                "data" : 
-                    [
-                        "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-                        ,"<a href='#'>View your application</a>"
-                    ]
+                "content" : {
+                    "en" : {"label" : "Important",
+                        "data" : 
+                        [
+                            "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                            ,"<a href='#'>View your application</a>"
+                        ]
+                    },
+                    "el" : {"label" : "Συμαντικό",
+                        "data" : 
+                        [
+                            "Επιτυχία: Η τεχνητή νοημοσύνη είναι ένα από καιρό καθιερωμένο γεγονός ότι ο αναγνώστης αποσπάται από το αναγνώσιμο περιεχόμενο μιας σελίδας όταν κοιτάζει τη διάταξή της."
+                            ,"<a href='#'>Προβολή της αίτησής σας</a>" 
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "alertSuccess",
-                "label":  {"en":"Success", "el":"Επιτυχία"},
-                "data" : 
-                    [
-                        "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-                        ,"Contact <a href='mailto:support@gov.cy'>support@gov.cy</a> if you think your application has a problem"
-                    ]
+                "content" : {
+                    "en" : {"label" : "Success",
+                        "data" : 
+                        [
+                            "Success: AIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                            ,"Contact <a href='mailto:support@gov.cy'>support@gov.cy</a> if you think your application has a problem"
+                        ]
+                    },
+                    "el" : {"label" : "Επιτυχία",
+                        "data" : 
+                        [
+                            "Επιτυχία: Η τεχνητή νοημοσύνη είναι ένα από καιρό καθιερωμένο γεγονός ότι ο αναγνώστης αποσπάται από το αναγνώσιμο περιεχόμενο μιας σελίδας όταν κοιτάζει τη διάταξή της."
+                            ,"Επικοινωνήστε με το <a href='mailto:support@gov.cy'>support@gov.cy</a> εάν πιστεύετε ότι η αίτησή σας έχει πρόβλημα" 
+                        ]
+                    }
+                }
             }
             ,{
                 "type": "successPanel",
-                "head" : "Η αίτηση έχει ολοκληρωθεί",
-                "label": {"en":"The application reference number is:<b>191292</b>", "el":"Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"}
+                "content" : {
+                    "en" : {
+                        "head" : "Your application has been completed",
+                        "label" : "The application reference number is:<b>191292</b>"
+                    },
+                    "el" : {
+                        "head" : "Η αίτηση έχει ολοκληρωθεί",
+                        "label" : "Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"
+                    }
+                }
             }
             ,{
                 "type": "warning",
-                "label": {"en":"Warning message here.", "el":"προειδοποιητικό μήνυμα."}
+                "content" : {
+                    "en" : {
+                        "label" : "Warning message here."
+                    },
+                    "el" : {
+                        "label" : "προειδοποιητικό μήνυμα."
+                    }
+                }
             }
             ,{
                 "type" :"divRowOpen"
@@ -192,7 +313,6 @@
             ,{
                 "type": "button",
                 "subtype": "primary",
-                "label":  {"en":"Back", "el":"Πίσω"},
                 "name": "back",
                 "id":"backbtn1",
                 "classes" : ["govcy-mx-2"],
@@ -203,12 +323,19 @@
                             {"action" : "link","data":"#p/index"}
                         ]
                     }
-                ]
+                ],
+                "content" : {
+                    "en" : {
+                        "label" : "Back"
+                    },
+                    "el" : {
+                        "label" : "Πίσω"
+                    }
+                }
             }
             ,{
                 "type": "button",
                 "subtype": "primary",
-                "label":  {"en":"Back 1", "el":"Πίσω 1"},
                 "name": "back",
                 "id":"backbtn2",
                 "classes" : ["govcy-mx-2"],
@@ -219,7 +346,15 @@
                             {"action" : "link","data":"#p/index"}
                         ]
                     }
-                ]
+                ],
+                "content" : {
+                    "en" : {
+                        "label" : "Back 1"
+                    },
+                    "el" : {
+                        "label" : "Πίσω 1"
+                    }
+                }
             }
             ,{
                 "type" :"divClose"

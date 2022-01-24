@@ -8,16 +8,25 @@
         "components" : [
             {
                 "type": "h1",
-                "label": {"en":"Prototypes", "el":"Προτότυπα"}
+                "content" : {
+                    "en" : {"label" : "Prototypes"},
+                    "el" : {"label" : "Προτότυπα"}
+                }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":"Click on the list of services below to check the respective prototypes.", "el":"Κάντε κλικ στη λίστα των υπηρεσιών παρακάτω για να ελέγξετε τα αντίστοιχα πρωτότυπα."}
+                "content" : {
+                    "en" : {"label" : "Click on the list of services below to check the respective prototypes."},
+                    "el" : {"label" : "Κάντε κλικ στη λίστα των υπηρεσιών παρακάτω για να ελέγξετε τα αντίστοιχα πρωτότυπα."}
+                }
             }
             ,{
                 "type": "link",
-                "label": {"en":"Child Grand Benefit", "el":"Βοήθημα τοκετού"},
-                "href" : "#p/birthBenefit/allLinks"
+                "href" : "#p/birthBenefit/allLinks",
+                "content" : {
+                    "en" : {"label" : "Child Grand Benefit"},
+                    "el" : {"label" : "Βοήθημα τοκετού"}
+                }
             }
             ,{
                 "type": "paragraph",
