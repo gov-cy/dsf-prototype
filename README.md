@@ -188,7 +188,8 @@ This file defines the page configuration and it's components. Note that the `{{i
     "id":"service1/page1", //page id
     "menus" : ["general"], //the menus of the page. Empty array if non 
     "layout" : "Max-width", // template reference
-    "script" : "birthBenefit/test.js", // javascript to be executed after loading the components. File must be located under `data/prototypes/`
+    "preScript" : "birthBenefit/test.js", // javascript to be executed before loading the components. File must be located under `data/prototypes/`
+    "postScript" : "birthBenefit/test.js", // javascript to be executed after loading the components. File must be located under `data/prototypes/`
     "DSFcomponents": //Components definitions  
         {
         "DOMId": "components", //the DOM id of the element that the components will be rendered in 
