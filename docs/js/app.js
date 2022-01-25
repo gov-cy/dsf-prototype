@@ -233,9 +233,17 @@ var appView = {
             //Render components
             if (data.DSFcomponents) {
                 //register scipt 
+                appModel.stopScripts = false;
                 if (data.preScript) {
-                    $.getScript("data/prototypes/"+data.preScript);
+                    //$.getScript("data/prototypes/"+data.preScript);
+                    $.ajax({
+                        async: false,
+                        type:"GET",
+                        url: "data/prototypes/"+data.preScript,
+                        dataType: "script"
+                    });
                 }
+                if (appModel.stopScripts) {return null;}
                 //for all components
                 for (var i = 0; i < data.DSFcomponents.components.length; i++) {
                     
