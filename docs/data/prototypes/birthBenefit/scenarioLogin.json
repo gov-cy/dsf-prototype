@@ -30,7 +30,7 @@
                 }
             }
             ,{
-                "type": "text",
+                "type": "password",
                 "required": false,
                 "name": "password",
                 "id" : "password",

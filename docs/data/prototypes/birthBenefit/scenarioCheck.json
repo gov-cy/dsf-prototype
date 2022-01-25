@@ -2,6 +2,7 @@
     "id":"birthBenefit/scenarioCheck",
     "menus" : [],
     "layout" : "Max-width",
+    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
     "DSFcomponents" : 
         {
         "DOMId": "components",

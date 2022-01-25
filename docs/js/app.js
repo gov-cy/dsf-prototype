@@ -232,6 +232,10 @@ var appView = {
             var DSFEvents = [];
             //Render components
             if (data.DSFcomponents) {
+                //register scipt 
+                if (data.preScript) {
+                    $.getScript("data/prototypes/"+data.preScript);
+                }
                 //for all components
                 for (var i = 0; i < data.DSFcomponents.components.length; i++) {
                     
@@ -258,8 +262,8 @@ var appView = {
                 }
                 
                 //register scipt 
-                if (data.script) {
-                    $.getScript("data/prototypes/"+data.script);
+                if (data.postScript) {
+                    $.getScript("data/prototypes/"+data.postScript);
                 }
             }
         });

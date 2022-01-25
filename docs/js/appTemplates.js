@@ -79,21 +79,23 @@ DSFTemplates =
     },
     "componentTemplates" : {
         "text": 
-         "<div class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
-        + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
-        + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
-        + "<input type='text' class='govcy-text-input' name='{{name}}'"
-        +"{{#id}}id='{{id}}'{{/id}}"
-        +"{{#langConent.placeholder}}placeholder='{{langConent.placeholder}}'{{/langConent.placeholder}}"
-        +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
-        + "</div>",
-        //"<div class='govcy-form govcy-mb-3{{#classes}} {{.}}{{/classes}}'>"
-            // + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label'>{{langLabel}}</label>"
-            // + "{{#hint}}<span class='govcy-hint'>{{hint}}</span>{{/hint}}"
-            // + "<input type='text' class='govcy-text-input' name='{{name}}'"
-            //     +"{{#id}}id='{{id}}'{{/id}}"
-            //     +"{{#placeholder}}placeholder='{{placeholder}}'{{/placeholder}}"
-            //     +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}></div>",
+            "<div class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
+            + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
+            + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
+            + "<input type='text' class='govcy-text-input' name='{{name}}'"
+            +"{{#id}}id='{{id}}'{{/id}}"
+            +"{{#langConent.placeholder}}placeholder='{{langConent.placeholder}}'{{/langConent.placeholder}}"
+            +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
+            + "</div>",
+        "password": 
+            "<div class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
+            + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
+            + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
+            + "<input type='password' class='govcy-text-input' name='{{name}}'"
+            +"{{#id}}id='{{id}}'{{/id}}"
+            +"{{#langConent.placeholder}}placeholder='{{langConent.placeholder}}'{{/langConent.placeholder}}"
+            +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
+            + "</div>",
         "button" : "<button type='button' class='govcy-btn-{{subtype}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
         "link" : "<a class='{{#classes}} {{.}}{{/classes}}' href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a>",
         "backLink" : "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",

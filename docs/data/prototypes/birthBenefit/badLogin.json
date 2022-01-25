@@ -9,8 +9,8 @@
             {
                 "type": "h1",
                 "content" : {
-                    "en" : {"label" : "Your account is not valid."},
-                    "el" : {"label" : "Ο λογαριασμός σας δεν είναι έγκυρος."}
+                    "en" : {"label" : "Your are not authorized."},
+                    "el" : {"label" : "Δεν είστε εξουσιοδοτημένοι."}
                 }
             }
             ,{
