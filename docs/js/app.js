@@ -227,7 +227,7 @@ var appView = {
             appView.renderSiteStuff(data);
             //page bindings
             appView.globalBindings(routeId,routeNo);
-
+            
             var DSFComponents = "";
             var DSFEvents = [];
             //Render components
@@ -272,6 +272,10 @@ var appView = {
                 //register scipt 
                 if (data.postScript) {
                     $.getScript("data/prototypes/"+data.postScript);
+                }
+                //styles
+                for (var key in data.styles){
+                    $(key).attr('style',data.styles[key]);
                 }
             }
         });

@@ -12,9 +12,9 @@
     ,
     "pages" : {
         "index":{"id":"index"}
+        ,"ariadniLogin":{"id":"ariadniLogin"}
         ,"birthBenefit/allLinks":{"id":"birthBenefit/allLinks"}
         ,"birthBenefit/scenarioStart":{"id":"birthBenefit/scenarioStart"}
-        ,"birthBenefit/scenarioLogin":{"id":"birthBenefit/scenarioLogin"}
         ,"birthBenefit/scenarioListChildren":{"id":"birthBenefit/scenarioListChildren" }
         ,"birthBenefit/scenarioShowBank":{"id":"birthBenefit/scenarioShowBank" }
         ,"birthBenefit/scenarioCheck":{"id":"birthBenefit/scenarioCheck" }        
@@ -28,20 +28,20 @@
     "routes" : {
         "birthBenefit1" : [
             "birthBenefit/scenarioStart"
-            ,"birthBenefit/scenarioLogin"
+            ,"ariadniLogin"
             ,"birthBenefit/scenarioCheck"
             ,"birthBenefit/confirm"
             ]
         ,"birthBenefit2" : [
             "birthBenefit/scenarioStart"
-            ,"birthBenefit/scenarioLogin"
+            ,"ariadniLogin"
             ,"birthBenefit/scenarioListChildren"
             ,"birthBenefit/scenarioCheck"
             ,"birthBenefit/confirm"
             ]
         ,"birthBenefit3" : [
             "birthBenefit/scenarioStart"
-            ,"birthBenefit/scenarioLogin"
+            ,"ariadniLogin"
             ,"birthBenefit/scenarioListChildren"
             ,"birthBenefit/scenarioShowBank"
             ,"birthBenefit/scenarioCheck"
