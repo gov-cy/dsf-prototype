@@ -10,7 +10,7 @@ DSFTemplates =
     "header" : {
         "en": 
             "<div class='row'>"
-            + "<header class='govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right'>"
+            + "<header id='headerContainerIn' class='govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right'>"
             + "<a href='#' class='govcy-logo'> <img/></a>"
             + "<form class='govcy-text-white govcy-bg-primary'>     "
             + "<select id='changeLangSel' name='govcy-lang-menu' class='govcy-lang-menu govcy-text-white'>"
@@ -31,7 +31,7 @@ DSFTemplates =
             + "</div>"
         ,"el" : 
             "<div class='row'>"
-            + "<header class='govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right'>"
+            + "<header id='headerContainerIn' class='govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right'>"
             + "<a href='#' class='govcy-logo'> <img/></a>"
             + "<form class='govcy-text-white govcy-bg-primary'>     "
             + "<select id='changeLangSel' name='govcy-lang-menu' class='govcy-lang-menu govcy-text-white'>"
@@ -54,7 +54,7 @@ DSFTemplates =
     "footer" : {
         "en" : 
             " <div class='row'>"
-            + "<footer class='govcy-footer'>"
+            + "<footer id='footerContainerIn' class='govcy-footer'>"
             + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo' /></span>"
             + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
             + "<li><a href='#'>Privacy statement</a></li>"
@@ -66,7 +66,7 @@ DSFTemplates =
             + "</div>"
         ,"el" : 
             " <div class='row'>"
-            + "<footer class='govcy-footer'>"
+            + "<footer id='footerContainerIn' class='govcy-footer'>"
             + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo' /></span>"
             + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
             + "<li><a href='#'>Όροι Χρήσης</a></li>"
@@ -98,7 +98,9 @@ DSFTemplates =
             + "</div>",
         "button" : "<button type='button' class='govcy-btn-{{subtype}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
         "link" : "<a class='{{#classes}} {{.}}{{/classes}}' href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a>",
-        "backLink" : "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
+        "backLink" : //"<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
+            "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
+            + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
         "paragraph" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         "spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>", 
         "paragraphHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</div>", 

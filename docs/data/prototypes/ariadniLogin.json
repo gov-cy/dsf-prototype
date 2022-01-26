@@ -1,0 +1,136 @@
+{
+    "id":"ariadniLogin",
+    "menus" : [],
+    "layout" : "Max-width",
+    "styles": 
+        {
+        "#footerContainerIn, #headerContainerIn" : "display:none;",
+        "#id, #password" : "height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;",
+        ".ariadniTitle" : "color: #6c757d!important;font-size: 1.5rem;",
+        "label[for=id], label[for=password]" : "font-size: 1rem; font-weight: 400; line-height: 1.5;color: #212529;",
+        "#loginDiv" : "padding-top: 1.75rem;padding-bottom: 1.75rem;border: 1px solid rgba(0, 0, 0, 0.4);box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);",
+        "#nextRoutebtn" : "color: #fff;background-color: #1c809d;border-color: #1c809d;font-size: 1rem;line-height: 1.5;",
+        ".ariadniHRLine" : "height: 0px;border: 1px solid #EEE;color: #6c757d;letter-spacing: .1em;line-height: 0;text-align: center;margin: 1rem 0;",
+        ".ariadniHRLine span" : "font-size: 1rem;font-weight: 400;background-color: #FFF;padding: 0 1em;",
+        ".ariadniText" :"font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;",
+        ".ariadniAnchor" :"color: #1c809d;text-decoration: none;"
+        }
+    ,
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type" :"divRowOpen"
+            },
+            {
+                "type" :"divColumnOpen",
+                "colnum": "3"
+            },
+            {
+                "type" :"divClose"
+            },
+            {
+                "type" :"divColumnOpen",
+                "colnum": "6",
+                "id" : "loginDiv"
+            },
+            {
+                "type" :"spanHTML",
+                "content" : {
+                    "en" : {"label" : "<h1 class='ariadniTitle'><img src='img/favicon-48x48.png'>   CY Login</h1>"},
+                    "el" : {"label" : "<h1 class='ariadniTitle'><img src='img/favicon-48x48.png'>   CY Login</h1>"}
+                }
+            },
+            {
+                "type": "h2",
+                "classes" : ["ariadniTitle"],
+                "content" : {
+                    "en" : {"label" : "Sign In"},
+                    "el" : {"label" : "Σύνδεση"}
+                }
+            }
+            ,{
+                "type": "text",
+                "hint" : "",
+                "required": false,
+                "name": "id",
+                "id" : "id",
+                "maxlength": 100,
+                "content" : {
+                    "en" : {"label" : "Username"},
+                    "el" : {"label" : "Όνομα Χρήστη"}
+                }
+            }
+            ,{
+                "type": "password",
+                "required": false,
+                "name": "password",
+                "id" : "password",
+                "maxlength": 100,
+                "content" : {
+                    "en" : {"label" : "Password"},
+                    "el" : {"label" : "Κωδικός Πρόσβασης"}
+                }
+            },
+            {
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextRoutebtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "getData","data":""},
+                            {"action" : "nextOnRoute","data":""}
+                        ]
+                    }
+                ],
+                "content" : {
+                    "en" : {"label" : "Sign In"},
+                    "el" : {"label" : "Σύνδεση"}
+                }
+            },
+            {
+                "type" :"spanHTML",
+                "content" : {
+                    "en" : {"label" : "<div class='ariadniHRLine'></div>"}
+                }
+            },
+            {
+                "type" :"spanHTML",
+                "classes": ["ariadniText"],
+                "content" : {
+                    "en" : {"label" : "No account? <span class='ariadniAnchor'>Sign up</span><br><span class='ariadniAnchor'>Forgot username?</span><br><span class='ariadniAnchor'>Forgot password?</span>"},
+                    "el" : {"label" : "Δεν έχετε λογαριασμό; <span class='ariadniAnchor'>Εγγραφείτε εδώ</span><br><span class='ariadniAnchor'>Ξεχάσατε το Όνομα Χρήστη;</span><br><span class='ariadniAnchor'>Ξεχάσατε τον Κωδικό Πρόσβασης σας;</span>"}
+                }
+            },
+            {
+                "type" :"spanHTML",
+                "content" : {
+                    "en" : {"label" : "<div class='ariadniHRLine'><span>OR</span></div>"}
+                }
+            },
+            {
+                "type" :"spanHTML",
+                "classes": ["ariadniText"],
+                "content" : {
+                    "en" : {"label" : "<span class='ariadniAnchor'>Sign in with eIDAS</span>"},
+                    "el" : {"label" : "<span class='ariadniAnchor'>Σύνδεση με eIDAS</span>"}
+                }
+            },
+            {
+                "type" :"divClose"
+            },
+            {
+                "type" :"divColumnOpen",
+                "colnum": "3"
+            },
+            {
+                "type" :"divClose"
+            },
+            {
+                "type" :"divClose"
+            }
+        ]
+    }   
+}
