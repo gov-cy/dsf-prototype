@@ -1,0 +1,70 @@
+{
+    "id":"birthBenefit/childrenNotInList",
+    "menus" : [],
+    "layout" : "Two-thirds",
+    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
+            },
+            {
+                "type": "h1",
+                "content" : {
+                    "en" : {"label" : "Apply for children who are not on the list"},
+                    "el" : {"label" : "Αίτηση για παιδιά που δεν βρέθηκαν στη λίστα"}
+                }
+            },
+            {
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "If you have children missing from the list, you’ll need to apply for them using the paper form so that you can attach their birth certificates."},
+                    "el" : {"label" : "Εάν έχετε γεννήσει παιδιά τα οποία δεν εμφανίζονται στη λίστα, θα πρέπει να υποβάλετε αίτηση γι’αυτά σε έντυπη μορφή, έτσι ώστε να επισυνάψετε τα πιστοποιητικά γέννησής τους."}
+                }
+            },
+            {
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "You can <span class='DSFAnchor'>download the paper form</span> to come back to later, and continue the online application for Constantinos and Anna."},
+                    "el" : {"label" : "Μπορείτε να κατεβάσετε το <span class='DSFAnchor'>έντυπο της αίτησης</span> για να το χρησιμοποιήσετε αργότερα και να συνεχίσετε την αίτησή σας διαδικτυακά για τα παιδιά: Κωνσταντίνος, Άννα."}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
+                }
+            },
+            {
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextRoutebtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "goBack","data":""}
+                        ]
+                    }
+                ],
+                "content" : {
+                    "en" : {"label" : "Continue application"},
+                    "el" : {"label" : "Συνεχίστε την αίτηση"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
+                }
+            }
+        ]
+    }   
+}

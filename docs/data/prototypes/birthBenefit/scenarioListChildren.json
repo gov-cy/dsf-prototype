@@ -1,7 +1,7 @@
 {
     "id":"birthBenefit/scenarioListChildren",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "preScript" : "birthBenefit/scenarioLoginSubmit.js",
     "DSFcomponents" : 
         {
@@ -10,42 +10,34 @@
             {
                 "type": "h1",
                 "content" : {
-                    "en" : {"label" : "Which children are you claiming for?"},
-                    "el" : {"label" : "Παιδί/ιά που υποβάλετε την αίτηση"}
+                    "en" : {"label" : "Children you can claim the grant for"},
+                    "el" : {"label" : "Παιδιά για τα οποία δικαιούστε το βοήθημα"}
                 }
-            }
-            ,{
+            },
+            {
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p>You can claim the child birth grant for children born in the past 12 months. These are the birth registrations we found in our records for the past 12 months:</p>"},
+                    "el" : {"label" : "<p>Μπορείτε να υποβάλετε αίτηση για το βοήθημα τοκετού για παιδιά που έχουν γεννηθεί κατά τους τελευταίους 12 μήνες.</p><p>Έχουμε εντοπίσει στα αρχεία μας εγγραφές για τα παιδιά σας που έχουν γεννηθεί κατά τους τελευταίους 12 μήνες ως εξής:</p>"}
+                }
+            },
+            {
                 "type": "table",
                 "content" : {
-                    "en" : {"label" : "List of children born in the last 365 days",
-                            "head": ["Child","Date of birth","Select"],
+                    "en" : {"label" : "",
+                            "head": ["Child","Date of birth"],
                             "data" : [
-                                ["George and Mike","15/12/2020","<div class='form-check'><input name='childSelect' class='form-check-input' type='radio' value='Γιώργος και Μιχάλης'></div>"],
-                                ["Andri","20/10/2022","An application has already been made."]
+                                ["Constantinos","20/09/2021"],
+                                ["Anna","02/01/2021"]
                             ]
                         },
-                    "el" : {"label" : "Λίστα παιδιών που γεννήθηκαν τις τελευταίες 365 ημέρες.",
-                        "head": ["Παιδί","Ημερ. Γεννήσεως","Επιλογή"],
+                    "el" : {"label" : "",
+                        "head": ["Όνομα παιδιού","Ημερομηνία γέννησης"],
                         "data" : [
-                            ["Γιώργος και Μιχάλης","15/12/2020","<div class='form-check'><input name='childSelect' class='form-check-input' type='radio' value='Γιώργος και Μιχάλης'></div>"],
-                            ["Άντρη","20/10/2022","Έχει γίνει ήδη αίτηση."]
+                            ["Κωνσταντίνος","20/09/2021"],
+                            ["Άννα","02/01/2021"]
                         ]
                     }
-                }
-            }
-            ,{
-                "type": "link",
-                "href" : "#p/birthBenefit/childNotFound",
-                "content" : {
-                    "en" : {"label" : "Is the child missing from this list or stillborn?"},
-                    "el" : {"label" : "Το παιδί λείπει από αυτή τη λίστα ή είναι νεκρό;"}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : ""}
                 }
             },
             {
@@ -63,6 +55,43 @@
                 "content" : {
                     "en" : {"label" : "Next"},
                     "el" : {"label" : "Επόμενο"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
+                }
+            }
+            ,{
+                "type": "link",
+                "href" : "#p/birthBenefit/childrenNotInList",
+                "content" : {
+                    "en" : {"label" : "Are any of your children missing from this list?"},
+                    "el" : {"label" : "Μήπως δεν βρήκατε κάποιο από τα παιδιά που έχετε γεννήσει στην πιο πάνω λίστα;"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
+                }
+            }
+            ,{
+                "type": "link",
+                "href" : "#p/birthBenefit/stillbornNotInList",
+                "content" : {
+                    "en" : {"label" : "Did you have a child who was stillborn?"},
+                    "el" : {"label" : "Έχετε γεννήσει θνησιγενές (νεκρό) βρέφος;"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
                 }
             }
         ]
