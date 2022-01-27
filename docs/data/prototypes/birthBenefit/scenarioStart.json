@@ -1,26 +1,63 @@
 {
     "id":"birthBenefit/scenarioStart",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
+    "styles": 
+        {
+        ".bdigitalH1" : "color: #31576F!important;font-size:36px;",
+        ".bdigitalH2" : "color: #31576F!important;font-size:30px;",
+        ".bdigitalAnchor" :"color: #1c809d;text-decoration: none;"
+        }
+    ,
     "DSFcomponents" : 
         {
         "DOMId": "components",
         "components" : [
             {
                 "type": "h1",
+                "classes" : [ "bdigitalH1"],
                 "content" : {
                     "en" : {"label" : "Apply for a child birth grant"},
                     "el" : {"label" : "Αίτηση για βοήθημα τοκετού"}
                 }
-            }
-            ,{
+            },
+            {
                 "type": "paragraphHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You could get €573.96 when you give birth to a child.</p><p>You can apply for the grant if you have:<ul><li>given birth within the last 12 months</li><li>you or your husband or civil partner have made social insurance contributions</li></ul></p><p>To apply, you’ll need your:<ul><li>social insurance number</li><li>IBAN account details</li></ul></p>"},
-                    "el" : {"label" : "<p>Έχετε τη δυνατότητα να λάβετε βοήθημα ύψους €573.96 όταν γεννήσετε.</p><p>Μπορείτε να υποβάλετε αίτηση για το βοήθημα εάν:<ul><li>έχετε γεννήσει εντός των τελευταίων 12 μηνών</li><li>έχετε καταβάλει, εσείς ή ο σύζυγος/σύντροφος με σύμφωνο συμβίωσης, τις απαιτούμενες εισφορές στο Ταμείο Κοινωνικών Ασφαλίσεων</li></ul></p><p>Για την αίτηση θα χρειαστείτε:<ul><li>τον αριθμό των κοινωνικών σας ασφαλίσεων</li><li>τα στοιχεία του τραπεζικού σας λογαριασμού</li></ul></p>"}
+                    "en" : {"label" : "<p>You could get €573.96 when you give birth to a child.</p><p>You can apply for the grant if:<ul><li>you have given birth within the last 12 months</li><li>you or your husband or civil partner have made social insurance contributions</li></ul></p>"},
+                    "el" : {"label" : "<p>Έχετε τη δυνατότητα να λάβετε βοήθημα ύψους €573.96 όταν γεννήσετε.</p><p>Μπορείτε να υποβάλετε αίτηση για το βοήθημα εάν:<ul><li>έχετε γεννήσει εντός των τελευταίων 12 μηνών</li><li>έχετε καταβάλει, εσείς ή ο σύζυγος/σύντροφος με σύμφωνο συμβίωσης, τις απαιτούμενες εισφορές στο Ταμείο Κοινωνικών Ασφαλίσεων</li></ul>"}
                 }
-            }
-            ,{
+            },
+            {
+                "type": "h2",
+                "classes" : ["bdigitalH2"],
+                "content" : {
+                    "en" : {"label" : "What you’ll need to use this service"},
+                    "el" : {"label" : "Τι θα χρειαστείτε για να χρησιμοποιήσετε αυτήν την υπηρεσία"}
+                }
+            },
+            {
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" :  "<p>You’ll need:</p><ul><li>a CY Login account that is for an individual </li><li>a bank account in your name and a digital copy of its IBAN certificate </li></ul>"},
+                    "el" : {"label" : "<p>Θα χρειαστείτε</p><ul><li>ένας λογαριασμός σύνδεσης CY που είναι για ένα άτομο </li><li>ένας τραπεζικός λογαριασμός στο όνομά σας και ένα ψηφιακό αντίγραφο του πιστοποιητικού IBAN του </li></ul>"}
+                }
+            },
+            {
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" :  "<p>You cannot use a CY Login account that’s for an organisation. You can <span class='bdigitalAnchor'>register for an individual’s CY Login account</span> if you do not have one.</p>"},
+                    "el" : {"label" : "<p>Δεν μπορείτε να χρησιμοποιήσετε έναν λογαριασμό σύνδεσης CY που προορίζεται για έναν οργανισμό. Μπορείτε να <span class='bdigitalAnchor'>εγγραφείτε για τον λογαριασμό σύνδεσης CY ενός ατόμου</span> εάν δεν έχετε.</p>"}
+                }
+            },
+            {
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" :  "<p><span class='bdigitalAnchor'>Your CY Login account must be 'authenticated'</span> before using this service - this means linking your identity with the account using online banking or doing it in person.</p>"},
+                    "el" : {"label" : "<p>Ο λογαριασμός σας στο CY Login πρέπει να πιστοποιηθεί πριν χρησιμοποιήσετε αυτήν την υπηρεσία. Αυτό σημαίνει σύνδεση της ταυτότητάς σας με τον λογαριασμό. Μάθετε <span class='bdigitalAnchor'>πώς να επαληθεύσετε τον λογαριασμό σας στο CY Login</span> μέσω ηλεκτρονικής τραπεζικής ή αυτοπροσώπως σε ένα Κέντρο Εξυπηρέτησης Πολιτών.</p>"}
+                }
+            },
+            {
                 "type": "button",
                 "subtype": "primary",
                 "id":"nextRoutebtn",
@@ -32,7 +69,7 @@
                     }
                 ],
                 "content" : {
-                    "en" : {"label" : "Start"},
+                    "en" : {"label" : "Get Started"},
                     "el" : {"label" : "Ξεκινήστε τη διαδικασία"}
                 }
             }
@@ -44,6 +81,7 @@
             }
             ,{
                 "type": "h2",
+                "classes" : ["bdigitalH2"],
                 "content" : {
                     "en" : {"label" : "Other ways to apply"},
                     "el" : {"label" : "Άλλοι τρόποι υποβολής αίτησης"}
@@ -52,8 +90,23 @@
             ,{
                 "type": "paragraphHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You can <a href='#'>apply using a paper</a> form instead.</p>"},
-                    "el" : {"label" : "<p>Μπορείτε να χρησιμοποιήσετε την <a href='#'>έντυπη μορφή της αίτησης.</a></p>"}
+                    "en" : {"label" : "<p>You can <span class='bdigitalAnchor'>apply using a paper</span> form instead.</p>"},
+                    "el" : {"label" : "<p>Μπορείτε να χρησιμοποιήσετε την <span class='bdigitalAnchor'>έντυπη μορφή της αίτησης.</span></p>"}
+                }
+            }
+            ,{
+                "type": "h2",
+                "classes" : ["bdigitalH2"],
+                "content" : {
+                    "en" : {"label" : "Get help and advice"},
+                    "el" : {"label" : "Λάβετε βοήθεια και συμβουλές"}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p>Contact the Social Insurance Services team if you need to discuss your eligibility. They cannot help with CY Login account issues.</p><p>Social Insurance Services<br><span class='bdigitalAnchor'>maternity@sid.mlsi.gov.cy</span><br>Telephone: 22409710<br>Open: Monday to Friday, 8am to 3pm</p>"},
+                    "el" : {"label" : "<p>Επικοινωνήστε με τις Υπηρεσίες Κοινωνικών Ασφαλίσεων εάν χρειάζεται να συζητήσετε την καταλληλότητά σας. Δεν μπορούμε να βοηθήσουμε με ζητήματα λογαριασμού σύνδεσης CY.</p><p>Υπηρεσίες Κοινωνικής Ασφάλισης<br><span class='bdigitalAnchor'>maternity@sid.mlsi.gov.cy</span><br>Τηλέφωνο: 22409710<br>Ανοιχτά: Δευτέρα έως Παρασκευή, 8 π.μ. έως 3 μ.μ.</p>"}
                 }
             }
         ]

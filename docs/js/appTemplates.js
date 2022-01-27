@@ -3,7 +3,8 @@ DSFTemplates =
     "defaultLang" : "en",
     "markdownFile" : "<div{{#id}} id='{{id}}'{{/id}}></h1>",
     "layouts": {
-        "Max-width" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article class='row' id='main'><form id='components' class='govcy-form'></form></article>"
+        "Max-width" : "<section class='row'><div id='before-main'></div></section><div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article class='row' id='main'><form id='components' class='govcy-form'></form></article>",
+        "Two-thirds" : "<section class='row'><div id='before-main'></div></section><div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article class='row' id='main'><form id='components' class='govcy-form col-md-9'></form></article>"
         ,"One-third + Two-thirds + Sidemenu" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
@@ -25,7 +26,6 @@ DSFTemplates =
             + "<span class='govcy-service-name'>Prototypes</span>"
             + "<ul class='govcy-menu govcy-bg-sub-menu govcy-bg-md-primary'>"
             + "<li><a href='#'>Help</a></li>"
-            + "<li><a href='#'>Login</a></li>"
             + "</ul>"
             + "</header>"
             + "</div>"
@@ -33,7 +33,7 @@ DSFTemplates =
             "<div class='row'>"
             + "<header id='headerContainerIn' class='govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right'>"
             + "<a href='#' class='govcy-logo'> <img/></a>"
-            + "<form class='govcy-text-white govcy-bg-primary'>     "
+            + "<form class='govcy-text-white govcy-bg-primary'>"
             + "<select id='changeLangSel' name='govcy-lang-menu' class='govcy-lang-menu govcy-text-white'>"
             + "<option value='en'>En</option>"
             + "<option value='el' selected>El</option>"
@@ -46,7 +46,6 @@ DSFTemplates =
             + "<span class='govcy-service-name'>Πρωτότυπα</span>"
             + "<ul class='govcy-menu govcy-bg-sub-menu govcy-bg-md-primary'>"
             + "<li><a href='#'>Βοήθεια</a></li>"
-            + "<li><a href='#'>Σύνδεση</a></li>"
             + "</ul>"
             + "</header>"
             + "</div>"
@@ -98,9 +97,12 @@ DSFTemplates =
             + "</div>",
         "button" : "<button type='button' class='govcy-btn-{{subtype}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
         "link" : "<a class='{{#classes}} {{.}}{{/classes}}' href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a>",
-        "backLink" : //"<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'>< <a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
-            "<div class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
+        "backLink" : 
+            "<div class='{{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
             + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
+        "userNamesSignOut" : 
+            "<div class='govcy-text-end{{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
+            + "<a href='#p/ariadniSignOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
         "paragraph" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         "spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>", 
         "paragraphHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</div>", 

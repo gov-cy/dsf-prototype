@@ -23,7 +23,10 @@
         ,"birthBenefit/dataNotCorrect":{"id":"birthBenefit/dataNotCorrect"}
         ,"birthBenefit/childNotFound":{"id":"birthBenefit/childNotFound"}
         ,"birthBenefit/badLogin":{"id":"birthBenefit/badLogin"}
+        ,"birthBenefit/childrenNotInList":{"id":"birthBenefit/childrenNotInList"}
+        ,"birthBenefit/stillbornNotInList":{"id":"birthBenefit/stillbornNotInList"}
         ,"cheatsheet":{"id":"cheatsheet"}
+        ,"ariadniSignOut":{"id":"ariadniSignOut"}
     },
     "routes" : {
         "birthBenefit1" : [

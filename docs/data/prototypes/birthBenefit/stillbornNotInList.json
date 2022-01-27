@@ -1,0 +1,77 @@
+{
+    "id":"birthBenefit/stillbornNotInList",
+    "menus" : [],
+    "layout" : "Two-thirds",
+    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
+            },
+            {
+                "type": "h1",
+                "content" : {
+                    "en" : {"label" : "Claim the grant for a stillborn child"},
+                    "el" : {"label" : "Αίτηση για βρέφος που γεννήθηκε νεκρό"}
+                }
+            },
+            {
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "The grant is for births in the past 12 months, and includes children who were stillborn after 28 weeks of pregnancy."},
+                    "el" : {"label" : "Το βοήθημα αφορά σε γεννήσεις των τελευταίων 12 μηνών και συμπεριλαμβάνει παιδιά που γεννήθηκαν νεκρά μετά τη συμπλήρωση 28 εβδομάδων εγκυμοσύνης."}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "You can apply by paper form so that you can attach a doctor’s letter with information about your child’s stillbirth. You may have received a letter at the hospital or clinic where you gave birth, or you can get a letter from your doctor afterwards."},
+                    "el" : {"label" : "Μπορείτε να υποβάλετε αίτηση σε έντυπη μορφή έτσι ώστε να επισυνάψετε τη σχετική βεβαίωση. Αν δεν έχετε λάβει επιστολή από το νοσοκομείο ή την κλινική όπου έχετε γεννήσει, μπορείτε να ζητήσετε τη βεβαίωση από τον γιατρό σας."}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "You can <span class='DSFAnchor'>download the paper form</span> to come back to later, and continue the online application for Constantinos and Anna."},
+                    "el" : {"label" : "Μπορείτε να κατεβάσετε το <span class='DSFAnchor'>έντυπο της αίτησης</span> για να το χρησιμοποιήσετε αργότερα και να συνεχίσετε τώρα την αίτησή σας διαδικτυακά για τα παιδιά: Κωνσταντίνος, Άννα."}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
+                }
+            },
+            {
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextRoutebtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "goBack","data":""}
+                        ]
+                    }
+                ],
+                "content" : {
+                    "en" : {"label" : "Continue application"},
+                    "el" : {"label" : "Συνεχίστε την αίτηση"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : " "}
+                }
+            }
+        ]
+    }   
+}
