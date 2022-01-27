@@ -17,6 +17,8 @@ jobs:
       - name: Install
         run: npm install
       - name: Percy Test
-        run: "percy exec -t 200 -- mocha tests/scripts/percy --exit"
+        uses: percy/exec-action@master
+        with:
+          command: "percy exec -t 200 -- mocha tests/scripts/percy --exit"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
