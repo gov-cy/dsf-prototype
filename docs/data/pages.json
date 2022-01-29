@@ -25,6 +25,10 @@
         ,"birthBenefit/badLogin":{"id":"birthBenefit/badLogin"}
         ,"birthBenefit/childrenNotInList":{"id":"birthBenefit/childrenNotInList"}
         ,"birthBenefit/stillbornNotInList":{"id":"birthBenefit/stillbornNotInList"}
+        ,"birthBenefit/stillbornNotInListNoChildren":{"id":"birthBenefit/stillbornNotInListNoChildren"}
+        ,"birthBenefit/noContributionsOrMarried":{"id":"birthBenefit/noContributionsOrMarried"}
+        ,"birthBenefit/noContributionsNotMarried":{"id":"birthBenefit/noContributionsNotMarried"}
+        ,"birthBenefit/noContributionsMarried":{"id":"birthBenefit/noContributionsMarried"}
         ,"cheatsheet":{"id":"cheatsheet"}
         ,"ariadniSignOut":{"id":"ariadniSignOut"}
     },
@@ -32,23 +36,30 @@
         "birthBenefit1" : [
             "birthBenefit/scenarioStart"
             ,"ariadniLogin"
+            ,"birthBenefit/scenarioListChildren"
+            ,"birthBenefit/scenarioShowBank"
             ,"birthBenefit/scenarioCheck"
             ,"birthBenefit/confirm"
             ]
         ,"birthBenefit2" : [
             "birthBenefit/scenarioStart"
             ,"ariadniLogin"
-            ,"birthBenefit/scenarioListChildren"
-            ,"birthBenefit/scenarioCheck"
-            ,"birthBenefit/confirm"
+            ,"birthBenefit/noContributionsOrMarried"
             ]
         ,"birthBenefit3" : [
             "birthBenefit/scenarioStart"
             ,"ariadniLogin"
-            ,"birthBenefit/scenarioListChildren"
-            ,"birthBenefit/scenarioShowBank"
-            ,"birthBenefit/scenarioCheck"
-            ,"birthBenefit/confirm"
+            ,"birthBenefit/noContributionsMarried"
+            ]
+        ,"birthBenefit4" : [
+            "birthBenefit/scenarioStart"
+            ,"ariadniLogin"
+            ,"birthBenefit/noContributionsNotMarried"
+            ]
+        ,"birthBenefit5" : [
+            "birthBenefit/scenarioStart"
+            ,"ariadniLogin"
+            ,"birthBenefit/childNotFound"
             ]
     }
 }

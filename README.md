@@ -447,6 +447,66 @@ Creates a div element i.e. `<div>`. Label can be HTML. Code example:
 </details>
 
 <details>
+  <summary>unorderedList</summary>
+  
+Creates a unordered list element i.e. `<ul>`. Content can be HTML. Code example: 
+
+```js
+,{
+    "type": "unorderedList",
+    "id" : "p1", //OPTIONAL, useful if you are adding an event
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {
+            "data" :[ // list items 
+                "list item 1",
+                "list item 2",
+                "list item 3"
+                ]
+            },
+        "el" : {
+            "data" :[ 
+                "list item 1 Ελληνικά",
+                "list item 2 Ελληνικά",
+                "list item 3 Ελληνικά"
+            ]
+        }
+    }
+}
+```
+</details>
+
+<details>
+  <summary>orderedList</summary>
+  
+Creates a ordered list element i.e. `<ol>`. Content can be HTML. Code example: 
+
+```js
+,{
+    "type": "orderedList",
+    "id" : "p1", //OPTIONAL, useful if you are adding an event
+    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "content" : {//multilanguage content
+        "en" : {
+            "data" :[ // list items 
+                "list item 1",
+                "list item 2",
+                "list item 3"
+                ]
+            },
+        "el" : {
+            "data" :[ 
+                "list item 1 Ελληνικά",
+                "list item 2 Ελληνικά",
+                "list item 3 Ελληνικά"
+            ]
+        }
+    }
+}
+```
+</details>
+
+<details>
   <summary>table</summary>
   
 Creates a table element i.e. `<table>`. Data my contain HTML. Code example: 
