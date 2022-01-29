@@ -1,0 +1,76 @@
+{
+    "id":"birthBenefit/noContributionsNotMarried",
+    "menus" : [],
+    "layout" : "Two-thirds",
+    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
+            }
+            ,{
+                "type": "h1",
+                "content" : {
+                    "en" : {"label" : "You cannot continue with this application online"},
+                    "el" : {"label" : "Δεν μπορείτε να συνεχίσετε την αίτηση διαδικτυακά"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "We have checked for social insurance contributions and marriage or civil partnership records in Cyprus, but we could not find any information."},
+                    "el" : {"label" : "Έχουμε ψάξει για εισφορές στο Ταμείο Κοινωνικών Ασφαλίσεων και πιστοποιητικό γάμου ή συμφώνου συμβίωσης στην Κύπρο, αλλά δεν έχουμε βρει καμία πληροφορία."}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p>You may still be eligible, but you’ll need to <span class='DSFAnchor'>apply by paper form</span> to provide evidence for any of these:</p>"},
+                    "el" : {"label" : "<p>Μπορεί να είστε επιλέξιμη, αλλά θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να προσκομίσετε αποδεικτικά στοιχεία για οποιοδήποτε από τα πιο κάτω σημεία:</p>"}
+                }
+            }
+            ,{
+                "type": "unorderedList",
+                "content" : {
+                    "en" : {"data" :[ 
+                        "you were married or entered into a civil partnership in another country, and your husband or civil partner has social insurance contributions (can include army credits)",
+                        "you were a student in the past 2 years",
+                        "you have had social insurance contributions in another country"
+                        ]},
+                    "el" : {"data" :[ 
+                        "παντρευτήκατε ή συνάψατε σύμφωνο συμβίωσης σε άλλη χώρα, και ο σύζυγος/σύντροφος σας έχει εισφορές κοινωνικών ασφαλίσεων (συμπεριλαμβανομένων και πιστώσεων Εθνικής Φρουράς)",
+                        "ήσασταν εσείς ή ο σύζυγος* σας φοιτητές κατά τα τελευταία 2 χρόνια",
+                        "έχετε καταβάλει εισφορές κοινωνικών ασφαλίσεων σε άλλη χώρα"
+                        ]}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p><span class='DSFAnchor'>If you’re not married or in a civil partnership</span></p>"},
+                    "el" : {"label" : "<p><span class='DSFAnchor'>Εάν δεν είστε παντρεμένη ή σε σύμφωνο συμβίωσης</span></p>"}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p><span class='DSFAnchor'>If you and your husband or civil partner do not have social insurance contributions</span></p>"},
+                    "el" : {"label" : "<p><span class='DSFAnchor'>Εάν εσείς και ο σύζυγος σας δεν έχετε εισφορές κοινωνικών ασφαλίσεων</span></p>"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : ""},
+                    "el" : {"label" : "* περιλαμβάνει γάμο (θρησκευτικό ή πολιτικό) ή σύμφωνο συμβίωσης"}
+                }
+            }
+        ]
+    }   
+}

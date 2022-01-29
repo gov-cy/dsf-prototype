@@ -52,8 +52,10 @@ DSFTemplates =
     },
     "footer" : {
         "en" : 
-            " <div class='row'>"
-            + "<footer id='footerContainerIn' class='govcy-footer'>"
+            "<div id='footerContainerIn' class='govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light'>"
+            + "<div class='govcy-container'>"
+            + " <div class='row'>"
+            + "<footer  class='govcy-footer'>"
             + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo' /></span>"
             + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
             + "<li><a href='#'>Privacy statement</a></li>"
@@ -63,9 +65,13 @@ DSFTemplates =
             + "</ul>"
             + "</footer>"
             + "</div>"
+            + "</div>"
+            + "</div>"
         ,"el" : 
-            " <div class='row'>"
-            + "<footer id='footerContainerIn' class='govcy-footer'>"
+        "<div id='footerContainerIn' class='govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light'>"
+            + "<div class='govcy-container'>"
+            + " <div class='row'>"
+            + "<footer  class='govcy-footer'>"
             + "<span class='govcy-d-inline-block govcy-valign-top govcy-pb-2'><img alt='govcy-logo' /></span>"
             + "<ul class='govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium'>"
             + "<li><a href='#'>Όροι Χρήσης</a></li>"
@@ -74,6 +80,8 @@ DSFTemplates =
             + "<li class='govcy-d-block govcy-text-dark'>© Κυπριακή Δημοκρατία, 2021</li>"
             + "</ul>"
             + "</footer>"
+            + "</div>"
+            + "</div>"
             + "</div>"
     },
     "componentTemplates" : {
@@ -106,6 +114,12 @@ DSFTemplates =
         "paragraph" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         "spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>", 
         "paragraphHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</div>", 
+        "unorderedList" : "<ul class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
+            + "{{#langConent.data}}<li>{{{.}}}</li>{{/langConent.data}}"
+            + "</ul>", 
+        "orderedList" : "<ol class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
+            + "{{#langConent.data}}<li>{{{.}}}</li>{{/langConent.data}}"
+            + "</ol>", 
         "h1" : "<h1 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h1>",
         "h2" : "<h2 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h2>",
         "h3" : "<h3 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h3>",

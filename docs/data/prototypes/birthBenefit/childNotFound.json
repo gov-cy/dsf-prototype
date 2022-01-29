@@ -1,30 +1,39 @@
 {
-    "id":"birthBenefit/dataNotCorrect",
+    "id":"birthBenefit/childNotFound",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
+    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
     "DSFcomponents" : 
         {
         "DOMId": "components",
         "components" : [
             {
-                "type": "backLink",
+                "type": "h1",
                 "content" : {
-                    "en" : {"label" : "Back"},
-                    "el" : {"label" : "Πίσω"}
+                    "en" : {"label" : "No children under 12 months old found"},
+                    "el" : {"label" : "Δεν έχουν βρεθεί παιδιά κάτω των 12 μηνών"}
                 }
             }
             ,{
-                "type": "h1",
+                "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "Your application cannot be submited."},
-                    "el" : {"label" : "Η αίτηση σας δεν μπορεί να καταχωρηθεί."}
+                    "en" : {"label" : "We could not find any registrations for children born in the past 12 months in our records."},
+                    "el" : {"label" : "Δεν έχουμε εντοπίσει στα αρχεία μας οποιαδήποτε εγγραφή για παιδιά που έχουν γεννηθεί τους τελευταίους 12 μήνες."}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
-                    "en" : {"label" : "<p>[could not find a birth record, point user to paper route, to provide birth certificate or hospital letter if stillbirth]</p>"},
-                    "el" : {"label" : "<p>[δεν μπόρεσε να βρει ένα αρχείο γέννησης, να οδηγήσει τον χρήστη στη διαδρομή χαρτιού, να παράσχει πιστοποιητικό γέννησης ή επιστολή νοσοκομείου σε περίπτωση θνησιγένειας]</p>"}
+                    "en" : {"label" : "<p>If you’ve had children within the past 12 months, you’ll need to <span class='DSFAnchor'>apply by paper form</span> so that you can attach their birth certificates.</p>"},
+                    "el" : {"label" : "<p>Εάν έχετε γεννήσει κατά τους τελευταίους 12 μήνες, θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να επισυνάψετε τα σχετικά πιστοποιητικά γέννησης.</p>"}
+                }
+            }
+            ,{
+                "type": "link",
+                "href" : "#p/birthBenefit/stillbornNotInListNoChildren",
+                "content" : {
+                    "en" : {"label" : "Did you have a child who was stillborn?"},
+                    "el" : {"label" : "Έχετε γεννήσει θνησιγενές (νεκρό) βρέφος;"}
                 }
             }
         ]
