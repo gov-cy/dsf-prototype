@@ -1,7 +1,7 @@
 {
     "id":"birthBenefit/scenarioShowBank",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "preScript" : "birthBenefit/scenarioLoginSubmit.js",
     "postScript" : "birthBenefit/scenarioShowBank_postScript.js",
     "DSFcomponents" : 
@@ -14,8 +14,12 @@
                     "en" : {"label" : "Back"},
                     "el" : {"label" : "Πίσω"}
                 }
-            },
-            {
+            }
+            ,{
+                "type": "divEmpty",
+                "id" : "alerts"
+            }
+            ,{
                 "type": "h1",
                 "content" : {
                     "en" : {"label" : "Bank account details"},
@@ -50,7 +54,7 @@
                 "id" : "isBankCorrect",
                 "content" : {
                     "en" : {"label" : "Is this information correct?",
-                            "options": [
+                            "options": [    
                                 {"option_id": "bank_yes","option_value":"yes", "option_label":"Yes"},
                                 {"option_id": "bank_no","option_value":"no", "option_label":"No"}
                             ]
@@ -76,15 +80,32 @@
                 "events" : [
                     {
                         "on":"click","actions" : [
+                            {"action" : "validate","data":""},
                             {"action" : "getData","data":""},
                             {"action" : "customScript","data":"birthBenefit/scenarioShowBank_button.js"},
                             {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ],
+                "validationsSummary" :"alerts",
+                "validations" : [
+                    {"validation" : "required", "elementName":"isBankCorrect","elementId":"isBankCorrect","elementType":"radio"}
+                ],
                 "content" : {
-                    "en" : {"label" : "Next"},
-                    "el" : {"label" : "Επόμενο"}
+                    "en" : {
+                        "label" : "Next",
+                        "validationSummaryTitle" : "There is a problem",
+                        "validationsLabels" : {
+                            "required.isBankCorrect" : "Please select if the information is correct."
+                        }
+                    },
+                    "el" : {
+                        "label" : "Επόμενο",
+                        "validationSummaryTitle" : "Υπάρχει ένα πρόβλημα",
+                        "validationsLabels" : {
+                            "required.isBankCorrect" : "Παρακαλώ επιλέξετε εάν οι πληροφορίες είναι σωστές."
+                        }
+                    }
                 }
             }
         ]

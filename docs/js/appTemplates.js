@@ -86,20 +86,20 @@ DSFTemplates =
     },
     "componentTemplates" : {
         "text": 
-            "<div class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
+            "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
+            + "<span {{#id}}id='{{id}}_error'{{/id}} class='govcy-input-error-msg'></span>"
             + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
             + "<input type='text' class='govcy-text-input' name='{{name}}'"
-            +"{{#id}}id='{{id}}'{{/id}}"
             +"{{#langConent.placeholder}}placeholder='{{langConent.placeholder}}'{{/langConent.placeholder}}"
             +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
             + "</div>",
         "password": 
-            "<div class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
+            "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
+            + "<span {{#id}}id='{{id}}_error'{{/id}} class='govcy-input-error-msg'></span>"
             + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
             + "<input type='password' class='govcy-text-input' name='{{name}}'"
-            +"{{#id}}id='{{id}}'{{/id}}"
             +"{{#langConent.placeholder}}placeholder='{{langConent.placeholder}}'{{/langConent.placeholder}}"
             +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
             + "</div>",
@@ -136,10 +136,11 @@ DSFTemplates =
         + "</tbody>"
         + "</table>"
         ,"checkboxes" : 
-            "<fieldset {{#id}} id='{{id}}'{{/id}}class='govcy-fieldset'>"
+            "<fieldset class='govcy-fieldset'>"
             + "<legend class='govcy-legend'>{{{langConent.label}}}</legend>"
             + "{{#langConent.hint}}<span class='govcy-hint'>{{{langConent.hint}}}</span>{{/langConent.hint}}"
-            + "<div class='govcy-form-control'>"
+            + "<div {{#id}} id='{{id}}'{{/id}}class='govcy-form-control'>"
+            + "<span {{#id}} id='{{id}}_error'{{/id}}class='govcy-input-error-msg'></span>"
             + "{{#langConent.options}}"
                 + "<label class='govcy-checkbox'>"
                 + "{{{option_label}}}"
@@ -155,10 +156,11 @@ DSFTemplates =
             + "<input class='form-control' type='file' name='{{name}}' {{#id}}id='{{id}}'{{/id}}>"
             + "</div>"            
         ,"radio" : 
-            "<fieldset {{#id}} id='{{id}}'{{/id}}class='govcy-fieldset'>"
+            "<fieldset class='govcy-fieldset'>"
             + "<legend class='govcy-legend'>{{{langConent.label}}}</legend>"
             + "{{#langConent.hint}}<span class='govcy-hint govcy-mt-2'>{{{langConent.hint}}}</span>{{/langConent.hint}}"
-            + "<div class='govcy-form-control'>"
+            + "<div {{#id}} id='{{id}}'{{/id}}class='govcy-form-control'>"
+            + "<span {{#id}} id='{{id}}_error'{{/id}}class='govcy-input-error-msg'></span>"
             + "{{#langConent.options}}"
                 + "<label class='govcy-radio-btn'>"
                 + "{{{option_label}}}"
@@ -182,7 +184,7 @@ DSFTemplates =
             "<div class='row govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3'>"
             + "<h2>{{{langConent.label}}}</h2>"
-            + "<p class='govcy-mb-0'>{{#langConent.data}}<a href='#'>{{{.}}}</a>{{/langConent.data}}</p>"
+            + "<p class='govcy-mb-0'>{{#langConent.data}}<a href='#' onclick='return false;'>{{{.}}}</a>{{/langConent.data}}</p>"
             + "</div>"
             + "</div>"
         ,"alertImportant" : 
@@ -213,6 +215,7 @@ DSFTemplates =
         ,"fieldsetOpen" : "<fieldset class='govcy-fieldset{{#classes}} {{.}}{{/classes}}' {{#id}} id='{{id}}'{{/id}}>" 
             + "<legend class='govcy-legend'>{{{langConent.legend}}}</legend>"
         ,"fieldsetClose" : "</fieldset>"
+        ,"divEmpty" : "<div class='{{#classes}} {{.}}{{/classes}}' {{#id}} id='{{id}}'{{/id}}></div>"
         ,"divContainerOpen" : "<div class='govcy-container{{#classes}} {{.}}{{/classes}}' {{#id}} id='{{id}}'{{/id}}>"
         ,"divContainerFluidOpen" : "<div class='govcy-container-fluid{{#classes}} {{.}}{{/classes}}' {{#id}} id='{{id}}'{{/id}}>"
         ,"divRowOpen" : "<div class='row{{#classes}} {{.}}{{/classes}}' {{#id}} id='{{id}}'{{/id}}>"

@@ -5,7 +5,7 @@
     "styles": 
         {
         "#footerContainerIn, #headerContainerIn" : "display:none;",
-        "#id, #password" : "height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;",
+        "#id :input, #password :input" : "height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;",
         ".ariadniTitle" : "color: #6c757d!important;font-size: 1.5rem;",
         "label[for=id], label[for=password]" : "font-size: 1rem; font-weight: 400; line-height: 1.5;color: #212529;",
         "#loginDiv" : "padding-top: 1.75rem;padding-bottom: 1.75rem;border: 1px solid rgba(0, 0, 0, 0.4);box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);",
@@ -34,8 +34,12 @@
                 "type" :"divColumnOpen",
                 "colnum": "6",
                 "id" : "loginDiv"
-            },
-            {
+            }            
+            ,{
+                "type": "divEmpty",
+                "id" : "alerts"
+            }
+            ,{
                 "type" :"spanHTML",
                 "content" : {
                     "en" : {"label" : "<h1 class='ariadniTitle'><img src='img/favicon-48x48.png'>   CY Login</h1>"},
@@ -80,14 +84,32 @@
                 "events" : [
                     {
                         "on":"click","actions" : [
+                            {"action" : "validate","data":""},
                             {"action" : "getData","data":""},
                             {"action" : "nextOnRoute","data":""}
                         ]
                     }
                 ],
+                "validationsSummary" :"alerts",
+                "validations" : [
+                    {"validation" : "required", "elementName":"id","elementId":"id", "elementType":"text"},
+                    {"validation" : "required", "elementName":"password","elementId":"password", "elementType":"password"}
+                ],
                 "content" : {
-                    "en" : {"label" : "Sign In"},
-                    "el" : {"label" : "Σύνδεση"}
+                    "en" : {
+                        "label" : "Sign In",
+                        "validationsLabels" : {
+                            "required.id" : "Please enter the username.",
+                            "required.password" : "Please enter the password."
+                        }
+                    },
+                    "el" : {
+                        "label" : "Σύνδεση",
+                        "validationsLabels" : {
+                            "required.id" : "Παρακαλώ περάστε το Όνομα Χρήστη.",
+                            "required.password" : "Παρακαλώ περάστε το Κωδικό Πρόσβασης."
+                        }
+                    }
                 }
             },
             {

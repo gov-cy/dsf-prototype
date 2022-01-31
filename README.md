@@ -390,6 +390,9 @@ Creates an an HTML button element as defined in GOVCY design system `<button typ
     }
 }
 ```
+
+NOTE: [Validations](#validations) and [Events and actions](#events-and-actions) are usually defined in buttons. 
+
 </details>
 
 <details>
@@ -762,6 +765,20 @@ Creates a warning GOVCY component.
 This list contains GOVCY containers such as `contaner` `container-fluid` `row` and `col`. It consists of **open** and **close** elements. ALWAYS REMEMBER to close a contaner, otherwise the rendered HTML will be invalid. 
 
 <details>
+  <summary>divEmpty</summary>
+  
+Creates an empty `<div>`.
+
+```js
+,{
+    "type": "divEmpty",
+    "id" : "div1", //OPTIONAL, useful if you are adding an event
+    "classes": ["govcy-mx-2"], //OPTIONAL add CSS classes to an element. Applies to the top div. 
+}
+```
+</details>
+
+<details>
   <summary>fieldsetOpen</summary>
   
 Opens a GOVCY `<fieldset>`.
@@ -891,6 +908,18 @@ An event can have multiple actions. For example when a user clicks on button, yo
 This list contains the predefined actions you can use.
 
 <details>
+  <summary>validate</summary>
+  
+perfoms the defined validations. See more in [Validations](#validations) section.
+
+```js
+,{
+    {"action" : "validate","data":""},
+}
+```
+</details>
+
+<details>
   <summary>alert</summary>
   
 Simply alerts the message in the `data`. Code example:
@@ -989,6 +1018,156 @@ if ((sessionStorage["id"]) != "elena") {
 
 -----
 
+## Validations
+
+Validations are defined on the element that calls the action, most likely a `button`. If validation fails the next actions will not be executed and error messages should apperar on the screen. 
+
+Note that validations can be performed on `text`, `password`, `radio` and `checkboxes` components only, unless a custom validation is defined. 
+
+The following elements must be defined as shown in the example below `validationsSummary`, `validations` and under content for each laguage `validationSummaryTitle` and `validationsLabels`.
+
+```js 
+
+,{
+    "type": "button",
+    "subtype": "primary",
+    "id":"nextbtn",
+    "events" : [
+        {
+            "on":"click","actions" : [
+                {"action" : "validate","data":""},
+                {"action" : "getData","data":""},
+                {"action" : "goBack","data":""}
+            ]
+        }
+    ],
+    "validationsSummary" :"alerts", //the id of the alert that shows the summary of the errors
+    "validations" : [ // all validations that must be performed
+        {"validation" : "required", //validation type
+            "elementName":"Bank", //the input name the validation will run
+            "elementId":"Bank",  // the id of the div that contains the input
+            "elementType":"text" // the element type (as defined in components)
+        },
+        {"validation" : "required", "elementName":"IBAN","elementId":"IBAN", "elementType":"text"} // second validation
+    ],
+    "content" : {
+        "en" : {
+            "label" : "Next",
+            "validationSummaryTitle" : "There is a problem", //The title that will appear in the alert that shows the summary of the errors 
+            "validationsLabels" : {
+                "required.Bank" : "Please enter the Bank Name.", //The message for the validation. The key here must be 'validationType.elementId'
+                "required.IBAN" : "Please enter the ΙΒΑΝ." // second message for validation
+            }
+        },
+        "el" : {
+            "label" : "Επόμενο",
+            "validationSummaryTitle" : "Υπάρχει ένα πρόβλημα",
+            "validationsLabels" : {
+                "required.Bank" : "Παρακαλώ περάστε το όνομα της Τράπεζας.",
+                "required.IBAN" : "Παρακαλώ περάστε το ΙΒΑΝ."
+            }
+        }
+    }
+}
+
+```
+
+To show the validations summary alert, make sure to include in the page a `<div>` component with the same `id` as defined in `validationsSummary`. For example:
+
+```js 
+"components" : [
+    {
+        "type": "backLink",
+        "content" : {
+            "en" : {"label" : "Back"},
+            "el" : {"label" : "Πίσω"}
+        }
+    }
+    ,{
+        "type": "divEmpty", //empty div component
+        "id" : "alerts" //same id as in `validationsSummary` 
+    }
+    ...
+
+```
+
+### Validation Types
+
+The following validation types can be defined:
+
+<details>
+  <summary>required</summary>
+  
+Checks if a value was entered for this element. See below a sample definition of this under the `validations` of the component that calls the validation.
+
+```js
+"validations" : [ // all validations that must be performed
+        {"validation" : "required", //validation type
+            "elementName":"Bank", //the input name the validation will run
+            "elementId":"Bank",  // the id of the div that contains the input
+            "elementType":"text" // the element type (as defined in components)
+        }
+```
+</details>
+
+<details>
+  <summary>is.</summary>
+  
+Use functions from the [is.js](https://is.js.org/) library to validate the value of the input defined by `elementName`. To use this define the validation starting with `is.` as defined in the library.
+
+See below a sample definition of this under the `validations` of the component that calls the validation.
+
+```js
+
+"validations" : [ // all validations that must be performed
+        {"validation" : "is.email", //validation type as defined in is.js library
+            "elementName":"emailAddress", //the input name the validation will run
+            "elementId":"emailAddressIn", // the id of the div that contains the input
+            "elementType":"text"// the element type (as defined in components)
+        }
+
+```
+</details>
+
+<details>
+  <summary>custom</summary>
+  
+Runs a custom function which **must** return `true` or `false`. 
+
+You can do this to make complex validations, such as checking for combination of values. For example:
+
+```js 
+
+/**
+ * This function checks if the `custom` radio has been checked and the `emailAddress` text field is empty 
+ */
+function checkEmail(){
+    if ((document.forms["components"]["emailRadio"].value == "custom") 
+        && document.forms["components"]["emailAddress"].value =="") return false;
+    else return true;
+}
+
+```
+
+The definition of this function can be done under the `preScript` or `postScript` of the [page element](#dataprototypesidjson).
+
+See below a sample definition of this under the `validations` of the component that calls the validation.
+
+```js
+"validations" : [ // all validations that must be performed
+        {"validation" : "custom", //validation type
+            "elementName":"emailAddress", //the input name the validation will run
+            "elementId":"emailAddressIn",  // the id of the div that contains the input
+            "elementType":"text", // the element type (as defined in components)
+            "functionName": "checkEmail" // name of the custom function to be run
+        }
+```
+
+</details>
+
+------
+
+
 ## More How Tos
 
 ### How to add a component definition?
@@ -1000,10 +1179,15 @@ Update the `js/appTemplates.js` file and add the template (in mustache js format
 - ~~Explain events and actions more~~
 - ~~Explain routes~~
 - ~~Add custom actions (custom js file)~~
-- Explain how to use data in custom actions
+- ~~Explain how to use data in custom actions~~
 - Add more components
-- Add validations
+- ~~Add validations~~
 - ~~Explain how to add components in a page~~
+- ~~Add custom validations (load js file  )~~
+- ~~Add more validation types~~
+- Explain more advanced custom actions
+    - Handle login data
+    - Render stuff on screen based on session variables
 
 Good to have 
 

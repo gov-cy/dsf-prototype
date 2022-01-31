@@ -1,7 +1,7 @@
 {
     "id":"birthBenefit/allLinks",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "DSFcomponents" : 
         {
         "DOMId": "components",

@@ -1,7 +1,7 @@
 {
     "id":"birthBenefit/badLogin",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "DSFcomponents" : 
         {
         "DOMId": "components",

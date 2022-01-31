@@ -1,8 +1,9 @@
 {
     "id":"birthBenefit/scenarioCheck",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "preScript" : "birthBenefit/scenarioLoginSubmit.js",
+    "postScript" : "birthBenefit/scenarioCheck_preScript.js",
     "DSFcomponents" : 
         {
         "DOMId": "components",
@@ -17,46 +18,42 @@
             ,{
                 "type": "h1",
                 "content" : {
-                    "en" : {"label" : "Check the information we have"},
-                    "el" : {"label" : "Επιβεβαίωση στοιχείων"}
-                }
-            },
-            {
-                "type": "table",
-                "name": "next",
-                "content" : {
-                    "en" : {"label" : "Check your information is correct.",
-                            "head": ["","",""],
-                            "data" : [
-                                ["<b>Contact email</b>","me@gmail.com",""],
-                                ["<b>Children included in application</b>","George and Mike",""],
-                                ["<b>Bank details</b>","Name<br>Maria Smith<br><br>Bank<br>Bank of Cyprus<br><br>IBAN/SIC<br>1234567890","<a href='#p/birthBenefit/changeBank'>Change account details</a>"]
-                            ]
-                        },
-                    "el" : {"label" : "Ελέγξτε πως τα στοιχεία που έχετε καταχωρίσει είναι ορθά.",
-                        "head": ["","",""],
-                        "data" : [
-                            ["<b>email επικοινωνίας</b>","me@gmail.com",""],
-                            ["<b>Παιδιά που περιλαμβάνονται στην αίτηση</b>","Γιώργος και Μιχάλης",""],
-                            ["<b>Στοιχεία Τράπεζας</b>","Όνομα<br>Μαρία Σμηθ<br><br>Τράπεζα<br>Τράπεζα Κύπρου<br><br>IBAN/SIC<br>1234567890","<a href='#p/birthBenefit/changeBank'>Αλλαγή στοιχείων λογαριασμού</a>"]
-                        ]
-                    }
+                    "en" : {"label" : "Check and submit"},
+                    "el" : {"label" : "Ελέγξτε και υποβάλετε"}
                 }
             }
             ,{
                 "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "Check the information we have is correct."},
-                    "el" : {"label" : "Ελέγξτε πως τα στοιχεία σας είναι ορθά."}
+                    "en" : {"label" : "We have found your children’s birth registration, social insurance contributions and your marriage or civil partnership details (if applicable). Your application is now ready to submit. "},
+                    "el" : {"label" : "Βρήκαμε την εγγραφή γέννησης των παιδιών σας, τις εισφορές κοινωνικής ασφάλισης και τα στοιχεία του γάμου ή της συμβίωσης (αν υπάρχουν). Η αίτησή σας είναι τώρα έτοιμη για υποβολή."}
                 }
             }
             ,{
-                "type": "link",
-                "label": {"en":"", "el":""},
-                "href" : "#p/birthBenefit/dataNotCorrect",
+                "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "Is the information not right?"},
-                    "el" : {"label" : "Τα στοιχεία δεν είναι ορθά;"}
+                    "en" : {"label" : "Before submitting please check that the information below is correct."},
+                    "el" : {"label" : "Πριν από την υποβολή, ελέγξτε ότι οι παρακάτω πληροφορίες είναι σωστές."}
+                }
+            }
+            ,{
+                "type": "table",
+                "name": "next",
+                "content" : {
+                    "en" : {"label" : "",
+                            "head": ["","",""],
+                            "data" : [
+                                ["<b>Bank details</b>","<b>Account Name</b><br>Maria Smith<br><br><b>Bank</b><br><span id='bankInfo'>Bank of Cyprus</span><br><br><b>IBAN</b><br><span id='IBANInfo'>1234567890</span>","<a href='#p/birthBenefit/changeBank'>Change</a>"],
+                                ["<b>Email address</b>","<span id='emailInfo'>me@example.com</span>","<a href='#r/birthBenefit1/4'>Change</a>"]
+                            ]
+                        },
+                    "el" : {"label" : "",
+                            "head": ["","",""],
+                            "data" : [
+                                ["<b>Bank details</b>","<b>Account Name</b><br>Maria Smith<br><br><b>Bank</b><br><span id='bankInfo'>Bank of Cyprus</span><br><br><b>IBAN</b><br><span id='IBANInfo'>1234567890</span>","<a href='#p/birthBenefit/changeBank'>Change</a>"],
+                                ["<b>Email address</b>","<span id='emailInfo'>me@example.com</span>","<a href='#r/birthBenefit1/4'>Change</a>"]
+                        ]
+                    }
                 }
             }
             ,{
@@ -78,8 +75,8 @@
                     }
                 ],
                 "content" : {
-                    "en" : {"label" : "Submit"},
-                    "el" : {"label" : "Υποβολή"}
+                    "en" : {"label" : "Submit application"},
+                    "el" : {"label" : "Υποβολή αίτησης"}
                 }
             }
         ]

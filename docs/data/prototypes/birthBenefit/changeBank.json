@@ -1,7 +1,7 @@
 {
     "id":"birthBenefit/changeBank",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "DSFcomponents" : 
         {
         "DOMId": "components",
@@ -12,6 +12,10 @@
                     "en" : {"label" : "Back"},
                     "el" : {"label" : "Πίσω"}
                 }
+            }
+            ,{
+                "type": "divEmpty",
+                "id" : "alerts"
             }
             ,{
                 "type": "h1",
@@ -65,14 +69,34 @@
                 "events" : [
                     {
                         "on":"click","actions" : [
+                            {"action" : "validate","data":""},
                             {"action" : "getData","data":""},
                             {"action" : "goBack","data":""}
                         ]
                     }
                 ],
+                "validationsSummary" :"alerts",
+                "validations" : [
+                    {"validation" : "required", "elementName":"Bank","elementId":"Bank", "elementType":"text"},
+                    {"validation" : "required", "elementName":"IBAN","elementId":"IBAN", "elementType":"text"}
+                ],
                 "content" : {
-                    "en" : {"label" : "Next"},
-                    "el" : {"label" : "Επόμενο"}
+                    "en" : {
+                        "label" : "Next",
+                        "validationSummaryTitle" : "There is a problem",
+                        "validationsLabels" : {
+                            "required.Bank" : "Please enter the Bank Name.",
+                            "required.IBAN" : "Please enter the ΙΒΑΝ."
+                        }
+                    },
+                    "el" : {
+                        "label" : "Επόμενο",
+                        "validationSummaryTitle" : "Υπάρχει ένα πρόβλημα",
+                        "validationsLabels" : {
+                            "required.Bank" : "Παρακαλώ περάστε το όνομα της Τράπεζας.",
+                            "required.IBAN" : "Παρακαλώ περάστε το ΙΒΑΝ."
+                        }
+                    }
                 }
             }
         ]

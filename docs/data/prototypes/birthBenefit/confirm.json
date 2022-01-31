@@ -1,7 +1,7 @@
 {
     "id":"birthBenefit/confirm",
     "menus" : [],
-    "layout" : "Max-width",
+    "layout" : "Two-thirds",
     "preScript" : "birthBenefit/scenarioLoginSubmit.js",
     "DSFcomponents" : 
         {
@@ -10,19 +10,66 @@
             {
                 "type": "successPanel",
                 "content" : {
-                    "en" : {"head" : "Your application has been submited",
-                            "label" : "The application reference number is:<b>191292</b>"
+                    "en" : {"head" : "Your application has been received"
                         },
-                    "el" : {"head" : "Η αίτηση έχει ολοκληρωθεί",
-                            "label" : "Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"
+                    "el" : {"head" : "Η αίτησή σας έχει ληφθεί"
                         }
+                }
+            }
+            ,{
+                "type": "h2",
+                "content" : {
+                    "en" : {"label" : "Your details"},
+                    "el" : {"label" : "Οι λεπτομέρειές σου"}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p><b>Name</b><br>Maria Smith</p>"},
+                    "el" : {"label" : "<p><b>Ονομα</b><br>Μαρία Σμιθ</p>"}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p><b>ID or alien registration number</b><br>123456</p>"},
+                    "el" : {"label" : "<p><b>Αριθμός ταυτότητας ή εγγραφής αλλοδαπού</b><br>123456</p>"}
+                }
+            }
+            ,{
+                "type": "h2",
+                "content" : {
+                    "en" : {"label" : "What happens next"},
+                    "el" : {"label" : "Τι συμβαίνει μετά"}
                 }
             }
             ,{
                 "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "The amount is expected to be deposited in your bank account within 5 working days."},
-                    "el" : {"label" : "Το ποσό αναμένεται να κατατεθεί στον τραπεζικό σας λογαριασμό εντός 5 εργάσιμων ημερών."}
+                    "en" : {"label" : "Your application will be processed by Social Insurance Services. You will receive a letter with a decision in one month."},
+                    "el" : {"label" : "Η αίτησή σας θα διεκπεραιωθεί από τις Υπηρεσίες Κοινωνικών Ασφαλίσεων. Θα λάβετε μια επιστολή με απόφαση σε ένα μήνα."}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p>You can <a href='javascript:window.print();'>print or save a copy of this page</a> for your records.</p>"},
+                    "el" : {"label" : "<p>Μπορείτε να <a href='javascript:window.print();'>εκτυπώσετε ή αποθηκεύσετε ένα αντίγραφο αυτής της σελίδας</a> για τα αρχεία σας.</p>"}
+                }
+            }
+            ,{
+                "type": "h2",
+                "content" : {
+                    "en" : {"label" : "Apply for other children"},
+                    "el" : {"label" : "Κάντε αίτηση για άλλα παιδιά"}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<p>If you had children, born in the past 12 months, whose names did not appear earlier in this application, you can <span class='DSFAnchor'>apply for them using the paper form</a>.</p>"},
+                    "el" : {"label" : "<p>Εάν είχατε παιδιά, γεννημένα τους τελευταίους 12 μήνες, τα ονόματα των οποίων δεν εμφανίζονταν νωρίτερα σε αυτήν την εφαρμογή, μπορείτε να <span class='DSFAnchor'>υποβάλετε αίτηση για αυτά χρησιμοποιώντας την έντυπη φόρμα</a>.</p>"}
                 }
             }
         ]

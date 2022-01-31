@@ -303,6 +303,69 @@
                 }
             }
             ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {
+                        "label" : "<p><b>Lists</b></p>"
+                    },
+                    "el" : {
+                        "label" : "<p><b>Λίστες</b></p>"
+                    }
+                }
+            }
+            ,{
+                "type": "unorderedList",
+                "content" : {
+                    "en" : {"data" :[ 
+                        "you were married or entered into a civil partnership in another country, and your husband or civil partner has social insurance contributions (can include army credits)",
+                        "you were a student in the past 2 years",
+                        "you have had social insurance contributions in another country"
+                        ]},
+                    "el" : {"data" :[ 
+                        "παντρευτήκατε ή συνάψατε σύμφωνο συμβίωσης σε άλλη χώρα, και ο σύζυγος/σύντροφος σας έχει εισφορές κοινωνικών ασφαλίσεων (συμπεριλαμβανομένων και πιστώσεων Εθνικής Φρουράς)",
+                        "ήσασταν εσείς ή ο σύζυγος* σας φοιτητές κατά τα τελευταία 2 χρόνια",
+                        "έχετε καταβάλει εισφορές κοινωνικών ασφαλίσεων σε άλλη χώρα"
+                        ]}
+                }
+            }
+            ,{
+                "type": "orderedList",
+                "content" : {
+                    "en" : {"data" :[ 
+                        "you were married or entered into a civil partnership in another country, and your husband or civil partner has social insurance contributions (can include army credits)",
+                        "you were a student in the past 2 years",
+                        "you have had social insurance contributions in another country"
+                        ]},
+                    "el" : {"data" :[ 
+                        "παντρευτήκατε ή συνάψατε σύμφωνο συμβίωσης σε άλλη χώρα, και ο σύζυγος/σύντροφος σας έχει εισφορές κοινωνικών ασφαλίσεων (συμπεριλαμβανομένων και πιστώσεων Εθνικής Φρουράς)",
+                        "ήσασταν εσείς ή ο σύζυγος* σας φοιτητές κατά τα τελευταία 2 χρόνια",
+                        "έχετε καταβάλει εισφορές κοινωνικών ασφαλίσεων σε άλλη χώρα"
+                        ]}
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {
+                        "label" : "<p><b>Conditional radio</b></p><p>This can be done with custom HTML for now</p>"
+                    },
+                    "el" : {
+                        "label" : "<p><b>Conditional radio</b></p><p>Αυτό μπορεί να γίνει με προσαρμοσμένο HTML προς το παρόν</p>"
+                    }
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {
+                        "label" : "<fieldset class='govcy-fieldset'><div class='govcy-form-control'><label class='govcy-radio-btn'>Use my CY Login account email, me@example.com<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show'/><span class='govcy-radio'></span></label><label class='govcy-radio-btn'>I’d like to use a different email address<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Email Address</label><span class='govcy-hint'>We’ll only use this for your application</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"
+                    },
+                    "el" : {
+                        "label" : "<fieldset class='govcy-fieldset'><div class='govcy-form-control'><label class='govcy-radio-btn'>Χρησιμοποιήστε τη διεύθυνση ηλεκτρονικού ταχυδρομείου του λογαριασμού μου στο CY Login, me@example.com<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show'/><span class='govcy-radio'></span></label><label class='govcy-radio-btn'>Θα ήθελα να χρησιμοποιήσω διαφορετική διεύθυνση email<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Διεύθυνση ηλεκτρονικού ταχυδρομείου</label><span class='govcy-hint'>Θα το χρησιμοποιήσουμε μόνο για την αίτησή σας</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"
+                    }
+                }
+            }
+            ,{
                 "type" :"divRowOpen"
             }
             ,{
