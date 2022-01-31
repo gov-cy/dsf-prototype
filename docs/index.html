@@ -36,12 +36,13 @@
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/vs.min.css">
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/is_js/0.9.0/is.min.js" integrity="sha512-DvhVUdQWYI9UoF5HGHhl00nbUFcr+j6dGlg/FSrolqR3EridE8CF82nCNAZsE4iAPkw/ws0O7IrZ1jOUuJQXxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>DSF Prototyping - GOV.CY</title>
         <meta name="description" content="Prototyping using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
-    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative" id="headerContainerOut">
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative d-print-none" id="headerContainerOut">
         <div class="govcy-container" id="headerContainer"></div>
     </div>
     <!--Top Menu-->
@@ -49,7 +50,7 @@
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer"></main>
     <!-- Footer -->
-    <div id="footerContainer">
+    <div id="footerContainer" class="d-print-none">
     </div>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

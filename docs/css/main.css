@@ -28170,3 +28170,8 @@ textarea.form-control-lg {
   border-radius: 50%;
   background-color: #272525;
 }
+
+.govcy-form .govcy-form-control-hint {
+  border-left: 4px solid #6D6E70;
+  padding-left: 13px;
+}

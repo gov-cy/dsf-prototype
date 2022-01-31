@@ -69,7 +69,8 @@ var appController = {
                 DSFComponent.events[i].on,
                     {"actions":DSFComponent.events[i].actions
                     ,"routeId":routeId
-                    ,"routeNo":routeNo}, 
+                    ,"routeNo":routeNo
+                    ,"component": DSFComponent}, 
                 appController.runActions );
         }
     }    
@@ -86,6 +87,9 @@ var appController = {
         //run appropriate action 
         if (!appModel.stopScripts) {
             switch (actions.data.actions[i].action) {
+                case "validate": 
+                    appModel.stopScripts=!appValidator.validate(actions.data.component);
+                    break;
                 case "alert": alert(actions.data.actions[i].data); break;
                 case "customScript": 
                     //$.getScript("data/prototypes/"+actions.data.actions[i].data); 
@@ -337,4 +341,140 @@ var appView = {
           appView.renderPage(appModel.currentPageId,routeId,routeNo);
       });
   }
+};
+
+
+/**
+ * validator class
+ */
+var appValidator = {
+    /**
+     * Perfoms the validations 
+     * 
+     * @param {*} component The component object that contains all the validation data
+     * @returns {Boolean}, false if one of the validations has failed
+     */
+    validate:function(component) {
+        //for all validation in component
+        var isValid=true;
+        var errorMessages =[];
+        //clear validation summary
+        appValidator.clearValidationSummary(component.validationsSummary);
+        //for all validations
+        for (var i=0; i < component.validations.length; i++) {
+            var isOneValid = true;
+            var validation = component.validations[i];
+            //clear error message
+            appValidator.clearValidationError(validation.elementName,validation.elementId,validation.elementType)
+            //depending on validation
+            switch (validation.validation) {
+                case "required": 
+                    let x = document.forms["components"][validation.elementName].value;
+                    if (x == "") isOneValid = false
+                break;
+                case "custom":
+                    //run custom function 
+                     if (!window[validation.functionName]()) isOneValid=false;
+                break;
+                default:
+                    // if validation starts with `is.` run `is.js` commands https://is.js.org/
+                    if (validation.validation.indexOf("is.") === 0) {
+                        if (!is[validation.validation.split("is.")[1]](document.forms["components"][validation.elementName].value)) isOneValid=false;
+                    }
+                break;
+            }
+            //if is not valid
+            if (!isOneValid) {
+                var message=component.langConent.validationsLabels[validation.validation+"."+validation.elementId];
+                appValidator.showValidationError(validation.elementName,validation.elementId,validation.elementType
+                    ,message);
+                isValid = false;
+                errorMessages.push(message);
+            }
+        }
+        //show validation summary
+        if (!isValid) {
+            appValidator.showValidationSummary(errorMessages,component.langConent.validationSummaryTitle,component.validationsSummary);
+        }
+        return isValid;
+    },
+    /**
+     * Shows the validation message
+     * 
+     * @param {String} elementName The input's name 
+     * @param {String} elementId The outer div ID
+     * @param {String} elementType The type of the element (must be consistend with what was defined)
+     * @param {String} message The message to be displayed
+     */
+    showValidationError:function(elementName,elementId,elementType,message){
+      switch (elementType) {
+          case "radio":
+          case "checkboxes":
+              $("#"+elementId).addClass("govcy-form-control-error");
+              $("#"+elementId+"_error").append(message);
+              //$("#"+elementId +" :input").addClass("govcy-form-control-error")
+          break;
+          case "text":
+          case "password":
+              $("#"+elementId).addClass("govcy-form-control-error");
+              $("#"+elementId+"_error").append(message);
+              $("#"+elementId +" :input").addClass("govcy-text-input-error");
+          break;
+      }
+    },
+    /**
+     * Clears the validation message
+     * 
+     * @param {String} elementName The input's name 
+     * @param {String} elementId The outer div ID
+     * @param {String} elementType The type of the element (must be consistend with what was defined) 
+     */
+    clearValidationError:function(elementName,elementId,elementType){
+      switch (elementType) {
+          case "radio":
+          case "checkboxes":
+              $("#"+elementId).removeClass("govcy-form-control-error");
+              $("#"+elementId+"_error").html("");
+          break;
+          case "text":
+          case "password":
+              $("#"+elementId).removeClass("govcy-form-control-error");
+              $("#"+elementId+"_error").html("");
+              $("#"+elementId +" :input").removeClass("govcy-text-input-error");
+          break;
+      }
+    },
+    /**
+     * Shows the validation error summary
+     * 
+     * @param {Array} messages The array of strings of the messages
+     * @param {String} validationSummaryTitle The title of the alert 
+     * @param {String} validationsAlert The element ID that will render the errors
+     */
+    showValidationSummary(messages, validationSummaryTitle, validationsAlert){
+      var obj = {
+          "type": "alertError",
+          "langConent" : {"label" : validationSummaryTitle,"data" : messages}
+      };
+                      
+      //render using mustache
+      var content = Mustache.render
+      (DSFTemplates.componentTemplates[obj.type]
+          , obj);
+  
+      //render on page
+      $("#"+validationsAlert).html(content);
+      
+      //scroll to top
+      window.scrollTo(0, 0);
+    },
+    /**
+     * Clears the validation error summary
+     * 
+     * @param {String} validationsAlert The element ID that will render the errors
+     */
+    clearValidationSummary(validationsAlert){
+      //render on page
+      $("#"+validationsAlert).html("");
+    }
 };
