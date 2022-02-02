@@ -34,6 +34,17 @@
             ,{
                 "type": "text",
                 "required": false,
+                "name": "BankAccountName",
+                "id" : "BankAccountName",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Name"},
+                    "el" : {"label" : "Όνομα"}
+                }
+            }
+            ,{
+                "type": "text",
+                "required": false,
                 "name": "Bank",
                 "id" : "Bank",
                 "maxlength": 200,

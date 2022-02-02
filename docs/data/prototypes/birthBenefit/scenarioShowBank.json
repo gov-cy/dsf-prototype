@@ -32,7 +32,7 @@
                     "en" : {"label" : "Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary.",
                             "head": ["",""],
                             "data" : [
-                                ["<b>Name</b>","Maria Smith"],
+                                ["<b>Name</b>","<span id='bankAccountNameInfo'>Elena Nicolaou</span>"],
                                 ["<b>Bank</b>","<span id='bankInfo'>Bank of Cyprus</span>"],
                                 ["<b>IBAN/SIC</b>","<span id='IBANInfo'>1234567890</span>"]
                             ]
@@ -40,8 +40,8 @@
                     "el" : {"label" : "Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος..",
                         "head": ["",""],
                         "data" : [
-                            ["<b>Όνομα</b>","Μαρία Σμηθ"],
-                            ["<b>Τράπεζα</b>","<span id='bankInfo'>Τράπεζα Κύπρου</span>"],
+                            ["<b>Name</b>","<span id='bankAccountNameInfo'>Elena Nicolaou</span>"],
+                            ["<b>Τράπεζα</b>","<span id='bankInfo'>Bank of Cyprus</span>"],
                             ["<b>IBAN/SIC</b>","<span id='IBANInfo'>1234567890</span>"]
                         ]
                     }
