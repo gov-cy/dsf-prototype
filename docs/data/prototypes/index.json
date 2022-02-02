@@ -9,28 +9,97 @@
             {
                 "type": "h1",
                 "content" : {
-                    "en" : {"label" : "Prototypes"},
-                    "el" : {"label" : "Προτότυπα"}
+                    "en" : {"label" : "Child Birth Grand Prototypes"},
+                    "el" : {"label" : "Προτότυπα για βοήθημα τοκετού"}
                 }
             }
             ,{
                 "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "Click on the list of services below to check the respective prototypes."},
-                    "el" : {"label" : "Κάντε κλικ στη λίστα των υπηρεσιών παρακάτω για να ελέγξετε τα αντίστοιχα πρωτότυπα."}
+                    "en" : {"label" : "Click on the link to start."},
+                    "el" : {"label" : "Κάντε κλικ στον σύνδεσμο για να ξεκινήσετε."}
+                }
+            }
+           ,{
+                "type": "link",
+                "href" : "#r/birthBenefit1/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 1 (happy path)"},
+                    "el" : {"label" : "Σενάριο 1 (happy path)"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Scenario where mother has elegible birth and either her or her husband has contributions."},
+                    "el" : {"label" : "Σενάριο όπου η μητέρα έχει επιλέξιμη γέννα και είτε η ίδια είτε ο σύζυγός της έχει συνεισφορές."}
                 }
             }
             ,{
                 "type": "link",
-                "href" : "#p/birthBenefit/allLinks",
+                "href" : "#r/birthBenefit2/0",
                 "content" : {
-                    "en" : {"label" : "Child Grand Benefit"},
-                    "el" : {"label" : "Βοήθημα τοκετού"}
+                    "en" : {"label" : "Scenario 2"},
+                    "el" : {"label" : "Σενάριο 2"}
                 }
             }
             ,{
                 "type": "paragraph",
-                "label": {"en":" ", "el":" "}
+                "content" : {
+                    "en" : {"label" : "Scenario where no contribution or marriage found."},
+                    "el" : {"label" : "Σενάριο που δεν έχουν βρεθεί συνεισφορές ή γάμος."}
+                }
+            }
+            ,{
+                "type": "link",
+                "href" : "#r/birthBenefit3/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 3"},
+                    "el" : {"label" : "Σενάριο 3"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Scenario where marriage found but no contribution found on either."},
+                    "el" : {"label" : "Σενάριο όπου βρέθηκε γάμος αλλά δεν βρέθηκε συνεισφορά σε κανένα από τα δύο."}
+                }
+            }
+            ,{
+                "type": "link",
+                "href" : "#r/birthBenefit4/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 4"},
+                    "el" : {"label" : "Σενάριο 4"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Scenario where no contribution found and mother is not married."},
+                    "el" : {"label" : "Σενάριο όπου δεν βρέθηκε συνεισφορά και η μητέρα δεν είναι παντρεμένη."}
+                }
+            }
+            ,{
+                "type": "link",
+                "href" : "#r/birthBenefit5/0",
+                "content" : {
+                    "en" : {"label" : "Scenario 5"},
+                    "el" : {"label" : "Σενάριο 5"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Scenario where no childre were found."},
+                    "el" : {"label" : "Σενάριο όπου δεν βρέθηκαν παιδιά."}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : " "}
+                }
             }
         ]
     }   

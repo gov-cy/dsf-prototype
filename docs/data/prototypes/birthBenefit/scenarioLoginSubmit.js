@@ -1,6 +1,5 @@
 //not the right user
-if (!(((sessionStorage["id"]) === "elena") 
-    && ((sessionStorage["password"]) === "pass"))){
+if (sessionStorage["id"].toLowerCase() != "elena"){
     window.location="#p/birthBenefit/badLogin";
     //use this to stop all other events
     appModel.stopScripts = true;  
