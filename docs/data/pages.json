@@ -19,6 +19,7 @@
         ,"birthBenefit/scenarioShowBank":{"id":"birthBenefit/scenarioShowBank" }
         ,"birthBenefit/scenarioCheck":{"id":"birthBenefit/scenarioCheck" }        
         ,"birthBenefit/changeBank":{"id":"birthBenefit/changeBank"}
+        ,"birthBenefit/changeBankConfirm":{"id":"birthBenefit/changeBankConfirm"}
         ,"birthBenefit/selectEmail":{"id":"birthBenefit/selectEmail"}
         ,"birthBenefit/confirm":{"id":"birthBenefit/confirm"}
         ,"birthBenefit/dataNotCorrect":{"id":"birthBenefit/dataNotCorrect"}

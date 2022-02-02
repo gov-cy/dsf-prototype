@@ -26,8 +26,8 @@
             ,{
                 "type": "paragraphHTML",
                 "content" : {
-                    "en" : {"label" : "<p><b>Name</b><br>Maria Smith</p>"},
-                    "el" : {"label" : "<p><b>Ονομα</b><br>Μαρία Σμιθ</p>"}
+                    "en" : {"label" : "<p><b>Name</b><br>Elena Nicolaou</p>"},
+                    "el" : {"label" : "<p><b>Ονομα</b><br>Έλενα Νικολάου</p>"}
                 }
             }
             ,{

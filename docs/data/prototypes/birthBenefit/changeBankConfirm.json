@@ -1,5 +1,5 @@
 {
-    "id":"birthBenefit/changeBank",
+    "id":"birthBenefit/changeBankConfirm",
     "menus" : [],
     "layout" : "Two-thirds",
     "preScript" : "birthBenefit/scenarioLoginSubmit.js",
@@ -83,7 +83,7 @@
                         "on":"click","actions" : [
                             {"action" : "validate","data":""},
                             {"action" : "getData","data":""},
-                            {"action" : "link","data":"#r/birthBenefit1/4"}
+                            {"action" : "link","data":"#r/birthBenefit1/5"}
                         ]
                     }
                 ],
