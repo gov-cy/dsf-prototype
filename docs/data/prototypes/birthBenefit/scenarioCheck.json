@@ -43,14 +43,14 @@
                     "en" : {"label" : "",
                             "head": ["","",""],
                             "data" : [
-                                ["<b>Bank details</b>","<b>Account Name</b><br><span id='bankAccountNameInfo'>Elena Nicolaou</span><br><br><b>Bank</b><br><span id='bankInfo'>Bank of Cyprus</span><br><br><b>IBAN</b><br><span id='IBANInfo'>1234567890</span>","<a href='#p/birthBenefit/changeBank'>Change</a>"],
+                                ["<b>Bank details</b>","<b>Account Name</b><br><span id='bankAccountNameInfo'>Elena Nicolaou</span><br><br><b>Bank</b><br><span id='bankInfo'>Bank of Cyprus</span><br><br><b>IBAN</b><br><span id='IBANInfo'>1234567890</span>","<a href='#p/birthBenefit/changeBankConfirm'>Change</a>"],
                                 ["<b>Email address</b>","<span id='emailInfo'>me@example.com</span>","<a href='#r/birthBenefit1/4'>Change</a>"]
                             ]
                         },
                     "el" : {"label" : "",
                             "head": ["","",""],
                             "data" : [
-                                ["<b>Bank details</b>","<b>Account Name</b><br><span id='bankAccountNameInfo'>Elena Nicolaou</span><br><br><b>Bank</b><br><span id='bankInfo'>Bank of Cyprus</span><br><br><b>IBAN</b><br><span id='IBANInfo'>1234567890</span>","<a href='#p/birthBenefit/changeBank'>Change</a>"],
+                                ["<b>Bank details</b>","<b>Account Name</b><br><span id='bankAccountNameInfo'>Elena Nicolaou</span><br><br><b>Bank</b><br><span id='bankInfo'>Bank of Cyprus</span><br><br><b>IBAN</b><br><span id='IBANInfo'>1234567890</span>","<a href='#p/birthBenefit/changeBankConfirm'>Change</a>"],
                                 ["<b>Email address</b>","<span id='emailInfo'>me@example.com</span>","<a href='#r/birthBenefit1/4'>Change</a>"]
                         ]
                     }
