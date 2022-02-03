@@ -21,14 +21,14 @@
             ,{
                 "type": "h1",
                 "content" : {
-                    "en" : {"label" : "Bank account details"},
+                    "en" : {"label" : "Provide bank account details"},
                     "el" : {"label" : "Στοιχεία τραπεζικού λογαριασμού"}
                 }
             }
             ,{
                 "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "Where do you want the amount of the allowance to be deposited? The account should be in your name or in case of a joint account, your name should also appear as a beneficiary."},
+                    "en" : {"label" : "Tell us what account you would like the grant paid into. The account must be in your name, but it can be a joint account."},
                     "el" : {"label" : "Πού θέλετε να κατατεθεί το ποσό του βοηθήματος; Ο λογαριασμός θα πρέπει να είναι στο όνομά σας ή σε περίπτωση κοινού λογαριασμού, θα πρέπει να φαίνεται και το δικό σας όνομα σαν δικαιούχος."}
                 }
             }
@@ -61,8 +61,8 @@
                 "id" : "IBAN",
                 "maxlength": 100,
                 "content" : {
-                    "en" : {"label" : "IBAN (international account number) / BIC (bank swift code)"},
-                    "el" : {"label" : "IBAN (διεθνής αριθμός λογαριασμού) / BIC (κωδικός swift τράπεζας)"}
+                    "en" : {"label" : "IBAN"},
+                    "el" : {"label" : "IBAN"}
                 }
             }
             ,{
@@ -70,8 +70,8 @@
                 "name": "IBANPDF",
                 "id" : "IBANPDF",
                 "content" : {
-                    "en" : {"label" : "Upload a document certifying the International Account Number (IBAN)."},
-                    "el" : {"label" : "Ανεβάστε έγγραφο που να πιστοποιεί τον διεθνή αριθμό λογαριασμού (IBAN)."}
+                    "en" : {"label" : "Upload a copy of the account's IBAN certificate"},
+                    "el" : {"label" : "Ανεβάστε έγγραφο που να πιστοποιεί το IBAN."}
                 }
             }
             ,{
