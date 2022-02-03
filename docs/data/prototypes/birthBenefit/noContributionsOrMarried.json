@@ -31,7 +31,7 @@
             ,{
                 "type": "paragraphHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You may still be eligible, but you’ll need to <span class='DSFAnchor'>apply by paper form</span> to provide evidence for any of these</p>"},
+                    "en" : {"label" : "<p>You may still be eligible, but you’ll need to <span class='DSFAnchor'>apply by paper form</span> to provide evidence for any of these:</p>"},
                     "el" : {"label" : "<p>Μπορεί να είστε επιλέξιμη, αλλά θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να προσκομίσετε αποδεικτικά στοιχεία για οποιοδήποτε από τα πιο κάτω σημεία:</p>"}
                 }
             }
@@ -40,7 +40,7 @@
                 "content" : {
                     "en" : {"data" :[ 
                         "you were married or entered into a civil partnership in another country, and your husband or civil partner has social insurance contributions (can include army credits)",
-                        "you were a student in the past 2 years",
+                        "you, your husband or civil partner were a student in the past 2 years",
                         "you have had social insurance contributions in another country"
                         ]},
                     "el" : {"data" :[ 

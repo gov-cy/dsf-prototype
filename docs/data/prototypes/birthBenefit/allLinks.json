@@ -76,22 +76,7 @@
             ,{
                 "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "Scenario where no contribution found and mother is not married."},
-                    "el" : {"label" : "Σενάριο όπου δεν βρέθηκε συνεισφορά και η μητέρα δεν είναι παντρεμένη."}
-                }
-            }
-            ,{
-                "type": "link",
-                "href" : "#r/birthBenefit5/0",
-                "content" : {
-                    "en" : {"label" : "Scenario 5"},
-                    "el" : {"label" : "Σενάριο 5"}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : "Scenario where no childre were found."},
+                    "en" : {"label" : "Scenario where no children were found."},
                     "el" : {"label" : "Σενάριο όπου δεν βρέθηκαν παιδιά."}
                 }
             }

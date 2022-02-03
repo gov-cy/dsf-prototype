@@ -9,7 +9,7 @@ if (sessionStorage["id"].toLowerCase() != "elena"){
     var useData = {
         "type": "userNamesSignOut",
         "content" : {
-            "en" : {"userName" : sessionStorage["id"],"logout":"Sign Out"},
+            "en" : {"userName" : sessionStorage["id"],"logout":"Sign out"},
             "el" : {"userName" : sessionStorage["id"],"logout":"Αποσύνδεση"}
         }
     };

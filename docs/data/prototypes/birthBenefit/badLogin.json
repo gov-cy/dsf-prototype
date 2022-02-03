@@ -16,8 +16,8 @@
             ,{
                 "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "You must have a verified Ariadni account in order to use our service."},
-                    "el" : {"label" : "Πρέπει να έχετε έναν επαληθευμένο λογαριασμό Ariadni για να χρησιμοποιήσετε την υπηρεσία μας."}
+                    "en" : {"label" : "You must have a verified CY Login account in order to use our service."},
+                    "el" : {"label" : "Πρέπει να έχετε έναν επαληθευμένο λογαριασμό CY Login για να χρησιμοποιήσετε την υπηρεσία μας."}
                 }
             }
             ,{
