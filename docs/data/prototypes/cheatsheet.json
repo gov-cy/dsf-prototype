@@ -229,13 +229,15 @@
                     "en" : {"label" : "There is a problem",
                         "data" : 
                         [
-                            "Enter your fullname","Second Error"
+                            {"message":"Enter your fullname"},
+                            {"message":"Second Error"}
                         ]
                     },
                     "el" : {"label" : "Υπάρχει ένα πρόβλημα",
                         "data" : 
                         [
-                            "Εισαγάγετε το όνομά σας","Δεύτερο λάθος"
+                            {"message":"Εισαγάγετε το όνομά σας"},
+                            {"message":"Δεύτερο λάθος"}
                         ]
                     }
                 }

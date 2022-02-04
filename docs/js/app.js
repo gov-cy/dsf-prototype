@@ -389,7 +389,10 @@ var appValidator = {
                 appValidator.showValidationError(validation.elementName,validation.elementId,validation.elementType
                     ,message);
                 isValid = false;
-                errorMessages.push(message);
+                errorMessages.push({
+                    "message" : message,
+                    "elementName" : validation.elementName
+                });
             }
         }
         //show validation summary
@@ -447,7 +450,7 @@ var appValidator = {
     /**
      * Shows the validation error summary
      * 
-     * @param {Array} messages The array of strings of the messages
+     * @param {Array} messages The messages object ({message, elementName})
      * @param {String} validationSummaryTitle The title of the alert 
      * @param {String} validationsAlert The element ID that will render the errors
      */
@@ -465,6 +468,13 @@ var appValidator = {
       //render on page
       $("#"+validationsAlert).html(content);
       
+      //bindings on error summary links
+      $('.errorSummaryLink').on('click', function() {
+        //focus on input
+        $('[name="'+$(this).data("element-name")+'"]').first().focus();
+        
+        return false;
+      });
       //scroll to top
       window.scrollTo(0, 0);
     },

@@ -29,7 +29,7 @@
             ,{
                 "type": "table",
                 "content" : {
-                    "en" : {"label" : "These are the bank details linked to your CY Login account",
+                    "en" : {"label" : "These are the bank details in Social Insurance Services records",
                             "head": ["",""],
                             "data" : [
                                 ["<b>Name</b>","<span id='bankAccountNameInfo'>Elena Nicolaou</span>"],
@@ -37,7 +37,7 @@
                                 ["<b>International Bank Account Number (IBAN)</b>","<span id='IBANInfo'>CY21002001950000357001234567</span>"]
                             ]
                         },
-                    "el" : {"label" : "Αυτά είναι τα στοιχεία του τραπεζικού λογαριασμού που υπάρχουν καταχωρημένα στο προφίλ σας στο CY Login:",
+                    "el" : {"label" : "Αυτά είναι τα στοιχεία του τραπεζικού λογαριασμού που υπάρχουν καταχωρημένα στα αρχεία των Υπηρεσιών Κοινωνικών Ασφαλίσεων",
                         "head": ["",""],
                         "data" : [
                             ["<b>Ονοματεπώνυμο</b>","<span id='bankAccountNameInfo'>Elena Nicolaou</span>"],
