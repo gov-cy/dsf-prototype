@@ -25,14 +25,14 @@
                 "type": "paragraph",
                 "content" : {
                     "en" : {"label" : "We have checked for social insurance contributions records for you and your husband or civil partner in Cyprus, but we could not find any information."},
-                    "el" : {"label" : "Έχουμε ψάξει αν εσείς ή ο σύζυγος* σας έχετε εισφορές στο Ταμείο Κοινωνικών Ασφαλίσεων, αλλά δεν έχουμε βρει καμία πληροφορία."}
+                    "el" : {"label" : "Έχουμε ψάξει αν εσείς ή ο σύζυγος σας (περιλαμβάνει γάμο ή σύμφωνο συμβίωσης) έχετε εισφορές στο Ταμείο Κοινωνικών Ασφαλίσεων, αλλά δεν έχουμε βρει καμία πληροφορία."}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
                     "en" : {"label" : "<p>You may still be eligible, but you’ll need to <span class='DSFAnchor'>apply by paper</span> form if:</p>"},
-                    "el" : {"label" : "<p>Μπορεί να είστε επιλέξιμη, αλλά θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να προσκομίσετε αποδεικτικά στοιχεία για οποιοδήποτε από τα πιο κάτω σημεία</p>"}
+                    "el" : {"label" : "<p>Μπορεί να είστε επιλέξιμη, αλλά θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να προσκομίσετε αποδεικτικά στοιχεία για οποιοδήποτε από τα πιο κάτω σημεία:</p>"}
                 }
             }
             ,{
@@ -62,13 +62,6 @@
                 "content" : {
                     "en" : {"label" : "<p>You cannot apply for the child birth grant if neither of you have social insurance contributions.</p>"},
                     "el" : {"label" : "<p>Δεν μπορείτε να υποβάλετε αίτηση για το βοήθημα τοκετού αν κανείς από εσάς δεν έχει εισφορές κοινωνικών ασφαλίσεων.</p>"}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : "* περιλαμβάνει γάμο (θρησκευτικό ή πολιτικό) ή σύμφωνο συμβίωσης"}
                 }
             }
         ]

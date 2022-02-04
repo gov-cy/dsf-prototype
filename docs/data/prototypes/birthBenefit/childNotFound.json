@@ -18,14 +18,14 @@
                 "type": "paragraph",
                 "content" : {
                     "en" : {"label" : "We could not find any registrations for children born in the past 12 months in our records."},
-                    "el" : {"label" : "Δεν έχουμε εντοπίσει στα αρχεία μας οποιαδήποτε εγγραφή για παιδιά που έχουν γεννηθεί τους τελευταίους 12 μήνες."}
+                    "el" : {"label" : "Δεν έχουμε εντοπίσει στα αρχεία μας οποιαδήποτε εγγραφή για παιδιά που έχουν γεννηθεί εντός των τελευταίων 12 μηνών."}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
                     "en" : {"label" : "<p>If you’ve had children within the past 12 months, you’ll need to <span class='DSFAnchor'>apply by paper form</span> so that you can attach their birth certificates.</p>"},
-                    "el" : {"label" : "<p>Εάν έχετε γεννήσει κατά τους τελευταίους 12 μήνες, θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να επισυνάψετε τα σχετικά πιστοποιητικά γέννησης.</p>"}
+                    "el" : {"label" : "<p>Εάν έχετε γεννήσει κατά τους τελευταίους 12 μήνες, θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να επισυνάψετε το σχετικό πιστοποιητικό γέννησης.</p>"}
                 }
             }
             ,{

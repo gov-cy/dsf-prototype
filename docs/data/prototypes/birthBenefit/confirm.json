@@ -12,7 +12,7 @@
                 "content" : {
                     "en" : {"head" : "Your application has been sent"
                         },
-                    "el" : {"head" : "Η αίτησή σας έχει σταλεί"
+                    "el" : {"head" : "Η αίτηση σας έχει υποβληθεί"
                         }
                 }
             }
@@ -20,56 +20,56 @@
                 "type": "h2",
                 "content" : {
                     "en" : {"label" : "Your details"},
-                    "el" : {"label" : "Οι λεπτομέρειές σου"}
+                    "el" : {"label" : "Τα στοιχεία σας"}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
                     "en" : {"label" : "<p><b>Name</b><br>Elena Nicolaou</p>"},
-                    "el" : {"label" : "<p><b>Ονομα</b><br>Έλενα Νικολάου</p>"}
+                    "el" : {"label" : "<p><b>Ονοματεπώνυμο</b><br>Έλενα Νικολάου</p>"}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
                     "en" : {"label" : "<p><b>Identity, alien registration or passport number</b><br>123456</p>"},
-                    "el" : {"label" : "<p><b>Αριθμός ταυτότητας ή εγγραφής αλλοδαπού</b><br>123456</p>"}
+                    "el" : {"label" : "<p><b>Αρ. ταυτότητας, εγγραφής αλλοδαπού ή διαβατηρίου</b><br>123456</p>"}
                 }
             }
             ,{
                 "type": "h2",
                 "content" : {
                     "en" : {"label" : "What happens next"},
-                    "el" : {"label" : "Τι συμβαίνει μετά"}
+                    "el" : {"label" : "Τα επόμενα βήματα"}
                 }
             }
             ,{
                 "type": "paragraph",
                 "content" : {
                     "en" : {"label" : "Your application will be processed by Social Insurance Services. You will receive an email with a decision in one month."},
-                    "el" : {"label" : "Η αίτησή σας θα διεκπεραιωθεί από τις Υπηρεσίες Κοινωνικών Ασφαλίσεων. Θα λάβετε ένα email με απόφαση σε ένα μήνα."}
+                    "el" : {"label" : "Η αίτηση σας θα τύχει επεξεργασίας από την Υπηρεσία Κοινωνικών Ασφαλίσεων. Θα λάβετε απάντηση, μέσω ηλεκτρονικού ταχυδρομείου, εντός ενός μηνός."}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
                     "en" : {"label" : "<p>You can <a href='javascript:window.print();'>print or save a copy of this page</a> for your records.</p>"},
-                    "el" : {"label" : "<p>Μπορείτε να <a href='javascript:window.print();'>εκτυπώσετε ή αποθηκεύσετε ένα αντίγραφο αυτής της σελίδας</a> για τα αρχεία σας.</p>"}
+                    "el" : {"label" : "<p>Μπορείτε να <a href='javascript:window.print();'>εκτυπώσετε ή να αποθηκεύσετε αυτή τη σελίδα</a> για το αρχείο σας.</p>"}
                 }
             }
             ,{
                 "type": "h2",
                 "content" : {
                     "en" : {"label" : "Apply for other children"},
-                    "el" : {"label" : "Κάντε αίτηση για άλλα παιδιά"}
+                    "el" : {"label" : "Αίτηση για άλλα παιδιά"}
                 }
             }
             ,{
                 "type": "paragraphHTML",
                 "content" : {
                     "en" : {"label" : "<p>If you had children, born in the past 12 months, whose names did not appear earlier in this application, you can <span class='DSFAnchor'>apply for them using the paper form</a>.</p>"},
-                    "el" : {"label" : "<p>Εάν είχατε παιδιά, γεννημένα τους τελευταίους 12 μήνες, τα ονόματα των οποίων δεν εμφανίζονταν νωρίτερα σε αυτήν την εφαρμογή, μπορείτε να <span class='DSFAnchor'>υποβάλετε αίτηση για αυτά χρησιμοποιώντας την έντυπη φόρμα</a>.</p>"}
+                    "el" : {"label" : "<p>Αν έχετε γεννήσει παιδιά, εντός των τελευταίων 12 μηνών, τα ονόματα των οποίων δεν εμφανίστηκαν προηγουμένως, μπορείτε να υποβάλετε αίτηση γι’αυτά χρησιμοποιώντας την <span class='DSFAnchor'>έντυπη μορφή της αίτησης</a>.</p>"}
                 }
             }
         ]

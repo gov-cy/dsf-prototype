@@ -18,7 +18,7 @@
                 "type": "h1",
                 "content" : {
                     "en" : {"label" : "Apply for children who are not on the list"},
-                    "el" : {"label" : "Αίτηση για παιδιά που δεν βρέθηκαν στη λίστα"}
+                    "el" : {"label" : "Αίτηση για παιδιά που δεν έχουν εντοπιστεί"}
                 }
             },
             {

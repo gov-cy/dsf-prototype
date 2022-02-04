@@ -171,7 +171,7 @@ DSFTemplates =
             "<div class='row govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3'>"
             + "<h2>{{{langConent.label}}}</h2>"
-            + "<p class='govcy-mb-0'>{{#langConent.data}}<a href='#' onclick='return false;'>{{{.}}}</a>{{/langConent.data}}</p>"
+            + "<p class='govcy-mb-0'>{{#langConent.data}}<a href='#' onclick='{{#elementName}}$(\"[name='{{elementName}}']\").focus(); {{/elementName}}return false;'>{{{.}}}</a>{{/langConent.data}}</p>"
             + "</div>"
             + "</div>"
         ,"alertImportant" : 

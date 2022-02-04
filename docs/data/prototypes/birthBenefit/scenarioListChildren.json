@@ -15,10 +15,10 @@
                 }
             },
             {
-                "type": "paragraphHTML",
+                "type": "paragraph",
                 "content" : {
-                    "en" : {"label" : "<p>You can claim the child birth grant for children born in the past 12 months. These are the birth registrations we found in our records for the past 12 months:</p>"},
-                    "el" : {"label" : "<p>Μπορείτε να υποβάλετε αίτηση για το βοήθημα τοκετού για παιδιά που έχουν γεννηθεί κατά τους τελευταίους 12 μήνες.</p><p>Έχουμε εντοπίσει στα αρχεία μας εγγραφές για τα παιδιά σας που έχουν γεννηθεί κατά τους τελευταίους 12 μήνες ως εξής:</p>"}
+                    "en" : {"label" : "You can claim the child birth grant for children born in the past 12 months. These are the birth registrations we found in our records for the past 12 months:"},
+                    "el" : {"label" : "Μπορείτε να υποβάλετε αίτηση για το βοήθημα τοκετού για παιδιά που έχουν γεννηθεί εντός των τελευταίων 12 μηνών. Στα αρχεία μας έχουμε εντοπίσει τις πιο κάτω εγγραφές γεννήσεων κατά τους τελευταίους 12 μήνες:"}
                 }
             },
             {
