@@ -31,6 +31,9 @@
         ,"birthBenefit/noContributionsOrMarried":{"id":"birthBenefit/noContributionsOrMarried"}
         ,"birthBenefit/noContributionsNotMarried":{"id":"birthBenefit/noContributionsNotMarried"}
         ,"birthBenefit/noContributionsMarried":{"id":"birthBenefit/noContributionsMarried"}
+        ,"birthBenefit/SCAbroad":{"id":"birthBenefit/SCAbroad"}
+        ,"birthBenefit/SCAbroad1":{"id":"birthBenefit/SCAbroad1"}
+        ,"birthBenefit/SCAbroad_contibutions":{"id":"birthBenefit/SCAbroad_contibutions"}
         ,"cheatsheet":{"id":"cheatsheet"}
         ,"ariadniSignOut":{"id":"ariadniSignOut"}
     },

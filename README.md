@@ -362,6 +362,36 @@ Creates an an HTML text input element and it's label i.e. `<input type='text' ..
 </details>
 
 <details>
+  <summary>date</summary>
+  
+Creates an date input element (with day, month and year text boxes) . Code example: 
+
+```js
+,{
+    "type": "date",
+    "required": false,
+    "name": "bdate", // NAME is important for HTML Inputs to get the values
+    "id" : "bdate",//OPTIONAL, useful if you are adding an event
+    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div
+    "content" : {//multilanguage content
+        "en" : {"label" : "Birth Date", //label
+            "hint" : "For emample, 12 11 2007.", //hint
+            "day" : "Day", //day label
+            "month" : "Month", //month label
+            "year" : "Year" //year label
+    },
+        "el" : {"label" : "Ημερ. Γέννισης", 
+            "hint" : "Για παράδειγμα, 12 11 2007.",
+            "day" : "Ημέρα",
+            "month" : "Μήνας",
+            "year" : "Χρόνος"
+        }
+    }
+}
+```
+</details>
+
+<details>
   <summary>button</summary>
   
 Creates an an HTML button element as defined in GOVCY design system `<button type='button' ..`. Usually buttons are accompabied with click events. Code example: 

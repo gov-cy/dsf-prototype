@@ -105,6 +105,26 @@
                 }
             }
             ,{
+                "type": "date",
+                "required": false,
+                "name": "bdate",
+                "id" : "bdate",
+                "content" : {
+                    "en" : {"label" : "Birth Date", 
+                        "hint" : "For emample, 12 11 2007.",
+                        "day" : "Day",
+                        "month" : "Month",
+                        "year" : "Year"
+                },
+                    "el" : {"label" : "Ημερ. Γέννισης", 
+                        "hint" : "Για παράδειγμα, 12 11 2007.",
+                        "day" : "Ημέρα",
+                        "month" : "Μήνας",
+                        "year" : "Χρόνος"
+                    }
+                }
+            }
+            ,{
                 "type" :"fieldsetOpen",
                 "content" : {
                     "en" : {"legend" : "Contact Address"},

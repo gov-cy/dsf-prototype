@@ -1,0 +1,211 @@
+{
+    "id":"birthBenefit/SCAbroad1",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
+            }
+            ,{
+                "type": "divEmpty",
+                "id" : "alerts"
+            }
+            ,{
+                "type": "h1",
+                "content" : {
+                    "en" : {"label" : "Social Contributions from Abroad"},
+                    "el" : {"label" : ""}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Please provide the following information for Social Insurance Contribution from Abroad."},
+                    "el" : {"label" : ""}
+                }
+            }
+            ,{
+                "type": "fieldsetOpen",
+                "content" : {
+                    "en" : {"legend" : "Contributor"},
+                    "el" : {"legend" : ""}
+                }
+            }
+            ,{
+                "type": "divContainerOpen"
+            }
+            ,{
+                "type": "divRowOpen"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "4",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_name",
+                "id" : "scabroad_name",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Name"},
+                    "el" : {"label" : "Όνομα"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "4",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_lastname",
+                "id" : "scabroad_lastname",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Last name"},
+                    "el" : {"label" : "Επίθετο"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "4",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_nationality",
+                "id" : "scabroad_nationality",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Nationality"},
+                    "el" : {"label" : "Εθνικότητα"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "fieldsetClose"
+            }
+            ,{
+                "type": "table", 
+                "content" : {
+                    "en" : {"label" : "Contributions",
+                            "head": ["Country","Social Insurance Number","Start date of contibutions","End date of contibutions",""], 
+                            "data" :  
+                            [
+                                ["Roumania","1234567890","2017-12-01","2019-12-01","<a href=javascript:'return false;'>Remove</a>"],
+                                ["Greece","1234567890","2019-12-01","2020-12-01","<a href=javascript:'return false;'>Remove</a>"]
+                            ]
+                        },
+                    "el" : {"label" : "Εισφορές",
+                        "head": ["Χώρα","Αρ. Κοινωνικών Ασφαλίσεων","Ημερ. έναρξης συνησφορών","Ημερ. λήξης συνησφορών",""],
+                        "data" : 
+                        [
+                            ["Roumania","1234567890","2017-12-01","2019-12-01","<a href=javascript:'return false;'>Remove</a>"],
+                            ["Greece","1234567890","2019-12-01","2020-12-01","<a href=javascript:'return false;'>Remove</a>"]
+                        ]
+                    }
+                }
+            }
+            ,{
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextbtn",
+                "classes" : ["govcy-btn-secondary","govcy-mb-3"],
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "link","data":"#p/birthBenefit/SCAbroad_contibutions"}
+                        ]
+                    }
+                ],
+                "content" : {
+                    "en" : {
+                        "label" : "Add (other page)"
+                    },
+                    "el" : {
+                        "label" : "Πρόσθεση (other page)"
+                    }
+                }
+            }
+            ,{
+                "type": "paragraphHTML",
+                "content" : {
+                    "en" : {"label" : "<button type='button' class='govcy-btn-secondary' data-bs-toggle='modal' data-bs-target='#exampleModal'>Add (modal)</button><div class='modal fade ' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>  <div class='modal-dialog modal-lg'>    <div class='modal-content'>      <div class='modal-header'>        <h5 class='modal-title' id='exampleModalLabel'>Contribution Details</h5>        <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>      </div>      <div class='modal-body'>        <form>  <div class='govcy-form-control'><label class='govcy-label' for='input'>Country</label><input type='text' class='govcy-text-input'>  </div>  <div class='govcy-form-control'><label class='govcy-label' for='input'>Social Insurance Number</label><input type='text' class='govcy-text-input'>  </div>  <div class='govcy-form-control'><label class='govcy-label govcy-mb-1' for=''>Start date of contibutions</label><span class='govcy-hint govcy-mb-3'>For emample, 12 11 2007</span><div class='govcy-d-flex'><div class='govcy-d-block'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Day</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Month</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Year</label><input type='text' class='govcy-text-input govcy-text-input-char_6 govcy-p-3' placeholder='' maxlength='4'></div></div></div>  <div class='govcy-form-control'><label class='govcy-label govcy-mb-1' for=''>End date of contibutions</label><span class='govcy-hint govcy-mb-3'>For emample, 12 11 2007</span><div class='govcy-d-flex'><div class='govcy-d-block'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Day</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Month</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Year</label><input type='text' class='govcy-text-input govcy-text-input-char_6 govcy-p-3' placeholder='' maxlength='4'></div></div></div>        </form>      </div>      <div class='modal-footer'>        <button type='button' class='govcy-btn-secondary' data-bs-dismiss='modal'>Close</button>        <button type='button' class='govcy-btn-primary' data-bs-dismiss='modal'>Add</button>      </div>    </div>  </div></div>" }, 
+                    "el" : {"label" : "<button type='button' class='govcy-btn-secondary' data-bs-toggle='modal' data-bs-target='#exampleModal'>Add (modal)</button><div class='modal fade ' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>  <div class='modal-dialog modal-lg'>    <div class='modal-content'>      <div class='modal-header'>        <h5 class='modal-title' id='exampleModalLabel'>Contribution Details</h5>        <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>      </div>      <div class='modal-body'>        <form>  <div class='govcy-form-control'><label class='govcy-label' for='input'>Country</label><input type='text' class='govcy-text-input'>  </div>  <div class='govcy-form-control'><label class='govcy-label' for='input'>Social Insurance Number</label><input type='text' class='govcy-text-input'>  </div>  <div class='govcy-form-control'><label class='govcy-label govcy-mb-1' for=''>Start date of contibutions</label><span class='govcy-hint govcy-mb-3'>For emample, 12 11 2007</span><div class='govcy-d-flex'><div class='govcy-d-block'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Day</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Month</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Year</label><input type='text' class='govcy-text-input govcy-text-input-char_6 govcy-p-3' placeholder='' maxlength='4'></div></div></div>  <div class='govcy-form-control'><label class='govcy-label govcy-mb-1' for=''>End date of contibutions</label><span class='govcy-hint govcy-mb-3'>For emample, 12 11 2007</span><div class='govcy-d-flex'><div class='govcy-d-block'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Day</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Month</label><input type='text' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'></div><div class='govcy-d-block govcy-ml-2'><label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>Year</label><input type='text' class='govcy-text-input govcy-text-input-char_6 govcy-p-3' placeholder='' maxlength='4'></div></div></div>        </form>      </div>      <div class='modal-footer'>        <button type='button' class='govcy-btn-secondary' data-bs-dismiss='modal'>Close</button>        <button type='button' class='govcy-btn-primary' data-bs-dismiss='modal'>Add</button>      </div>    </div>  </div></div>"}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "" }, 
+                    "el" : {"label" : ""}
+                }
+            }
+            ,{
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextbtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "validate","data":""},
+                            {"action" : "getData","data":""},
+                            {"action" : "link","data":"#r/birthBenefit1/4"}
+                        ]
+                    }
+                ],
+                "validationsSummary" :"alerts",
+                "validations" : [
+                    {"validation" : "required", "elementName":"scabroad_name","elementId":"scabroad_name", "elementType":"text"},
+                    {"validation" : "required", "elementName":"scabroad_lastname","elementId":"scabroad_lastname", "elementType":"text"},
+                    {"validation" : "required", "elementName":"scabroad_nationality","elementId":"scabroad_nationality", "elementType":"text"}
+                ],
+                "content" : {
+                    "en" : {
+                        "label" : "Next",
+                        "validationSummaryTitle" : "There is a problem",
+                        "validationsLabels" : {
+                            "required.scabroad_name" : "Please enter the Name",
+                            "required.scabroad_lastname" : "Please enter the Last Name.",
+                            "required.scabroad_nationality" : "Please enter the Nationality."
+                        }
+                    },
+                    "el" : {
+                        "label" : "Επόμενο",
+                        "validationSummaryTitle" : "Υπάρχει ένα πρόβλημα",
+                        "validationsLabels" : {
+                            "required.BankAccountName" : "Εισαγάγετε το Όνομα.",
+                            "required.Bank" : "Παρακαλώ περάστε το Επίθετο.",
+                            "required.IBAN" : "Παρακαλώ περάστε την Εθνικότητα."
+                        }
+                    }
+                }
+            }
+        ]
+    }   
+}

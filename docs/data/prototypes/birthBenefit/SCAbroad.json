@@ -1,0 +1,274 @@
+{
+    "id":"birthBenefit/SCAbroad",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
+            }
+            ,{
+                "type": "divEmpty",
+                "id" : "alerts"
+            }
+            ,{
+                "type": "h1",
+                "content" : {
+                    "en" : {"label" : "Social Contributions from Abroad"},
+                    "el" : {"label" : ""}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Please provide the following information for Social Insurance Contribution from Abroad."},
+                    "el" : {"label" : ""}
+                }
+            }
+            ,{
+                "type": "fieldsetOpen",
+                "content" : {
+                    "en" : {"legend" : "Contributor"},
+                    "el" : {"legend" : ""}
+                }
+            }
+            ,{
+                "type": "divContainerOpen"
+            }
+            ,{
+                "type": "divRowOpen"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "4",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_name",
+                "id" : "scabroad_name",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Name"},
+                    "el" : {"label" : "Όνομα"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "4",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_lastname",
+                "id" : "scabroad_lastname",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Last name"},
+                    "el" : {"label" : "Επίθετο"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "4",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_nationality",
+                "id" : "scabroad_nationality",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Nationality"},
+                    "el" : {"label" : "Εθνικότητα"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "fieldsetClose"
+            }
+            
+            ,{
+                "type": "fieldsetOpen",
+                "content" : {
+                    "en" : {"legend" : "Contributions"},
+                    "el" : {"legend" : ""}
+                }
+            }
+            ,{
+                "type": "divContainerOpen"
+            }
+            ,{
+                "type": "divRowOpen"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "6",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_country",
+                "id" : "scabroad_country",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Country"},
+                    "el" : {"label" : "Χώρα"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "6",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_SSINumber",
+                "id" : "scabroad_SSINumber",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Social Insurance Number"},
+                    "el" : {"label" : "Αρ. Κοινωνικών Ασφαλίσεων"}
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divRowOpen"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "6",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "date",
+                "required": false,
+                "name": "scabroad_scstartdate",
+                "id" : "scabroad_scstartdate",
+                "content" : {
+                    "en" : {"label" : "Start date of contibutions",
+                        "day" : "Day",
+                        "month" : "Month",
+                        "year" : "Year"
+                },
+                    "el" : {"label" : "Ημερ. έναρξης συνησφορών", 
+                        "day" : "Ημέρα",
+                        "month" : "Μήνας",
+                        "year" : "Χρόνος"
+                    }
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divColumnOpen",
+                "colnum": "6",
+                "classes": ["govcy-pl-0"]
+            }
+            ,{
+                "type": "date",
+                "required": false,
+                "name": "scabroad_scenddate",
+                "id" : "scabroad_scenddate",
+                "content" : {
+                    "en" : {"label" : "End date of contibutions", 
+                        "day" : "Day",
+                        "month" : "Month",
+                        "year" : "Year"
+                },
+                    "el" : {"label" : "Ημερ. λήξης συνησφορών", 
+                        "day" : "Ημέρα",
+                        "month" : "Μήνας",
+                        "year" : "Χρόνος"
+                    }
+                }
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "divClose"
+            }
+            ,{
+                "type": "fieldsetClose"
+            }
+            ,{
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextbtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "validate","data":""},
+                            {"action" : "getData","data":""},
+                            {"action" : "link","data":"#r/birthBenefit1/4"}
+                        ]
+                    }
+                ],
+                "validationsSummary" :"alerts",
+                "validations" : [
+                    {"validation" : "required", "elementName":"scabroad_name","elementId":"scabroad_name", "elementType":"text"},
+                    {"validation" : "required", "elementName":"scabroad_lastname","elementId":"scabroad_lastname", "elementType":"text"},
+                    {"validation" : "required", "elementName":"scabroad_nationality","elementId":"scabroad_nationality", "elementType":"text"}
+                ],
+                "content" : {
+                    "en" : {
+                        "label" : "Next",
+                        "validationSummaryTitle" : "There is a problem",
+                        "validationsLabels" : {
+                            "required.scabroad_name" : "Please enter the Name",
+                            "required.scabroad_lastname" : "Please enter the Last Name.",
+                            "required.scabroad_nationality" : "Please enter the Nationality."
+                        }
+                    },
+                    "el" : {
+                        "label" : "Επόμενο",
+                        "validationSummaryTitle" : "Υπάρχει ένα πρόβλημα",
+                        "validationsLabels" : {
+                            "required.BankAccountName" : "Εισαγάγετε το Όνομα.",
+                            "required.Bank" : "Παρακαλώ περάστε το Επίθετο.",
+                            "required.IBAN" : "Παρακαλώ περάστε την Εθνικότητα."
+                        }
+                    }
+                }
+            }
+        ]
+    }   
+}

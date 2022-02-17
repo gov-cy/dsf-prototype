@@ -1,0 +1,115 @@
+{
+    "id":"birthBenefit/SCAbroad_contibutions",
+    "menus" : [],
+    "layout" : "Max-width",
+    "DSFcomponents" : 
+        {
+        "DOMId": "components",
+        "components" : [
+            {
+                "type": "backLink",
+                "content" : {
+                    "en" : {"label" : "Back"},
+                    "el" : {"label" : "Πίσω"}
+                }
+            }
+            ,{
+                "type": "divEmpty",
+                "id" : "alerts"
+            }
+            ,{
+                "type": "h1",
+                "content" : {
+                    "en" : {"label" : "Add Contributions Details"},
+                    "el" : {"label" : ""}
+                }
+            }
+            ,{
+                "type": "paragraph",
+                "content" : {
+                    "en" : {"label" : "Please provide information for Social Insurance Contribution from Abroad."},
+                    "el" : {"label" : ""}
+                }
+            } 
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_country",
+                "id" : "scabroad_country",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Country"},
+                    "el" : {"label" : "Χώρα"}
+                }
+            }
+            ,{
+                "type": "text",
+                "required": true,
+                "name": "scabroad_SSINumber",
+                "id" : "scabroad_SSINumber",
+                "maxlength": 200,
+                "content" : {
+                    "en" : {"label" : "Social Insurance Number"},
+                    "el" : {"label" : "Αρ. Κοινωνικών Ασφαλίσεων"}
+                }
+            }
+            ,{
+                "type": "date",
+                "required": false,
+                "name": "scabroad_scstartdate",
+                "id" : "scabroad_scstartdate",
+                "content" : {
+                    "en" : {"label" : "Start date of contibutions",
+                        "day" : "Day",
+                        "month" : "Month",
+                        "year" : "Year"
+                },
+                    "el" : {"label" : "Ημερ. έναρξης συνησφορών", 
+                        "day" : "Ημέρα",
+                        "month" : "Μήνας",
+                        "year" : "Χρόνος"
+                    }
+                }
+            }
+            ,{
+                "type": "date",
+                "required": false,
+                "name": "scabroad_scenddate",
+                "id" : "scabroad_scenddate",
+                "content" : {
+                    "en" : {"label" : "End date of contibutions", 
+                        "day" : "Day",
+                        "month" : "Month",
+                        "year" : "Year"
+                },
+                    "el" : {"label" : "Ημερ. λήξης συνησφορών", 
+                        "day" : "Ημέρα",
+                        "month" : "Μήνας",
+                        "year" : "Χρόνος"
+                    }
+                }
+            }
+            ,{
+                "type": "button",
+                "subtype": "primary",
+                "id":"nextbtn",
+                "events" : [
+                    {
+                        "on":"click","actions" : [
+                            {"action" : "getData","data":""},
+                            {"action" : "link","data":"javascript:history.back()"}
+                        ]
+                    }
+                ],
+                "content" : {
+                    "en" : {
+                        "label" : "Add"
+                    },
+                    "el" : {
+                        "label" : "Πρόσθεση"
+                    }
+                }
+            }
+        ]
+    }   
+}

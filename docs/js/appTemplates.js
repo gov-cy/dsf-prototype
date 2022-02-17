@@ -71,6 +71,26 @@ DSFTemplates =
             + "</div>"
     },
     "componentTemplates" : {
+        "date": 
+        "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
+        +" <label class='govcy-label govcy-mb-1' for=''>{{{langConent.label}}}</label>"
+        + "<span class='govcy-input-error-msg govcy-mb-3'></span>"
+        + "{{#langConent.hint}}<span class='govcy-hint govcy-mb-3'>{{langConent.hint}}</span>{{/langConent.hint}}"
+            + "<div class='govcy-d-flex'>"
+				+ "<div class='govcy-d-block'>"
+					+ "<label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>{{langConent.day}}</label>"
+					+ "<input type='text' name='{{name}}-day' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'>"
+				+ "</div>"
+				+ "<div class='govcy-d-block govcy-ml-2'>"
+					+ "<label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>{{langConent.month}}</label>"
+					+ "<input type='text' name='{{name}}-month' class='govcy-text-input govcy-text-input-char_3 govcy-p-2' placeholder='' maxlength='2'>"
+				+ "</div>"
+				+ "<div class='govcy-d-block govcy-ml-2'>"
+					+ "<label class='govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2' for=''>{{langConent.year}}</label>"
+					+ "<input type='text' name='{{name}}-year' class='govcy-text-input govcy-text-input-char_6 govcy-p-3' placeholder='' maxlength='4'>"
+				+ "</div>"
+			+ "</div>"
+		+ "</div>",
         "text": 
             "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control {{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
@@ -112,7 +132,7 @@ DSFTemplates =
         "h4" : "<h4 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h4>",
         "h5" : "<h5 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h5>",
         "h6" : "<h6 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h6>",
-        "table" : "<p>{{langConent.label}}</p>"
+        "table" : "<p><strong>{{langConent.label}}</strong></p>"
         + "<table class='table{{#classes}} {{.}}{{/classes}}'>"
         + "<thead><tr>"
             + "{{#langConent.head}}<th>{{.}}</th>{{/langConent.head}}"
