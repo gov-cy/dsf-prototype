@@ -1,13 +1,13 @@
 {
     "name": "gov-cy-dsf-prototype",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "main": "index.html",
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "scripts": {
         "start": "http-server -c-1 -p 3000 -o docs/",
-        "version": "auto-changelog -p && git add CHANGELOG.md"
+        "version": "auto-changelog -p --template changelog-template.hbs"
     },
     "devDependencies": {
         "auto-changelog": "^2.4.0",
