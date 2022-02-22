@@ -5,12 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-
 {{#each releases}}
   {{#if href}}
-    ## [{{title}}]({{href}}){{#if tag}} - {{isoDate}}{{/if}}
+    ## [{{title}}]({{href}}) - {{isoDate}}
   {{else}}
-    ## {{title}}{{#if tag}} - {{isoDate}}{{/if}}
+    ## {{title}}{{isoDate}}
   {{/if}}
 
   {{#if summary}}
@@ -21,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     ### Merged
 
     {{#each merges}}
-      - {{#if commit.breaking}}**Breaking change:** {{date}} - {{/if}}{{message}} {{#if href}}[`#{{id}}`]({{href}}){{/if}}
+      - {{#if commit.breaking}}**Breaking change:** {{/if}}{{message}} {{#if href}}[`#{{id}}`]({{href}}){{/if}}
     {{/each}}
   {{/if}}
 
@@ -29,12 +28,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     ### Fixed
 
     {{#each fixes}}
-      - {{#if commit.breaking}}**Breaking change:** {{date}} - {{/if}}{{commit.subject}}{{#each fixes}} {{#if href}}[`#{{id}}`]({{href}}){{/if}}{{/each}}
+      - {{#if commit.breaking}}**Breaking change:** {{/if}}{{commit.subject}}{{#each fixes}} {{#if href}}[`#{{id}}`]({{href}}){{/if}}{{/each}}
     {{/each}}
   {{/if}}
 
   {{#commit-list commits heading='### Commits'}}
-    - {{#if breaking}}**Breaking change:** {{/if}}{{date}} - {{subject}} {{#if href}}[`{{shorthash}}`]({{href}}){{/if}}
-  {{/commit-list}} 
+    - {{#if breaking}}**Breaking change:** {{/if}}{{subject}} {{#if href}}[`{{shorthash}}`]({{href}}){{/if}}
+  {{/commit-list}}
 
 {{/each}}
