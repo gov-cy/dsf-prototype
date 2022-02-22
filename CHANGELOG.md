@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/gov-cy/dsf-prototype/compare/v0.2.0...v0.2.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* update changelog template ([827eeb6](https://github.com/gov-cy/dsf-prototype/commit/827eeb65dcb1db23ffeb99feb0baaa60d14e0d95))
+
 ## [0.2.0](https://github.com/gov-cy/dsf-prototype/compare/v0.1.2...v0.2.0) (2022-02-22)
 
 ### 0.1.2 (2022-02-22)
