@@ -1,17 +1,22 @@
 {
     "name": "gov-cy-dsf-prototype",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "",
     "main": "index.html",
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "scripts": {
+        "release": "standard-version",
+        "release:minor": "standard-version --release-as minor",
+        "release:patch": "standard-version --release-as patch",
+        "release:major": "standard-version --release-as major",
         "start": "http-server -c-1 -p 3000 -o docs/",
         "version": "auto-changelog -p --template changelog-template.hbs"
     },
     "devDependencies": {
         "auto-changelog": "^2.4.0",
-        "http-server": "^13.0.2"
+        "http-server": "^13.0.2",
+        "standard-version": "^9.3.2"
     },
     "dependencies": {}
 }
