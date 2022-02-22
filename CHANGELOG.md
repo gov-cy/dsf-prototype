@@ -1,19 +1,44 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-### [0.2.1](https://github.com/gov-cy/dsf-prototype/compare/v0.2.0...v0.2.1) (2022-02-22)
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-### Bug Fixes
+## [v0.2.2](https://github.com/gov-cy/dsf-prototype/compare/v0.2.1...v0.2.2)
 
-* update changelog template ([827eeb6](https://github.com/gov-cy/dsf-prototype/commit/827eeb65dcb1db23ffeb99feb0baaa60d14e0d95))
 
-## [0.2.0](https://github.com/gov-cy/dsf-prototype/compare/v0.1.2...v0.2.0) (2022-02-22)
+### Merged
 
-### 0.1.2 (2022-02-22)
+- Ce standard version test [`#35`](https://github.com/gov-cy/dsf-prototype/pull/35)
 
-## 0.1.2
+
+### Commits
+
+- 2022-02-22T20:21:03.000Z - chore(release): 0.2.1 [`0d522c9`](https://github.com/gov-cy/dsf-prototype/commit/0d522c97fb87704ec58817c41cdefd1313d2fc1e)
+- 2022-02-22T20:20:34.000Z - fix: update changelog template [`827eeb6`](https://github.com/gov-cy/dsf-prototype/commit/827eeb65dcb1db23ffeb99feb0baaa60d14e0d95)
+
+## [v0.2.1](https://github.com/gov-cy/dsf-prototype/compare/v0.2.0...v0.2.1) - 2022-02-22
+
+
+
+
+### Commits
+
+- 2022-02-22T19:59:37.000Z - chore(release): 0.2.1 [`19d3791`](https://github.com/gov-cy/dsf-prototype/commit/19d3791e6946a6b60261a1c84553d3f226da8552)
+
+## [v0.2.0](https://github.com/gov-cy/dsf-prototype/compare/v0.1.2...v0.2.0) - 2022-02-22
+
+
+
+
+### Commits
+
+- 2022-02-22T19:53:29.000Z - testing standard-version package [`418c75f`](https://github.com/gov-cy/dsf-prototype/commit/418c75ff066fe780458831feba0c612f80b83933)
+- 2022-02-22T19:53:52.000Z - chore(release): 0.2.0 [`a3a92e2`](https://github.com/gov-cy/dsf-prototype/commit/a3a92e2a8a83536db43ce305b756f8de9397d250)
+
+## v0.1.2 - 2022-02-22
 
 
 ### Merged
