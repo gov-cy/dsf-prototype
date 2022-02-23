@@ -21,10 +21,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>If the data we have are not correct, you can <a href='#' onclick='return false;'>apply using a paper</a> form instead.</p>"},
-                    "el" : {"label" : "<p>Εάν τα στοιχέια που έχουμε καταχωρημένα δεν είναι σωστά μπορείτε να χρησιμοποιήσετε την <a href='#' onclick='return false;'>έντυπη μορφή της αίτησης.</a></p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>If the data we have are not correct, you can <a href='#' onclick='return false;'>apply using a paper</a> form instead.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Εάν τα στοιχέια που έχουμε καταχωρημένα δεν είναι σωστά μπορείτε να χρησιμοποιήσετε την <a href='#' onclick='return false;'>έντυπη μορφή της αίτησης.</a></p>"}
                 }
             }
         ]

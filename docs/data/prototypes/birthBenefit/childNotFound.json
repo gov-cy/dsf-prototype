@@ -22,10 +22,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>If you’ve had children within the past 12 months, you’ll need to <span class='DSFAnchor'>apply by paper form</span> so that you can attach their birth certificates.</p>"},
-                    "el" : {"label" : "<p>Εάν έχετε γεννήσει κατά τους τελευταίους 12 μήνες, θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να επισυνάψετε το σχετικό πιστοποιητικό γέννησης.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>If you’ve had children within the past 12 months, you’ll need to <span class='DSFAnchor'>apply by paper form</span> so that you can attach their birth certificates.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Εάν έχετε γεννήσει κατά τους τελευταίους 12 μήνες, θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να επισυνάψετε το σχετικό πιστοποιητικό γέννησης.</p>"}
                 }
             }
             ,{

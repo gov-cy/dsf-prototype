@@ -10,5 +10,8 @@ if (sessionStorage["Bank"]) {
     if (sessionStorage["Bank"] != "") $("#bankInfo").text(sessionStorage["Bank"]);
 }
 if (sessionStorage["IBAN"]) {
-    if (sessionStorage["IBAN"] != "") $("#IBANInfo").text(sessionStorage["IBAN"]);
+    if (sessionStorage["IBAN"] != "") $("#IBANInfo").text(sessionStorage["IBAN"].replace(/.(?=.{4,}$)/g, '*'));
+}
+if (sessionStorage["phoneNum"]) {
+    if (sessionStorage["phoneNum"] != "") $("#phoneNumInfo").text(sessionStorage["phoneNum"]);
 }

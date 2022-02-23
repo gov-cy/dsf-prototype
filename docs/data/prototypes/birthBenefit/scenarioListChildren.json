@@ -56,13 +56,6 @@
                 }
             }
             ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : " "}
-                }
-            }
-            ,{
                 "type": "link",
                 "href" : "#p/birthBenefit/childrenNotInList",
                 "content" : {
@@ -71,25 +64,11 @@
                 }
             }
             ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : " "}
-                }
-            }
-            ,{
                 "type": "link",
                 "href" : "#p/birthBenefit/stillbornNotInList",
                 "content" : {
                     "en" : {"label" : "Did you have a child who was stillborn?"},
                     "el" : {"label" : "Έχετε γεννήσει θνησιγενές (νεκρό) βρέφος;"}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : " "}
                 }
             }
         ]

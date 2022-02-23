@@ -325,13 +325,13 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
                     "en" : {
-                        "label" : "<p><b>Lists</b></p>"
+                        "label" : "<p class='govcy-mb-3'><b>Lists</b></p>"
                     },
                     "el" : {
-                        "label" : "<p><b>Λίστες</b></p>"
+                        "label" : "<p class='govcy-mb-3'><b>Λίστες</b></p>"
                     }
                 }
             }
@@ -366,18 +366,18 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
                     "en" : {
-                        "label" : "<p><b>Conditional radio</b></p><p>This can be done with custom HTML for now</p>"
+                        "label" : "<p class='govcy-mb-3'><b>Conditional radio</b></p><p class='govcy-mb-3'>This can be done with custom HTML for now</p>"
                     },
                     "el" : {
-                        "label" : "<p><b>Conditional radio</b></p><p>Αυτό μπορεί να γίνει με προσαρμοσμένο HTML προς το παρόν</p>"
+                        "label" : "<p class='govcy-mb-3'><b>Conditional radio</b></p><p class='govcy-mb-3'>Αυτό μπορεί να γίνει με προσαρμοσμένο HTML προς το παρόν</p>"
                     }
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
                     "en" : {
                         "label" : "<fieldset class='govcy-fieldset'><div class='govcy-form-control'><label class='govcy-radio-btn'>Use my CY Login account email, me@example.com<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show'/><span class='govcy-radio'></span></label><label class='govcy-radio-btn'>I’d like to use a different email address<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Email Address</label><span class='govcy-hint'>We’ll only use this for your application</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"

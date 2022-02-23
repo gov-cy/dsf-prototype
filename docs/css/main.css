@@ -66,7 +66,7 @@ a.govcy-back-link:hover {
   --bs-dark: #212529;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
+  --bs-success-rgb: 0, 112, 60;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
@@ -80,7 +80,7 @@ a.govcy-back-link:hover {
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.188rem;
+  --bs-body-font-size: 1.125rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #272525;
@@ -177,7 +177,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1.188rem;
+  font-size: 1.125rem;
 }
 
 p {
@@ -432,14 +432,9 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
-}
+
 legend + * {
   clear: left;
 }
@@ -562,7 +557,7 @@ progress {
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.188rem;
+  --bs-body-font-size: 1.125rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #272525;
@@ -9271,7 +9266,7 @@ progress {
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.188rem;
+  --bs-body-font-size: 1.125rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #272525;
@@ -9368,7 +9363,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1.188rem;
+  font-size: 1.125rem;
 }
 
 p {
@@ -9623,14 +9618,9 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
-}
+
 legend + * {
   clear: left;
 }
@@ -11420,7 +11410,7 @@ progress {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5;
   color: #272525;
@@ -11592,7 +11582,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5;
   color: #272525;
@@ -11916,7 +11906,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.375rem 0.75rem;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5;
   color: #272525;
@@ -12177,7 +12167,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -12735,7 +12725,7 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   color: #272525;
   text-align: left;
   list-style: none;
@@ -13925,7 +13915,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   color: #272525;
   text-align: left;
   background-color: #fff;
@@ -15218,7 +15208,7 @@ textarea.form-control-lg {
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
@@ -16818,7 +16808,7 @@ textarea.form-control-lg {
 }
 
 .fs-6 {
-  font-size: 1.188rem !important;
+  font-size: 1.125rem !important;
 }
 
 .fst-italic {
@@ -18102,7 +18092,7 @@ textarea.form-control-lg {
 }
 
 .govcy-bg-success {
-  background-color: rgb(80,94,49) !important;
+  background-color: rgb(0, 112, 60) !important;
 }
 
 .govcy-bg-info {
@@ -18242,7 +18232,7 @@ textarea.form-control-lg {
 }
 
 .govcy-fs-6 {
-  font-size: 1.188rem !important;
+  font-size: 1.125rem !important;
 }
 
 .govcy-efs-large {
@@ -20119,7 +20109,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-sm-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(0, 112, 60) !important;
   }
 
   .govcy-bg-sm-info {
@@ -21780,7 +21770,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-md-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(0, 112, 60) !important;
   }
 
   .govcy-bg-md-info {
@@ -23441,7 +23431,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-lg-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(0, 112, 60) !important;
   }
 
   .govcy-bg-lg-info {
@@ -25102,7 +25092,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-xl-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(0, 112, 60) !important;
   }
 
   .govcy-bg-xl-info {
@@ -26763,7 +26753,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-xxl-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(0, 112, 60) !important;
   }
 
   .govcy-bg-xxl-info {
@@ -27189,7 +27179,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1.188rem;
+  font-size: 1.125rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -28087,7 +28077,6 @@ textarea.form-control-lg {
   padding: 6px 16px 8px 60px;
   margin-top: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

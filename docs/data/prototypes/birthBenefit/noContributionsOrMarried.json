@@ -29,10 +29,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You may still be eligible, but you’ll need to <span class='DSFAnchor'>apply by paper form</span> to provide evidence for any of these:</p>"},
-                    "el" : {"label" : "<p>Μπορεί να είστε επιλέξιμη, αλλά θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να προσκομίσετε αποδεικτικά στοιχεία για οποιοδήποτε από τα πιο κάτω σημεία:</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>You may still be eligible, but you’ll need to <span class='DSFAnchor'>apply by paper form</span> to provide evidence for any of these:</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Μπορεί να είστε επιλέξιμη, αλλά θα πρέπει να υποβάλετε <span class='DSFAnchor'>αίτηση γραπτώς</span> έτσι ώστε να προσκομίσετε αποδεικτικά στοιχεία για οποιοδήποτε από τα πιο κάτω σημεία:</p>"}
                 }
             }
             ,{
@@ -58,10 +58,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>If you have had no social insurance contributions, <span class='DSFAnchor'>apply for the single mother grant</span> instead.</p>"},
-                    "el" : {"label" : "<p>Αν δεν έχετε εισφορές κοινωνικών ασφαλίσεων μπορείτε να υποβάλετε αίτηση για το <span class='DSFAnchor'>ειδικό βοήθημα τοκετού για άγαμες μητέρες</span>.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>If you have had no social insurance contributions, <span class='DSFAnchor'>apply for the single mother grant</span> instead.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Αν δεν έχετε εισφορές κοινωνικών ασφαλίσεων μπορείτε να υποβάλετε αίτηση για το <span class='DSFAnchor'>ειδικό βοήθημα τοκετού για άγαμες μητέρες</span>.</p>"}
                 }
             }
             ,{
@@ -72,10 +72,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You cannot apply for a grant if you are married or in a civil partnership and neither of you have social insurance contributions.</p>"},
-                    "el" : {"label" : "<p>Δεν μπορείτε να υποβάλετε αίτηση για το βοήθημα τοκετού αν είστε παντρεμένοι ή σε σύμφωνο συμβίωσης και κανείς από εσάς δεν έχει εισφορές κοινωνικών ασφαλίσεων.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>You cannot apply for a grant if you are married or in a civil partnership and neither of you have social insurance contributions.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Δεν μπορείτε να υποβάλετε αίτηση για το βοήθημα τοκετού αν είστε παντρεμένοι ή σε σύμφωνο συμβίωσης και κανείς από εσάς δεν έχει εισφορές κοινωνικών ασφαλίσεων.</p>"}
                 }
             }
         ]
