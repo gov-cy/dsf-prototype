@@ -36,10 +36,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You can <span class='DSFAnchor'>download the paper form</span> to come back to later, and continue the online application for Constantinos</p>"},
-                    "el" : {"label" : "<p>Μπορείτε να κατεβάσετε το <span class='DSFAnchor'>έντυπο της αίτησης</span> για να το χρησιμοποιήσετε αργότερα και να συνεχίσετε τώρα την αίτησή σας διαδικτυακά για τα παιδιά: Κωνσταντίνος.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>You can <span class='DSFAnchor'>download the paper form</span> to come back to later, and continue the online application for Constantinos</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Μπορείτε να κατεβάσετε το <span class='DSFAnchor'>έντυπο της αίτησης</span> για να το χρησιμοποιήσετε αργότερα και να συνεχίσετε τώρα την αίτησή σας διαδικτυακά για τα παιδιά: Κωνσταντίνος.</p>"}
                 }
             }
             ,{
@@ -56,13 +56,6 @@
                 "content" : {
                     "en" : {"label" : "Continue application"},
                     "el" : {"label" : "Συνεχίστε την αίτηση"}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : " "}
                 }
             }
         ]

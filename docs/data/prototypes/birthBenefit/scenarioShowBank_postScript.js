@@ -10,5 +10,5 @@ if (sessionStorage["Bank"]) {
 }
 //if IBAN was changed change the details on the screen
 if (sessionStorage["IBAN"]) {
-    $("#IBANInfo").text(sessionStorage["IBAN"]);
+    $("#IBANInfo").text(sessionStorage["IBAN"].replace(/.(?=.{4,}$)/g, '*'));
 }

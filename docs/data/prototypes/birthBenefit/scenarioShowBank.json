@@ -34,7 +34,7 @@
                             "data" : [
                                 ["<b>Name</b>","<span id='bankAccountNameInfo'>Elena Nicolaou</span>"],
                                 ["<b>Bank</b>","<span id='bankInfo'>Bank of Cyprus</span>"],
-                                ["<b>International Bank Account Number (IBAN)</b>","<span id='IBANInfo'>CY21002001950000357001234567</span>"]
+                                ["<b>International Bank Account Number (IBAN)</b>","<span id='IBANInfo'>************************4567</span>"]
                             ]
                         },
                     "el" : {"label" : "Αυτά είναι τα στοιχεία του τραπεζικού λογαριασμού που υπάρχουν καταχωρημένα στα αρχεία των Υπηρεσιών Κοινωνικών Ασφαλίσεων",
@@ -42,7 +42,7 @@
                         "data" : [
                             ["<b>Ονοματεπώνυμο</b>","<span id='bankAccountNameInfo'>Elena Nicolaou</span>"],
                             ["<b>Τράπεζα</b>","<span id='bankInfo'>Bank of Cyprus</span>"],
-                            ["<b>International Bank Account Number (IBAN)</b>","<span id='IBANInfo'>CY21002001950000357001234567</span>"]
+                            ["<b>International Bank Account Number (IBAN)</b>","<span id='IBANInfo'>************************4567</span>"]
                         ]
                     }
                 }
@@ -65,12 +65,6 @@
                             {"option_id": "bank_no","option_value":"no", "option_label":"Όχι"}
                         ]
                     }
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""}
                 }
             },
             {

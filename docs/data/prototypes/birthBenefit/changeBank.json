@@ -76,6 +76,7 @@
             }
             ,{
                 "type": "button",
+                "classes" :"govcy-mb-4",
                 "subtype": "primary",
                 "id":"nextbtn",
                 "events" : [

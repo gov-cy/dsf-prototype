@@ -10,9 +10,11 @@
             {
                 "type": "successPanel",
                 "content" : {
-                    "en" : {"head" : "Your application has been sent"
+                    "en" : {"head" : "Your application has been sent",
+                            "label": "Your reference number<br>HDJ2123F"
                         },
-                    "el" : {"head" : "Η αίτηση σας έχει υποβληθεί"
+                    "el" : {"head" : "Η αίτηση σας έχει υποβληθεί",
+                            "label": "O αριθμός αίτησης σας<br>HDJ2123F"
                         }
                 }
             }
@@ -24,17 +26,17 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p><b>Name</b><br>Elena Nicolaou</p>"},
-                    "el" : {"label" : "<p><b>Ονοματεπώνυμο</b><br>Έλενα Νικολάου</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'><b>Name</b><br>Elena Nicolaou</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'><b>Ονοματεπώνυμο</b><br>Έλενα Νικολάου</p>"}
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p><b>Identity, alien registration or passport number</b><br>123456</p>"},
-                    "el" : {"label" : "<p><b>Αρ. ταυτότητας, εγγραφής αλλοδαπού ή διαβατηρίου</b><br>123456</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'><b>Identity, alien registration or passport number</b><br>123456</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'><b>Αρ. ταυτότητας, εγγραφής αλλοδαπού ή διαβατηρίου</b><br>123456</p>"}
                 }
             }
             ,{
@@ -52,10 +54,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>You can <a href='javascript:window.print();'>print or save a copy of this page</a> for your records.</p>"},
-                    "el" : {"label" : "<p>Μπορείτε να <a href='javascript:window.print();'>εκτυπώσετε ή να αποθηκεύσετε αυτή τη σελίδα</a> για το αρχείο σας.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>You can <a href='javascript:window.print();'>print or save a copy of this page</a> for your records.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Μπορείτε να <a href='javascript:window.print();'>εκτυπώσετε ή να αποθηκεύσετε αυτή τη σελίδα</a> για το αρχείο σας.</p>"}
                 }
             }
             ,{
@@ -66,10 +68,10 @@
                 }
             }
             ,{
-                "type": "paragraphHTML",
+                "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p>If you had children, born in the past 12 months, whose names did not appear earlier in this application, you can <span class='DSFAnchor'>apply for them using the paper form</a>.</p>"},
-                    "el" : {"label" : "<p>Αν έχετε γεννήσει παιδιά, εντός των τελευταίων 12 μηνών, τα ονόματα των οποίων δεν εμφανίστηκαν προηγουμένως, μπορείτε να υποβάλετε αίτηση γι’αυτά χρησιμοποιώντας την <span class='DSFAnchor'>έντυπη μορφή της αίτησης</a>.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>If you had children, born in the past 12 months, whose names did not appear earlier in this application, you can <span class='DSFAnchor'>apply for them using the paper form</a>.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Αν έχετε γεννήσει παιδιά, εντός των τελευταίων 12 μηνών, τα ονόματα των οποίων δεν εμφανίστηκαν προηγουμένως, μπορείτε να υποβάλετε αίτηση γι’αυτά χρησιμοποιώντας την <span class='DSFAnchor'>έντυπη μορφή της αίτησης</a>.</p>"}
                 }
             }
         ]

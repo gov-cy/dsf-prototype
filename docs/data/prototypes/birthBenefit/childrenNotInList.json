@@ -29,17 +29,11 @@
                 }
             },
             {
-                "type": "paragraphHTML",
+                "type": "spanHTML",
+                "classes" : ["govcy-mb-3"],
                 "content" : {
                     "en" : {"label" : "You can <span class='DSFAnchor'>download the paper form</span> to come back to later, and continue the online application for Constantinos."},
                     "el" : {"label" : "Μπορείτε να κατεβάσετε το <span class='DSFAnchor'>έντυπο της αίτησης</span> για να το χρησιμοποιήσετε αργότερα και να συνεχίσετε την αίτησή σας διαδικτυακά για τα παιδιά: Κωνσταντίνος."}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : " "}
                 }
             },
             {
@@ -56,13 +50,6 @@
                 "content" : {
                     "en" : {"label" : "Continue application"},
                     "el" : {"label" : "Συνεχίστε την αίτηση"}
-                }
-            }
-            ,{
-                "type": "paragraph",
-                "content" : {
-                    "en" : {"label" : ""},
-                    "el" : {"label" : " "}
                 }
             }
         ]

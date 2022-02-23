@@ -347,6 +347,7 @@ Creates an an HTML text input element and it's label i.e. `<input type='text' ..
     "id" : "text1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element. Applies to the top div
     "maxlength": 10, // OPTIONAL, defines the maximum length of the input
+    "charSubType": 20, // OPTIONAL, defines the text sub type and changes of the length of the boxin terms of characters. Can have values 20,10,5,4,3 or 2
     "content" : {//multilanguage content
         "en" : {"label" : "Text Box" //label
             "placeholder": "XXXXXX", // the input placeholder
@@ -462,13 +463,13 @@ Creates a span element i.e. `<span>`. Label can be HTML. Code example:
 </details>
 
 <details>
-  <summary>paragraphHTML</summary>
+  <summary>spanHTML</summary>
   
 Creates a div element i.e. `<div>`. Label can be HTML. Code example: 
 
 ```js
 ,{
-    "type": "paragraphHTML",
+    "type": "spanHTML",
     "id" : "p1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
     "content" : {//multilanguage content
