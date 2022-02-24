@@ -2,10 +2,16 @@ DSFTemplates =
 {
     "defaultLang" : "en",
     "markdownFile" : "<div{{#id}} id='{{id}}'{{/id}}></h1>",
-    "layouts": {
+    /*"layouts": {
         "Max-width" : "<section class='row'><div id='before-main'></div></section><div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article class='row' id='main'><form id='components' class='govcy-form'></form></article>",
         "Two-thirds" : "<section class='row'><div id='before-main'></div></section><div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><article class='row' id='main'><form id='components' class='govcy-form col-md-9'></form></article>"
         ,"One-third + Two-thirds + Sidemenu" : "<div style='color:red'>This is just for demonstration purposes. It is not a real service.</div><div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
+            +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
+    },*/
+    "layouts": {
+        "Max-width" : "<section class='row'><div id='before-main'></div></section><article class='row' id='main'><form id='components' class='govcy-form'></form></article>",
+        "Two-thirds" : "<section class='row'><div id='before-main'></div></section><article class='row' id='main'><form id='components' class='govcy-form col-md-9'></form></article>"
+        ,"One-third + Two-thirds + Sidemenu" : "<div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
     "header" : {
@@ -115,7 +121,7 @@ DSFTemplates =
             "<div class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
             + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
         "userNamesSignOut" : 
-            "<div class='govcy-text-end govcy-mb-4{{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
+            "<div class='govcy-text-end {{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
             + "<a href='#p/ariadniSignOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
         "paragraph" : "<p class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         /*"spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>",*/ 
@@ -126,12 +132,12 @@ DSFTemplates =
         "orderedList" : "<ol class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
             + "{{#langConent.data}}<li>{{{.}}}</li>{{/langConent.data}}"
             + "</ol>", 
-        "h1" : "<h1 class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h1>",
-        "h2" : "<h2 class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h2>",
-        "h3" : "<h3 class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h3>",
-        "h4" : "<h4 class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h4>",
-        "h5" : "<h5 class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h5>",
-        "h6" : "<h6 class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h6>",
+        "h1" : "<h1 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h1>",
+        "h2" : "<h2 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h2>",
+        "h3" : "<h3 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h3>",
+        "h4" : "<h4 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h4>",
+        "h5" : "<h5 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h5>",
+        "h6" : "<h6 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h6>",
         "table" : "<p><strong>{{langConent.label}}</strong></p>"
         + "<div class='govcy-mb-4 table-responsive{{#classes}} {{.}}{{/classes}}'>"
         + "<table class='table'>"

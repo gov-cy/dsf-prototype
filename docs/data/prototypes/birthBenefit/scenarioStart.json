@@ -4,9 +4,9 @@
     "layout" : "Two-thirds",
     "styles": 
         {
-        ".bdigitalH1" : "color: #31576F!important;font-size:36px;",
-        ".bdigitalH2" : "color: #31576F!important;font-size:30px;",
-        ".bdigitalAnchor" :"color: #1c809d;text-decoration: none;"
+        ".bdigitalH1" : "/*color: #31576F!important;font-size:36px;*/",
+        ".bdigitalH2" : "/*color: #31576F!important;font-size:30px;*/",
+        ".bdigitalAnchor" :"/*color: #1c809d;text-decoration: none;*/"
         }
     ,
     "DSFcomponents" : 
