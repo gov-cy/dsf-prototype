@@ -46,14 +46,14 @@
             {
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" :  "<p class='govcy-mb-3'>You cannot use a CY Login account that’s for an organisation. You can <span class='bdigitalAnchor'>register for an individual’s CY Login account</span> if you do not have one.</p>"},
+                    "en" : {"label" :  "<p class='govcy-mb-3'>If you do not have either of these accounts, <span class='bdigitalAnchor'><a href="https://cge.cyprus.gov.cy/cyloginregistration/register">register for a CY Login account</a></span>.</p>"},
                     "el" : {"label" : "<p class='govcy-mb-3'>Δεν μπορείτε να χρησιμοποιήσετε εταιρικό προφίλ στο CY Login. Μπορείτε να<span class='bdigitalAnchor'>κάνετε εγγραφή για προφίλ στο CY Login για πολίτες</span>, αν δεν έχετε ήδη</p>"}
                 }
             },
             {
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" :  "<p class='govcy-mb-3'><span class='bdigitalAnchor'>Your CY Login account must be 'authenticated'</span> before using this service – this means linking your identity with the account using online banking or doing it in person.</p>"},
+                    "en" : {"label" :  "<p class='govcy-mb-3'>You'll need to <span class='bdigitalAnchor'><a href="https://cge.cyprus.gov.cy/cyloginregistration/knowledgebase/help/identification">'authenticate' your CY Login account</a></span> when you use it for the first time. This means confirming your identity with CY Login. You can do this through online banking, or by going to a Citizen Service Centre or District Post Office.</p>"},
                     "el" : {"label" : "<p class='govcy-mb-3'><span class='bdigitalAnchor'>Το προφίλ σας στο CY Login θα πρέπει να ‘ταυτοποιηθεί’</span> προτού χρησιμοποιήσετε αυτή την υπηρεσία – αυτό σημαίνει πως πρέπει να συνδέσετε την ταυτότητά σας με το προφίλ σας μέσω e-banking ή με επίσκεψη στα ΚΕΠ/ΚΕ.ΠΟ. </p>"}
                 }
             },
