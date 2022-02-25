@@ -39,8 +39,8 @@
                 "id" : "BankAccountName",
                 "maxlength": 200,
                 "content" : {
-                    "en" : {"label" : "Name"},
-                    "el" : {"label" : "Όνομα"}
+                    "en" : {"label" : "Full Name"},
+                    "el" : {"label" : "Ονοματεπώνυμο"}
                 }
             }
             ,{
@@ -107,7 +107,7 @@
                         "label" : "Επόμενο",
                         "validationSummaryTitle" : "Υπάρχει ένα πρόβλημα",
                         "validationsLabels" : {
-                            "required.BankAccountName" : "Εισαγάγετε το Όνομα που χρησιμοποιείται στον τραπεζικό λογαριασμό.",
+                            "required.BankAccountName" : "Παρακαλώ περάστε το Όνομα που χρησιμοποιείται στον τραπεζικό λογαριασμό.",
                             "required.Bank" : "Παρακαλώ περάστε το όνομα της Τράπεζας.",
                             "required.IBAN" : "Παρακαλώ περάστε το ΙΒΑΝ."
                         }
