@@ -253,16 +253,26 @@ var appView = {
                     
                     //take care of multilanguage hasle 
                     appView.prepareMultiLanguage(data.DSFcomponents.components[i]);
-                    
-                    //render using mustache
-                    DSFComponents += Mustache.render
+                    // render in mustache
+                    var componentHTML = Mustache.render
                     (DSFTemplates.componentTemplates[data.DSFcomponents.components[i].type]
                         , data.DSFcomponents.components[i]);
+
+                    //if there is a DOMId object then append that area
+                    if (data.DSFcomponents.components[i].DOMId) {
+                        $("#"+data.DSFcomponents.components[i].DOMId).append(componentHTML);
+                    }else {
+                        //render using mustache
+                        DSFComponents += componentHTML
+                    }
+
+                    
                     
                     //register events in array
                     if (data.DSFcomponents.components[i].events) {
                         DSFEvents.push(data.DSFcomponents.components[i]);
                     }
+                    
                 }
 
                 //render on page

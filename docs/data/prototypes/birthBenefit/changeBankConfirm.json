@@ -9,6 +9,7 @@
         "components" : [
             {
                 "type": "backLink",
+                "DOMId" : "before-main",
                 "content" : {
                     "en" : {"label" : "Back"},
                     "el" : {"label" : "Πίσω"}
@@ -63,15 +64,6 @@
                 "content" : {
                     "en" : {"label" : "IBAN"},
                     "el" : {"label" : "IBAN"}
-                }
-            }
-            ,{
-                "type": "file",
-                "name": "IBANPDF",
-                "id" : "IBANPDF",
-                "content" : {
-                    "en" : {"label" : "Upload a copy of the account's IBAN certificate"},
-                    "el" : {"label" : "Ανεβάστε έγγραφο που να πιστοποιεί το IBAN."}
                 }
             }
             ,{

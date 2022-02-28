@@ -118,10 +118,10 @@ DSFTemplates =
         "button" : "<button type='button' class='govcy-btn-{{subtype}} govcy-mb-4{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
         "link" : "<div class='govcy-mb-4{{#classes}} {{.}}{{/classes}}'><a href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
         "backLink" : 
-            "<div class='govcy-mb-4 {{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
+            "<div class='govcy-float-start {{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
             + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
         "userNamesSignOut" : 
-            "<div class='govcy-text-end {{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
+            "<div class='govcy-text-end govcy-float-end{{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
             + "<a href='#p/ariadniSignOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
         "paragraph" : "<p class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         /*"spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>",*/ 
@@ -187,7 +187,7 @@ DSFTemplates =
             + "</div>"
             + "</fieldset>"
         ,"successPanel" : 
-            "<div class='row govcy-mb-4 govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
+            "<div class='row govcy-my-4 govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
                 + "<div class='govcy-alert-completed-notification govcy-px-0'>"
                     + "<div class='govcy-alert-completed-notification-body govcy-bg-success'>"
                         + "<h1>{{langConent.head}}</h1>"

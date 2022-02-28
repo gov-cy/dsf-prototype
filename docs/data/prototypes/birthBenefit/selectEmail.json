@@ -10,6 +10,7 @@
         "components" : [
             {
                 "type": "backLink",
+                "DOMId" : "before-main",
                 "content" : {
                     "en" : {"label" : "Back"},
                     "el" : {"label" : "Πίσω"}
@@ -22,8 +23,8 @@
             ,{
                 "type": "h1",
                 "content" : {
-                    "en" : {"label" : "How would you like to be contacted?"},
-                    "el" : {"label" : "Πως θέλετε να επικοινωνήσουμε μαζί σας;"}
+                    "en" : {"label" : "What are your contact details?"},
+                    "el" : {"label" : "Ποια είναι τα στοιχεία επικοινωνίας σας;"}
                 }
             }
             ,{

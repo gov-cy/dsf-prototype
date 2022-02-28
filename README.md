@@ -274,7 +274,33 @@ DSFTemplates =
 
 ## Components
 
-Check out below the list of components you can use in your pages and their JSON text that needs to be added under the `DSFcomponents` in the page definition file.
+Components are defined under the `DSFcomponents` in the page definition file. The following attributes are common to all components but each component type can have specialized attributes. 
+
+```js
+,{
+    "type": "button",
+    "id" : "button1", //OPTIONAL, useful if you are adding an event
+    "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
+    "DOMId" : "before-main", //OPTIONAL, If there is a `DOMId` value then the component is appended in the element with that ID. Usually used with back-link
+    "events" : [ //OPTIONAL events that trigger actions
+        {
+            "on":"click","actions" : [ //on click 
+                {"action" : "getData","data":""}, // save data
+                {"action" : "link","data":"#p/index"} // redirect to new page
+            ]
+        }
+    ],
+    "content" : {//multilanguage content (each component can have different content)
+        "en" : {"label" : "label", //label
+            "hint": "This is a hint", //hint for the entire input
+        }, 
+        "el" : {"label" : "Επιγραφή" //label
+            "hint": "This is a hint", //hint for the entire input
+        }
+    }
+}
+```
+Check out below the list of components you can use in your pages and their JSON text that needs to be added under the `DSFcomponents` in the page definition file. 
 
 ### Components List
 This list contains HTML and GOVCY components.
@@ -327,6 +353,7 @@ Creates an an HTML anchor element that redircects back in the browser's hisoty i
     "type": "backLink",
     "id" : "link1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
+    "DOMId" : "before-main", //OPTIONAL, If there is a `DOMId` value then the component is appended in the element with that ID. Usually used with back-link
     "content" : {//multilanguage content
         "en" : {"label" : "Back"}, //label
         "el" : {"label" : "Πίσω"}
