@@ -24,7 +24,7 @@
             {
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p class='govcy-mb-3'>You could get €573.96 when you give birth to a child.</p><p class='govcy-mb-3'>You can apply for the grant if:<ul><li>you have given birth within the last 12 months</li><li>you, your husband or civil partner have made <span class='bdigitalAnchor'><a href="">social insurance contributions</a></span></li></ul></p>"},
+                    "en" : {"label" : "<p class='govcy-mb-3'>You could get €573.96 when you give birth to a child.</p><p class='govcy-mb-3'>You can apply for the grant if:<ul><li>you have given birth within the last 12 months</li><li>you, your husband or civil partner have made <span class='bdigitalAnchor'><a href='http://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/445196CDBAC862C4C2257C93003824CD?OpenDocument'>social insurance contributions</a></span></li></ul></p>"},
                     "el" : {"label" : "<p class='govcy-mb-3'>Εάν έχετε γεννήσει μπορείτε να λάβετε βοήθημα ύψους €573.96.</p><p class='govcy-mb-3'>Μπορείτε να υποβάλετε αίτηση για το βοήθημα αν:<ul><li>έχετε γεννήσει εντός των τελευταίων 12 μηνών</li><li>εσείς ή ο σύζυγός σας (περιλαμβάνει γάμο ή σύμφωνο συμβίωσης) έχετε καταβάλει εισφορές στις Κοινωνικές Ασφαλίσεις</li></ul>"}
                 }
             },
@@ -60,14 +60,14 @@
             {
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" :  "<p class='govcy-mb-3'>If you do not have either of these accounts, <span class='bdigitalAnchor'><a href="https://cge.cyprus.gov.cy/cyloginregistration/register">register for a CY Login account</a></span>.</p>"},
-                    "el" : {"label" : "<p class='govcy-mb-3'>Εάν δεν έχετε κανέναν από αυτούς τους λογαριασμούς, <span class='bdigitalAnchor'><a href="https://cge.cyprus.gov.cy/cyloginregistration/register">εγγραφείτε για λογαριασμό CY Login</a></span>.</p>"}
+                    "en" : {"label" :  "<p class='govcy-mb-3'>If you do not have either of these accounts, <span class='bdigitalAnchor'><a href='https://cge.cyprus.gov.cy/cyloginregistration/register'>register for a CY Login account</a></span>.</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Εάν δεν έχετε κανέναν από αυτούς τους λογαριασμούς, <span class='bdigitalAnchor'><a href='https://cge.cyprus.gov.cy/cyloginregistration/register'>εγγραφείτε για λογαριασμό CY Login</a></span>.</p>"}
                 }
             },
             {
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" :  "<p class='govcy-mb-3'>You'll need to <span class='bdigitalAnchor'><a href="https://cge.cyprus.gov.cy/cyloginregistration/knowledgebase/help/identification">'authenticate' your CY Login account</a></span> when you use it for the first time. This means confirming your identity with CY Login. You can do this through online banking, or by going to a Citizen Service Centre or District Post Office.</p>"},
+                    "en" : {"label" :  "<p class='govcy-mb-3'>You'll need to <span class='bdigitalAnchor'><a href='https://cge.cyprus.gov.cy/cyloginregistration/knowledgebase/help/identification'>'authenticate' your CY Login account</a></span> when you use it for the first time. This means confirming your identity with CY Login. You can do this through online banking, or by going to a Citizen Service Centre or District Post Office.</p>"},
                     "el" : {"label" : "<p class='govcy-mb-3'>Θα χρειαστεί να 'πιστοποιήσετε' τον λογαριασμό σας CY Login όταν τον χρησιμοποιήσετε για πρώτη φορά. Αυτό σημαίνει επιβεβαίωση της ταυτότητάς σας με το CY Login. Μπορείτε να το κάνετε αυτό μέσω ηλεκτρονικής τραπεζικής ή πηγαίνοντας σε Κέντρο Εξυπηρέτησης Πολιτών ή Περιφερειακό Ταχυδρομείο.</p>"}
                 }
             },
@@ -98,7 +98,7 @@
             ,{
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p class='govcy-mb-3'>You can <span class='bdigitalAnchor'><a href="http://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/B85AA4D88E3630B4C2257B18003B2C9D?OpenDocument">apply using a paper</a></span> form instead.</p>"},
+                    "en" : {"label" : "<p class='govcy-mb-3'>You can <span class='bdigitalAnchor'><a href='http://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/B85AA4D88E3630B4C2257B18003B2C9D?OpenDocument'>apply using a paper</a></span> form instead.</p>"},
                     "el" : {"label" : "<p class='govcy-mb-3'>Μπορείτε να χρησιμοποιήσετε την <span class='bdigitalAnchor'>έντυπη μορφή της αίτησης.</span></p>"}
                 }
             }
@@ -113,15 +113,15 @@
             ,{
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p class='govcy-mb-3'>For eligibility questions, ask the Social Insurance Services team </p><p class='govcy-mb-3'><span class='bdigitalAnchor'><a href="mailto:maternity@sid.mlsi.gov.cy">maternity@sid.mlsi.gov.cy</a></span><br>Telephone: 22409710<br>Open: Monday to Friday, 8am to 3pm</p>"},
-                    "el" : {"label" : "<p class='govcy-mb-3'>Επικοινωνήστε με τις Υπηρεσίες Κοινωνικών Ασφαλίσεων αν δεν είστε σίγουρη αν δικαιούστε το βοήθημα. Δεν μπορούν να σας βοηθήσουν όμως για θέματα που αφορούν στο CY Login.</p><p class='govcy-mb-3'>Yπηρεσίες Κοινωνικών Ασφαλίσεων<br><span class='bdigitalAnchor'><a href="mailto:maternity@sid.mlsi.gov.cy">maternity@sid.mlsi.gov.cy</a></span><br>Τηλέφωνο: 22409710<br>Ωράριο: Δευτέρα με Παρασκευή, 8.00 π.μ. - 3.00 μ.μ.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>For eligibility questions, ask the Social Insurance Services team </p><p class='govcy-mb-3'><span class='bdigitalAnchor'><a href='mailto:maternity@sid.mlsi.gov.cy'>maternity@sid.mlsi.gov.cy</a></span><br>Telephone: 22409710<br>Open: Monday to Friday, 8am to 3pm</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Επικοινωνήστε με τις Υπηρεσίες Κοινωνικών Ασφαλίσεων αν δεν είστε σίγουρη αν δικαιούστε το βοήθημα. Δεν μπορούν να σας βοηθήσουν όμως για θέματα που αφορούν στο CY Login.</p><p class='govcy-mb-3'>Yπηρεσίες Κοινωνικών Ασφαλίσεων<br><span class='bdigitalAnchor'><a href='mailto:maternity@sid.mlsi.gov.cy'>maternity@sid.mlsi.gov.cy</a></span><br>Τηλέφωνο: 22409710<br>Ωράριο: Δευτέρα με Παρασκευή, 8.00 π.μ. - 3.00 μ.μ.</p>"}
                 }
             }
             ,{
                 "type": "spanHTML",
                 "content" : {
-                    "en" : {"label" : "<p class='govcy-mb-3'>For CY Login or Ariadni issues, ask the Ariadni Support team </p><p class='govcy-mb-3'><span class='bdigitalAnchor'><a href="mailto:ariadnisupport@dits.dmrid.gov.cy">ariadnisupport@dits.dmrid.gov.cy</a></span><br>Telephone: 22601395</p>"},
-                    "el" : {"label" : "<p class='govcy-mb-3'>Επικοινωνήστε με τις Υπηρεσίες Κοινωνικών Ασφαλίσεων αν δεν είστε σίγουρη αν δικαιούστε το βοήθημα. Δεν μπορούν να σας βοηθήσουν όμως για θέματα που αφορούν στο CY Login.</p><p class='govcy-mb-3'>Yπηρεσίες Κοινωνικών Ασφαλίσεων<br><span class='bdigitalAnchor'><a href="mailto:maternity@sid.mlsi.gov.cy">maternity@sid.mlsi.gov.cy</a></span><br>Τηλέφωνο: 22409710<br>Ωράριο: Δευτέρα με Παρασκευή, 8.00 π.μ. - 3.00 μ.μ.</p>"}
+                    "en" : {"label" : "<p class='govcy-mb-3'>For CY Login or Ariadni issues, ask the Ariadni Support team </p><p class='govcy-mb-3'><span class='bdigitalAnchor'><a href='mailto:ariadnisupport@dits.dmrid.gov.cy'>ariadnisupport@dits.dmrid.gov.cy</a></span><br>Telephone: 22601395</p>"},
+                    "el" : {"label" : "<p class='govcy-mb-3'>Επικοινωνήστε με τις Υπηρεσίες Κοινωνικών Ασφαλίσεων αν δεν είστε σίγουρη αν δικαιούστε το βοήθημα. Δεν μπορούν να σας βοηθήσουν όμως για θέματα που αφορούν στο CY Login.</p><p class='govcy-mb-3'>Yπηρεσίες Κοινωνικών Ασφαλίσεων<br><span class='bdigitalAnchor'><a href='mailto:ariadnisupport@dits.dmrid.gov.cy'>ariadnisupport@dits.dmrid.gov.cy</a></span><br>Τηλέφωνο: 22601395</p>"}
                 }
             }
         ]
