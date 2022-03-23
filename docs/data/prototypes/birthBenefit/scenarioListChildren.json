@@ -2,7 +2,7 @@
     "id":"birthBenefit/scenarioListChildren",
     "menus" : [],
     "layout" : "Two-thirds",
-    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
+    "preScript" : "isLoggedIn.js",
     "DSFcomponents" : 
         {
         "DOMId": "components",

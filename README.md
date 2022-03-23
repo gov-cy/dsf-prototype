@@ -490,24 +490,6 @@ Creates a span element i.e. `<span>`. Label can be HTML. Code example:
 </details>
 
 <details>
-  <summary>spanHTML</summary>
-  
-Creates a div element i.e. `<div>`. Label can be HTML. Code example: 
-
-```js
-,{
-    "type": "spanHTML",
-    "id" : "p1", //OPTIONAL, useful if you are adding an event
-    "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
-    "content" : {//multilanguage content
-        "en" : {"label" : "<b>Lorem 13 ipsum dolor sit amet</b>", }, //label
-        "el" : {"label" : "<b>Lorem 13 ipsum dolor sit amet</b>"}
-    }
-}
-```
-</details>
-
-<details>
   <summary>unorderedList</summary>
   
 Creates a unordered list element i.e. `<ul>`. Content can be HTML. Code example: 

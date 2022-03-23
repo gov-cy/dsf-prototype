@@ -2,7 +2,7 @@
     "id":"birthBenefit/scenarioCheck",
     "menus" : [],
     "layout" : "Two-thirds",
-    "preScript" : "birthBenefit/scenarioLoginSubmit.js",
+    "preScript" : "isLoggedIn.js",
     "postScript" : "birthBenefit/scenarioCheck_preScript.js",
     "DSFcomponents" : 
         {

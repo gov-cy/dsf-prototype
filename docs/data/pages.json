@@ -12,7 +12,7 @@
     ,
     "pages" : {
         "index":{"id":"index"}
-        ,"ariadniLogin":{"id":"ariadniLogin"}
+        ,"login":{"id":"login"}
         ,"birthBenefit/allLinks":{"id":"birthBenefit/allLinks"}
         ,"birthBenefit/scenarioStart":{"id":"birthBenefit/scenarioStart"}
         ,"birthBenefit/scenarioListChildren":{"id":"birthBenefit/scenarioListChildren" }
@@ -35,12 +35,12 @@
         ,"birthBenefit/SCAbroad1":{"id":"birthBenefit/SCAbroad1"}
         ,"birthBenefit/SCAbroad_contibutions":{"id":"birthBenefit/SCAbroad_contibutions"}
         ,"cheatsheet":{"id":"cheatsheet"}
-        ,"ariadniSignOut":{"id":"ariadniSignOut"}
+        ,"signOut":{"id":"signOut"}
     },
     "routes" : {
         "birthBenefit1" : [
             "birthBenefit/scenarioStart"
-            ,"ariadniLogin"
+            ,"login"
             ,"birthBenefit/scenarioListChildren"
             ,"birthBenefit/scenarioShowBank"
             ,"birthBenefit/selectEmail"
@@ -49,17 +49,17 @@
             ]
         ,"birthBenefit2" : [
             "birthBenefit/scenarioStart"
-            ,"ariadniLogin"
+            ,"login"
             ,"birthBenefit/noContributionsOrMarried"
             ]
         ,"birthBenefit3" : [
             "birthBenefit/scenarioStart"
-            ,"ariadniLogin"
+            ,"login"
             ,"birthBenefit/noContributionsMarried"
             ]
         ,"birthBenefit4" : [
             "birthBenefit/scenarioStart"
-            ,"ariadniLogin"
+            ,"login"
             ,"birthBenefit/childNotFound"
             ]
     }

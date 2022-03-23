@@ -122,7 +122,7 @@ DSFTemplates =
             + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
         "userNamesSignOut" : 
             "<div class='govcy-text-end govcy-float-end{{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
-            + "<a href='#p/ariadniSignOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
+            + "<a href='#p/signOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
         "paragraph" : "<p class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         /*"spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>",*/ 
         "spanHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</div>", 

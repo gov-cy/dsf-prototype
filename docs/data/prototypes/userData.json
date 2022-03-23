@@ -1,0 +1,22 @@
+{
+    "elena" : 
+    {
+        "name" : "Elena Nicolaou",
+        "email" : "me@example.com.cy",
+        "isVerified" : true,
+        "type" : "person",
+        "children": 
+        [
+            {
+                "name": "Κωνσταντίνος",
+                "dob" : "20/09/2021"
+            }
+        ], 
+        "bank": 
+            {
+                "beneficiary" : "Elena Nicolaou", 
+                "bankName": "Bank of Cyprus", 
+                "IBAN":"CY12345678901234567"
+            }
+    }
+}

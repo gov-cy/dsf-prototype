@@ -1,8 +1,8 @@
 {
-    "id":"ariadniSignOut",
+    "id":"signOut",
     "menus" : [],
     "layout" : "Two-thirds",
-    "preScript" : "ariadniSignOut.js",
+    "preScript" : "signOut.js",
     "DSFcomponents" : 
         {
         "DOMId": "components",
