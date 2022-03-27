@@ -187,7 +187,7 @@ var appView = {
       $('#headerContainer').html("");
       $('#footerContainer').html("");
       $('#sideMenu').html("");
-      $('#topMenu').html("");
+      $('#before-main').html("");
       $('#main').html("");
   },
   /**

@@ -29,7 +29,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
         <!-- Bootstrap CSS -->
-        <link href="css/main.css" rel="stylesheet" >
+        <link href="https://govcydesignsystem1.azureedge.net/bvtest/version/1.0.1/style.min.css" rel="stylesheet" >
         <link href="css/prototype.css" rel="stylesheet" >
         
 
@@ -39,19 +39,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/is_js/0.9.0/is.min.js" integrity="sha512-DvhVUdQWYI9UoF5HGHhl00nbUFcr+j6dGlg/FSrolqR3EridE8CF82nCNAZsE4iAPkw/ws0O7IrZ1jOUuJQXxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>DSF Prototyping - GOV.CY</title>
         <meta name="description" content="Prototyping using GOV.CY styles, components and patterns.">
+        <!-- Counter.dev -->
         <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"cevangelou",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>
     </head>
     <body>
+    <!--bodyStart-->
+    <section  class="govcy-container-fluid" id="bodyStartContainer"> </section>
     <!--Header-->
-    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative d-print-none" id="headerContainerOut">
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative govcy-d-print-none" id="headerContainerOut">
         <div class="govcy-container" id="headerContainer"></div>
     </div>
-    <!--Top Menu-->
-    <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
+    <!--beforeMain-->
+    <section class="govcy-container govcy-mb-4" id='beforeMainContainer'><div id="before-main"></div><div class=" clearfix"></div></section>
     <!--Main-->
-    <main class="govcy-container govcy-my-2" id="mainContainer"></main>
+    <main class="govcy-container" id="mainContainer"></main>
     <!-- Footer -->
-    <div id="footerContainer" class="d-print-none">
+    <div id="footerContainer" class="govcy-d-print-none">
     </div>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

@@ -9,9 +9,9 @@ DSFTemplates =
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },*/
     "layouts": {
-        "Max-width" : "<section class='row'><div id='before-main'></div></section><article class='row' id='main'><form id='components' class='govcy-form'></form></article>",
-        "Two-thirds" : "<section class='row'><div id='before-main'></div></section><article class='row' id='main'><form id='components' class='govcy-form col-md-9'></form></article>"
-        ,"One-third + Two-thirds + Sidemenu" : "<div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
+        "Max-width" : "<article class='row' id='main'><form id='components' class='govcy-form'></form></article>",
+        "Two-thirds" : "<article class='row' id='main'><form id='components' class='govcy-form col-md-9'></form></article>"
+        ,"One-third + Two-thirds + Sidemenu" : "<div class='row'><article class='col-md-9 order-md-last' id='main'><form id='components' class='govcy-form'></form></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
     "header" : {
@@ -78,7 +78,7 @@ DSFTemplates =
     },
     "componentTemplates" : {
         "date": 
-        "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control govcy-mb-4{{#classes}} {{.}}{{/classes}}'>"
+        "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control{{#classes}} {{.}}{{/classes}}'>"
         +" <label class='govcy-label govcy-mb-1' for=''>{{{langConent.label}}}</label>"
         + "<span class='govcy-input-error-msg govcy-mb-3'></span>"
         + "{{#langConent.hint}}<span class='govcy-hint govcy-mb-3'>{{langConent.hint}}</span>{{/langConent.hint}}"
@@ -98,7 +98,7 @@ DSFTemplates =
 			+ "</div>"
 		+ "</div>",
         "text": 
-            "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control govcy-mb-4{{#classes}} {{.}}{{/classes}}'>"
+            "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control{{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
             + "<span {{#id}}id='{{id}}_error'{{/id}} class='govcy-input-error-msg'></span>"
             + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
@@ -107,7 +107,7 @@ DSFTemplates =
             +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
             + "</div>",
         "password": 
-            "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control govcy-mb-4{{#classes}} {{.}}{{/classes}}'>"
+            "<div {{#id}}id='{{id}}'{{/id}} class='govcy-form-control{{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}} class='govcy-label' for='input'>{{{langConent.label}}}</label>"
             + "<span {{#id}}id='{{id}}_error'{{/id}} class='govcy-input-error-msg'></span>"
             + "{{#langConent.hint}}<span class='govcy-hint'>{{langConent.hint}}</span>{{/langConent.hint}}"
@@ -115,32 +115,33 @@ DSFTemplates =
             +"{{#langConent.placeholder}}placeholder='{{langConent.placeholder}}'{{/langConent.placeholder}}"
             +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
             + "</div>",
-        "button" : "<button type='button' class='govcy-btn-{{subtype}} govcy-mb-4{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
+        "button" : "<button type='button' class='govcy-btn-{{subtype}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
         "link" : "<div class='govcy-mb-4{{#classes}} {{.}}{{/classes}}'><a href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
         "backLink" : 
-            "<div class='govcy-float-start {{#classes}} {{.}}{{/classes}}'><span class='bi bi-chevron-left'></span>"
-            + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
+            "<div class='govcy-float-start{{#classes}} {{.}}{{/classes}}'>"
+                +"<span class='bi bi-chevron-left'></span>"
+                + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
         "userNamesSignOut" : 
             "<div class='govcy-text-end govcy-float-end{{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
             + "<a href='#p/signOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
-        "paragraph" : "<p class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
+        "paragraph" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
         /*"spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>",*/ 
         "spanHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</div>", 
-        "unorderedList" : "<ul class='govcy-mb-3 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
+        "unorderedList" : "<ul class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
             + "{{#langConent.data}}<li>{{{.}}}</li>{{/langConent.data}}"
             + "</ul>", 
-        "orderedList" : "<ol class='govcy-mb-3{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
+        "orderedList" : "<ol class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
             + "{{#langConent.data}}<li>{{{.}}}</li>{{/langConent.data}}"
             + "</ol>", 
-        "h1" : "<h1 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h1>",
-        "h2" : "<h2 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h2>",
-        "h3" : "<h3 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h3>",
-        "h4" : "<h4 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h4>",
-        "h5" : "<h5 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h5>",
-        "h6" : "<h6 class='govcy-my-4 {{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h6>",
-        "table" : "<p><strong>{{langConent.label}}</strong></p>"
-        + "<div class='govcy-mb-4 table-responsive{{#classes}} {{.}}{{/classes}}'>"
-        + "<table class='table'>"
+        "h1" : "<h1 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h1>",
+        "h2" : "<h2 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h2>",
+        "h3" : "<h3 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h3>",
+        "h4" : "<h4 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h4>",
+        "h5" : "<h5 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h5>",
+        "h6" : "<h6 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h6>",
+        "table" : "<p>{{{langConent.label}}}</p>"
+        + "<div class='govcy-table-responsive{{#classes}} {{.}}{{/classes}}'>"
+        + "<table class='govcy-table govcy-mb-4'>"
         + "<thead><tr>"
             + "{{#langConent.head}}<th>{{.}}</th>{{/langConent.head}}"
         + "</tr></thead>"
@@ -150,7 +151,7 @@ DSFTemplates =
         + "</table>"
         + "</div>"
         ,"checkboxes" : 
-            "<fieldset class='govcy-mb-4 govcy-fieldset'>"
+            "<fieldset class='govcy-fieldset govcy-mb-0'>"
             + "<legend class='govcy-legend'>{{{langConent.label}}}</legend>"
             + "{{#langConent.hint}}<span class='govcy-hint'>{{{langConent.hint}}}</span>{{/langConent.hint}}"
             + "<div {{#id}} id='{{id}}'{{/id}}class='govcy-form-control'>"
@@ -165,29 +166,29 @@ DSFTemplates =
             + "{{/langConent.options}}"
             + "</div>"
             + "</fieldset>"
-        ,"file" : "<div class='govcy-mb-4 govcy-form-control{{#classes}} {{.}}{{/classes}}'>"
+        ,"file" : "<div class='govcy-form-control{{#classes}} {{.}}{{/classes}}'>"
             + "<label{{#id}} for='{{id}}'{{/id}}class='govcy-label'>{{langConent.label}}</label>"
             + "<span {{#id}}id='{{id}}_error'{{/id}} class='govcy-input-error-msg'></span>"
             + "<input type='file' name='{{name}}' {{#id}}id='{{id}}'{{/id}}>"
             + "</div>"            
         ,"radio" : 
-            "<fieldset class='govcy-mb-4 govcy-fieldset'>"
+            "<fieldset class='govcy-fieldset govcy-mb-0'>"
             + "<legend class='govcy-legend'>{{{langConent.label}}}</legend>"
             + "{{#langConent.hint}}<span class='govcy-hint govcy-mt-2'>{{{langConent.hint}}}</span>{{/langConent.hint}}"
             + "<div {{#id}} id='{{id}}'{{/id}}class='govcy-form-control'>"
             + "<span {{#id}} id='{{id}}_error'{{/id}}class='govcy-input-error-msg'></span>"
             + "{{#langConent.options}}"
-                + "<label class='govcy-radio-btn'>"
+                + "<label class='govcy-radio'>"
                 + "{{{option_label}}}"
                 + "<input name='{{name}}' value='{{option_value}}' id='{{option_id}}'{{#option_checked}}checked{{/option_checked}} class='govcy-radio-input' type='radio'>"
-                + "<span class='govcy-radio'></span>"
+                + "<span class='govcy-radio-checked'></span>"
                 + "{{#option_hint}}<span class='govcy-hint govcy-mt-2'>{{{option_hint}}}</span>{{/option_hint}}"
                 + "</label>"
             + "{{/langConent.options}}"
             + "</div>"
             + "</fieldset>"
         ,"successPanel" : 
-            "<div class='row govcy-my-4 govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
+            "<div class='row govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
                 + "<div class='govcy-alert-completed-notification govcy-px-0'>"
                     + "<div class='govcy-alert-completed-notification-body govcy-bg-success'>"
                         + "<h1>{{langConent.head}}</h1>"
@@ -196,14 +197,14 @@ DSFTemplates =
                 + "</div>"
             + "</div>"
         ,"alertError" : 
-            "<div class='row govcy-mb-4 govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
+            "<div class='row govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3'>"
             + "<h2>{{{langConent.label}}}</h2>"
             + "<p class='govcy-mb-0'>{{#langConent.data}}<a class='errorSummaryLink' href='#'{{#elementName}} data-element-name='{{elementName}}'{{/elementName}}>{{{message}}}</a>{{/langConent.data}}</p>"
             + "</div>"
             + "</div>"
         ,"alertImportant" : 
-            "<div class='row govcy-mb-4 govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
+            "<div class='row govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-notification govcy-br-5 govcy-br-info govcy-px-0'>"
                 + "<div class='govcy-alert-notification-header govcy-bg-info'>{{{langConent.label}}}</div>"
                 + "<div class='govcy-alert-notification-body'>"
@@ -212,7 +213,7 @@ DSFTemplates =
             + "</div>"
             + "</div>"
         ,"alertSuccess" : 
-            "<div class='row govcy-mb-4 govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
+            "<div class='row govcy-px-2{{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-notification govcy-br-5 govcy-br-success govcy-px-0'>"
                 + "<div class='govcy-alert-notification-header govcy-bg-success'>{{{langConent.label}}}</div>"
                 + "<div class='govcy-alert-notification-body'>"
@@ -221,7 +222,7 @@ DSFTemplates =
             + "</div>"
             + "</div>"
         ,"warning" :
-            "<div class='row govcy-mb-4{{#classes}} {{.}}{{/classes}}'>"
+            "<div class='row {{#classes}} {{.}}{{/classes}}'>"
             + "<div class='govcy-alert-warning'>"
             + "<span class='material-icons govcy-alert-warning-icon'>error</span>"
             + "<span class='govcy-alert-warning-text' >{{{langConent.label}}}</span>"
