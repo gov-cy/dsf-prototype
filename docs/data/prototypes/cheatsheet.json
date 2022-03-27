@@ -305,11 +305,11 @@
                 "content" : {
                     "en" : {
                         "head" : "Your application has been completed",
-                        "label" : "The application reference number is:<b>191292</b>"
+                        "label" : "The application reference number is :<br>191292a"
                     },
                     "el" : {
                         "head" : "Η αίτηση έχει ολοκληρωθεί",
-                        "label" : "Ο αριθμός αναφοράς σας είναι ο εξής:<b>191292a</b>"
+                        "label" : "Ο αριθμός αναφοράς σας είναι ο εξής:<br>191292a"
                     }
                 }
             }
@@ -369,21 +369,10 @@
                 "type": "spanHTML",
                 "content" : {
                     "en" : {
-                        "label" : "<p class='govcy-mb-3'><b>Conditional radio</b></p><p class='govcy-mb-3'>This can be done with custom HTML for now</p>"
+                        "label" : "<fieldset class='govcy-fieldset govcy-mb-0'><legend class='govcy-legend'>Email Adress</legend><div class='govcy-form-control' id='emailRadioControl'><span id='emailRadioControl_error' class='govcy-input-error-msg'></span><label class='govcy-radio'>Use my CY Login account email, <b>me@example.com</b><input class='govcy-radio-input' value='default' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show' /><span class='govcy-radio-checked'></span></label><label class='govcy-radio'>I’d like to use a different email address<input class='govcy-radio-input' value='custom' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio-checked'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div id='emailAddressIn' class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Email address</label><span id='emailAddressIn_error' class='govcy-input-error-msg'></span><span class='govcy-hint'>We’ll only use this for your child birth grant application</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"
                     },
                     "el" : {
-                        "label" : "<p class='govcy-mb-3'><b>Conditional radio</b></p><p class='govcy-mb-3'>Αυτό μπορεί να γίνει με προσαρμοσμένο HTML προς το παρόν</p>"
-                    }
-                }
-            }
-            ,{
-                "type": "spanHTML",
-                "content" : {
-                    "en" : {
-                        "label" : "<fieldset class='govcy-fieldset'><div class='govcy-form-control'><label class='govcy-radio-btn'>Use my CY Login account email, me@example.com<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show'/><span class='govcy-radio'></span></label><label class='govcy-radio-btn'>I’d like to use a different email address<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Email Address</label><span class='govcy-hint'>We’ll only use this for your application</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"
-                    },
-                    "el" : {
-                        "label" : "<fieldset class='govcy-fieldset'><div class='govcy-form-control'><label class='govcy-radio-btn'>Χρησιμοποιήστε τη διεύθυνση ηλεκτρονικού ταχυδρομείου του λογαριασμού μου στο CY Login, me@example.com<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show'/><span class='govcy-radio'></span></label><label class='govcy-radio-btn'>Θα ήθελα να χρησιμοποιήσω διαφορετική διεύθυνση email<input class='govcy-radio-input' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Διεύθυνση ηλεκτρονικού ταχυδρομείου</label><span class='govcy-hint'>Θα το χρησιμοποιήσουμε μόνο για την αίτησή σας</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"
+                        "label" : "<fieldset class='govcy-fieldset govcy-mb-0'><legend class='govcy-legend'>Διεύθυνση ηλ. ταχυδρομείου</legend><div class='govcy-form-control' id='emailRadioControl'><span id='emailRadioControl_error' class='govcy-input-error-msg'></span><label class='govcy-radio'>Τη διεύθυνση ηλ. ταχυδρομείου που είναι καταχωρημένη στο προφίλ μου στο CY Login: <b>me@example.com</b><input class='govcy-radio-input' value='default' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email.show' /><span class='govcy-radio-checked'></span></label><label class='govcy-radio'>Θα ήθελα να καταχωρήσω διαφορετική διεύθυνση<input class='govcy-radio-input' value='custom' name='emailRadio' type='radio' data-bs-toggle='collapse' data-bs-target='#email:not(.show)'/><span class='govcy-radio-checked'></span></label><div class='collapse govcy-pl-3 govcy-ml-1' id='email'><div id='emailAddressIn' class='govcy-form-control govcy-form-control-hint'><label class='govcy-label' for=''>Διεύθυνση ηλ. ταχυδρομείου</label><span id='emailAddressIn_error' class='govcy-input-error-msg'></span><span class='govcy-hint'>Θα χρησιμοποιηθεί μόνο για τους σκοπούς αυτής της αίτησης</span><input type='text' name='emailAddress' class='govcy-text-input'/></div></div></div></fieldset>"
                     }
                 }
             }
