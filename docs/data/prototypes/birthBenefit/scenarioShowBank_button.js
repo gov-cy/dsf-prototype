@@ -1,7 +1,7 @@
 if (sessionStorage["isBankCorrect"] == "no"){
     window.location="#p/birthBenefit/changeBank";
     //use this to stop all other events
-    appModel.stopScripts = true;  
+    DSFStopScripts = true;  
 }
 
 

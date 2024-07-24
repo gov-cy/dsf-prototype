@@ -10,7 +10,13 @@
             }
         }
     ,
-    "pages" : {
+    "commonContent": {
+        "back" : {
+            "en": "Back"
+            ,"el": "Πίσω"
+        } 
+    }
+    ,"pages" : {
         "index":{"id":"index"}
         ,"login":{"id":"login"}
         ,"birthBenefit/allLinks":{"id":"birthBenefit/allLinks"}

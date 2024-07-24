@@ -1,22 +1,15 @@
 {
-    "id":"birthBenefit/scenarioShowBank",
+    "id":"birthBenefit/selectEmail",
     "menus" : [],
     "layout" : "Two-thirds",
     "preScript" : "isLoggedIn.js",
     "postScript" : "birthBenefit/selectEmailValidation.js",
+    "hasBack" : true,
     "DSFcomponents" : 
         {
         "DOMId": "components",
         "components" : [
             {
-                "type": "backLink",
-                "DOMId" : "before-main",
-                "content" : {
-                    "en" : {"label" : "Back"},
-                    "el" : {"label" : "Πίσω"}
-                }
-            }
-            ,{
                 "type": "divEmpty",
                 "id" : "alerts"
             }

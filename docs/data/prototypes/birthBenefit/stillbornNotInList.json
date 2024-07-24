@@ -3,19 +3,12 @@
     "menus" : [],
     "layout" : "Two-thirds",
     "preScript" : "isLoggedIn.js",
+    "hasBack" : true,
     "DSFcomponents" : 
         {
         "DOMId": "components",
         "components" : [
-            {
-                "type": "backLink",
-                "DOMId" : "before-main",
-                "content" : {
-                    "en" : {"label" : "Back"},
-                    "el" : {"label" : "Πίσω"}
-                }
-            },
-            {
+             {
                 "type": "h1",
                 "content" : {
                     "en" : {"label" : "Claim the grant for a stillborn child"},
