@@ -1,3 +1,16 @@
+DSFReusableStuff = {
+    "editButton" : '<span class="DSFEditSpan">'
+    + '<span class="btn DSFMoveButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-bar-contract" viewBox="0 0 16 16">'
+    + '<title>Drag to move</title>'
+    + '<path fill-rule="evenodd" d="M3.646 14.854a.5.5 0 0 0 .708 0L8 11.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zm0-13.708a.5.5 0 0 1 .708 0L8 4.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8z"/>'
+    + '</svg></span>'
+     + '<span class="btn {{#editMode}}DSFEdit{{/editMode}}Button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">'
+     + '<title>Click to edit</title>'
+     + '<path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>'
+     + '</svg></span>'
+     + '</span>',
+    "editPageObject" : '<pre id="DSFComponentsObj"></pre><pre id="DSFComponentsHTML"></pre>'
+};
 DSFTemplates = 
 {
     "defaultLang" : "en",
@@ -10,7 +23,7 @@ DSFTemplates =
     },*/
     "layouts": {
         "Max-width" : "<article class='row' id='main'><form id='components' class='govcy-form'></form></article>",
-        "Two-thirds" : "<article class='row' id='main'><form id='components' class='govcy-form col-md-9'></form></article>"
+        "Two-thirds" : "<div class='row'><article class='govcy-col-8' id='main'><form id='components' class='govcy-form'></form></article></div>"
         ,"One-third + Two-thirds + Sidemenu" : "<div class='row'><article class='col-md-9 order-md-last' id='main'><form id='components' class='govcy-form'></form></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
@@ -116,15 +129,14 @@ DSFTemplates =
             +"{{#maxlength}} maxlength={{maxlength}}{{/maxlength}}>"
             + "</div>",
         "button" : "<button type='button' class='govcy-btn-{{subtype}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</button>",
-        "link" : "<div class='govcy-mb-4{{#classes}} {{.}}{{/classes}}'><a href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
+        "link" : "<div class='{{#editMode}}DSFEdit{{/editMode}} govcy-mb-4{{#classes}} {{.}}{{/classes}}'>{{#editMode}}"+DSFReusableStuff.editButton+"{{/editMode}}<a href='{{href}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</a></div>",
         "backLink" : 
-            "<div class='govcy-float-start{{#classes}} {{.}}{{/classes}}'>"
-                +"<span class='bi bi-chevron-left'></span>"
-                + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a></div>",
+            "<span class='bi bi-chevron-left'></span>"
+                + "<a href='javascript:history.back()'{{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.label}}</a>",
         "userNamesSignOut" : 
-            "<div class='govcy-text-end govcy-float-end{{#classes}} {{.}}{{/classes}}'>{{langConent.userName}} | "
-            + "<a href='#p/signOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a></div>",
-        "paragraph" : "<p class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</p>", 
+            "{{langConent.userName}} | "
+            + "<a href='#p/signOut' {{#id}} id='{{id}}'{{/id}}href='#' class='govcy-back-link'>{{langConent.logout}}</a>",
+        "paragraph" : "<p class='{{#editMode}}DSFEdit{{/editMode}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{#editMode}}"+DSFReusableStuff.editButton+"<span contenteditable='true'>{{/editMode}}{{langConent.label}}{{#editMode}}</span>{{/editMode}}</p>", 
         /*"spanHTML" : "<span class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</span>",*/ 
         "spanHTML" : "<div class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{{langConent.label}}}</div>", 
         "unorderedList" : "<ul class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
@@ -133,7 +145,7 @@ DSFTemplates =
         "orderedList" : "<ol class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>"
             + "{{#langConent.data}}<li>{{{.}}}</li>{{/langConent.data}}"
             + "</ol>", 
-        "h1" : "<h1 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h1>",
+        "h1" : "<h1 class='{{#editMode}}DSFEdit{{/editMode}}{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{#editMode}}"+DSFReusableStuff.editButton+"<span contenteditable='true'>{{/editMode}}{{langConent.label}}{{#editMode}}</span>{{/editMode}}</h1>",
         "h2" : "<h2 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h2>",
         "h3" : "<h3 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h3>",
         "h4" : "<h4 class='{{#classes}} {{.}}{{/classes}}'{{#id}} id='{{id}}'{{/id}}>{{langConent.label}}</h4>",

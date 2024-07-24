@@ -2,7 +2,7 @@
 if ((!sessionStorage["id"]) || (sessionStorage["id"].toLowerCase() != "elena")){
     window.location="#p/birthBenefit/badLogin";
     //use this to stop all other events
-    appModel.stopScripts = true;  
+    DSFStopScripts = true;  
 //if is the right user load userNamesSignOut component
 } else {
     //prepare user data object 
@@ -22,5 +22,5 @@ if ((!sessionStorage["id"]) || (sessionStorage["id"].toLowerCase() != "elena")){
         , useData);
 
     //render on page
-    $("#before-main").html(userDataContent);
+    $("#beforeMainContainerUsername").html(userDataContent);
 }

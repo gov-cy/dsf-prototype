@@ -148,8 +148,13 @@ Check below a sample structure of the file with comments to help identify what i
                 ]
             }
         }
-    ,
-    "pages" : {// define the pages 
+    ,"commonContent": { //common content within the site
+        "back" : { //to be used for the back button
+            "en": "Back"
+            ,"el": "Πίσω"
+        } 
+    }
+    ,"pages" : {// define the pages 
         "index":{ //index must be the same as id 
             "id":"index" //page id. //in this example the file is located under data/prototypes/index.json
         }
@@ -190,6 +195,7 @@ This file defines the page configuration and it's components. Note that the `{{i
     "layout" : "Max-width", // template reference
     "preScript" : "birthBenefit/test.js", // javascript to be executed before loading the components. File must be located under `data/prototypes/`
     "postScript" : "birthBenefit/test.js", // javascript to be executed after loading the components. File must be located under `data/prototypes/`
+    "hasBack" : true, //if the page as a back link
     "DSFcomponents": //Components definitions  
         {
         "DOMId": "components", //the DOM id of the element that the components will be rendered in 
@@ -281,7 +287,7 @@ Components are defined under the `DSFcomponents` in the page definition file. Th
     "type": "button",
     "id" : "button1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"] //OPTIONAL add CSS classes to an element
-    "DOMId" : "before-main", //OPTIONAL, If there is a `DOMId` value then the component is appended in the element with that ID. Usually used with back-link
+    "DOMId" : "backLink", //OPTIONAL, If there is a `DOMId` value then the component is appended in the element with that ID. Usually used with back-link
     "events" : [ //OPTIONAL events that trigger actions
         {
             "on":"click","actions" : [ //on click 
@@ -353,7 +359,7 @@ Creates an an HTML anchor element that redircects back in the browser's hisoty i
     "type": "backLink",
     "id" : "link1", //OPTIONAL, useful if you are adding an event
     "classes": ["govcy-bg-danger","govcy-text-white"], //OPTIONAL add CSS classes to an element
-    "DOMId" : "before-main", //OPTIONAL, If there is a `DOMId` value then the component is appended in the element with that ID. Usually used with back-link
+    "DOMId" : "backLink", //OPTIONAL, If there is a `DOMId` value then the component is appended in the element with that ID. Usually used with back-link
     "content" : {//multilanguage content
         "en" : {"label" : "Back"}, //label
         "el" : {"label" : "Πίσω"}
@@ -1044,7 +1050,7 @@ The example below saves the data from a from on the browser's `sessionStorage` a
 }
 ```
 
-To force stop the next actions defined in an event from a custom script you simply need to set this in your code `appModel.stopScripts = true;`. Using the previous example and with the contents of the `data/prototypes/birthBenefit/scenarioLoginSubmit.js` file below, if user is not 'elena' the user is redirected to the 'badlogin' page and the rest of the actions are not triggered.
+To force stop the next actions defined in an event from a custom script you simply need to set this in your code `DSFStopScripts = true;`. Using the previous example and with the contents of the `data/prototypes/birthBenefit/scenarioLoginSubmit.js` file below, if user is not 'elena' the user is redirected to the 'badlogin' page and the rest of the actions are not triggered.
 
 ```js
 //check if the user is 'elena'
@@ -1052,7 +1058,7 @@ if ((sessionStorage["id"]) != "elena") {
     //if not then we consider it to be a bad login so redirect to badlogin page
     window.location="#p/birthBenefit/badLogin";
     //use this to stop all other events
-    appModel.stopScripts = true;  
+    DSFStopScripts = true;  
 } 
 ```
 

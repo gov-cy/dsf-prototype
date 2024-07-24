@@ -1,1 +1,19 @@
 .DSFAnchor{color: #1d70b8;text-decoration: underline;}
+/* .DSFEdit{border: 1px solid #ccc!important;} */
+.DSFEditSpan > * {margin-right:  10px;}
+.DSFEditButton{color: #212529;border-color: #212529;padding: 0px 10px 0px 10px;cursor:pointer;}
+.DSFMoveButton{color: #212529;border-color: #212529;padding: 0px 10px 0px 10px;cursor: move; cursor: -webkit-grabbing;}
+
+[contenteditable]:focus {
+        box-shadow: 0 0 0 4pt #fd0;
+        outline: none;
+  }
+
+  #DSFComponentsObj, #DSFComponentsHTML
+  {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border: 1px solid #ddd;
+    height: 500px;
+  }
